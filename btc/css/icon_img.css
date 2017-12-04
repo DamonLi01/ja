@@ -1,0 +1,82 @@
+.icon {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -18px;
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.icon-geren {
+    background: url(../images/grzx_img/2011_03.png) no-repeat center;
+}
+
+.icon-anquan {
+    background: url(../images/grzx_img/2011_06.png) no-repeat center;
+}
+
+.icon-shiming {
+    background: url(../images/grzx_img/2011_08.png) no-repeat center;
+}
+
+.icon-xiaofei {
+    background: url(../images/grzx_img/2011_10.png) no-repeat center;
+}
+
+.icon-jiaoyi {
+    background: url(../images/grzx_img/2011_12.png) no-repeat center;
+}
+
+.icon-shoukuan {
+    background: url(../images/grzx_img/2011_14.png) no-repeat center;
+}
+
+.icon-tixing {
+    background: url(../images/grzx_img/tixing.png) no-repeat center;
+}
+.icon-caichan {
+    background: url(../images/caiwu_img/caiwu2011_03.png) no-repeat center;
+}
+.icon-chongbi {
+    background: url(../images/caiwu_img/caiwu2011_06.png) no-repeat center;
+}
+.icon-tibi {
+    background: url(../images/caiwu_img/caiwu2011_08.png) no-repeat center;
+}
+.icon-zijin{
+    background: url(../images/caiwu_img/caiwu2011_10.png) no-repeat center;
+}
+
+.icon-zonghe {
+    background: url(../images/caiwu_img/caiwu2011_12.png) no-repeat center;
+}
+.icon-usdt{
+    background: url(../images/caiwu_img/usdt.png) no-repeat center;
+}
+.icon-eos{
+   
+    background: url(../images/caiwu_img/EOS.png) no-repeat center;
+}
+
+.icon_b{
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+    margin-left: -40px;
+}
+.icon>.icon {
+    position: relative;
+    left: -24px;
+    /*border-right: 30px solid transparent;*/
+}
+
+.icon_black {
+    -webkit-filter: drop-shadow(rgb(0, 0, 0)32px 0);
+    filter: drop-shadow(rgb(0, 0, 0)32px 0);
+}
+
+.icon_white {
+    -webkit-filter: drop-shadow(rgb(255, 255, 255)32px 0);
+    filter: drop-shadow(rgb(255, 255, 255)32px 0);
+}
