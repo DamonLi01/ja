@@ -62,6 +62,16 @@
     background: url(../images/adv_img/back_01.png) no-repeat center;
     
 }
+.icon-up{
+    background: url(../images/zc_img/up.png) no-repeat center;
+    
+}
+.icon_d{
+    width: 35px;
+    height: 35px;
+    margin-top: -40px;
+    margin-left: -35px;
+}
 .icon_b{
     width: 32px;
     height: 32px;
