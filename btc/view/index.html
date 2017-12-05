@@ -1,0 +1,622 @@
+<include file="Public:header" />
+<link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+<script src="../lib/js/jquery.min.js"></script>
+<script src="../lib/js/bootstrap.min.js"></script>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.gg_box {
+		width: 1200px;
+		height: 620px;
+		background-color: rgb(204, 201, 201);
+	}
+
+	.m0 {
+		margin: 0;
+	}
+
+	.hq {
+		color: #444444;
+		background-color: #f8f9fa;
+		padding: 15px 0;
+	}
+
+	.thumbnail {
+		border: 0;
+		margin-bottom: 10px;
+		border-radius: 10px;
+	}
+
+	.plr5 {
+		padding: 0 5px;
+	}
+
+	.r_box {
+		height: 330px;
+	}
+
+	.pos_r {
+		position: relative;
+	}
+
+	.pos_a {
+		position: absolute;
+	}
+
+	.zgzd {
+		position: absolute;
+		bottom: 0px;
+	}
+
+	.fw-b {
+		font-weight: bold;
+	}
+
+	.m70 {
+		margin-bottom: 70px;
+	}
+
+	.pb50 {
+		/* min-height: 560px; */
+		padding-bottom: 50px
+	}
+
+	.pt40 {
+		padding-top: 40px;
+	}
+
+	.pb20 {
+		padding-bottom: 20px;
+	}
+
+	.bgf3 {
+		background-color: #F3F7F8;
+	}
+
+	.ptb30 {
+		padding: 30px 0;
+	}
+
+	.ptb50 {
+		padding: 50px 0;
+	}
+
+	.b0 {
+		border: 0 !important;
+	}
+
+	.p0 {
+		padding: 0;
+	}
+
+	.mai tr>td {
+		padding: 3px !important;
+		border: 0 !important;
+	}
+
+	.mrdw {
+		width: 50%;
+		text-align: center;
+	}
+
+	.bg_ih {
+		background-color: inherit !important;
+	}
+
+	.nav-tabs>li>a {
+		margin-right: 0 !important;
+	}
+
+	.sanjiao {
+		position: absolute;
+		margin-top: 34px;
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		/* IE 9 */
+		-moz-transform: rotate(90deg);
+		/* Firefox */
+		-webkit-transform: rotate(90deg);
+		/* Safari 和 Chrome */
+		-o-transform: rotate(90deg);
+		/* Opera */
+	}
+
+	#myTab {
+		overflow: hidden;
+
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+
+	#myTab li {
+		/* border: 1px solid #ddd; */
+		padding: 3px 0;
+		/* border: inherit */
+	}
+
+	#myTab li a {
+		display: block;
+	}
+
+	.on {
+		background-color: #ddd;
+	}
+
+	.c_ddd {
+		color: #ddd;
+	}
+
+	.progress {
+		height: 15px!important;
+		border-radius: 0;
+	}
+
+	.w85 {
+		width: 85px;
+	}
+
+	.r20 {
+		right: 20px;
+	}
+
+	.c_green {
+		color: #0f990f;
+	}
+
+	.c_red {
+		color: #FE4E48;
+	}
+
+	.hq_fs p {
+		font-size: 16px;
+	}
+
+	.t3 {
+		top: 3px;
+	}
+	/*.panel-body{ background-color: #625c5b;color: #fff;}.panel-body h1{ color:#fff;}.panel-body td{     color: #d6d6d5;}a {color: #FFFFFF;}*/
+</style>
+<div class="container pt40">
+	<div class="row hq_fs">
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 c_green">
+					<strong>54236.50 CNY</strong>
+					<i class="pull-right r20 t3 glyphicon glyphicon-arrow-up"></i>
+				</p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 c_red">
+					<strong>54236.50 CNY</strong>
+					<i class="pull-right r20 t3 glyphicon glyphicon-arrow-down"></i>
+				</p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+		<div class="col-md-2 plr5">
+			<a href="#" class="thumbnail   hq">
+				<p class="text-center m0 ">btc行情</p>
+				<p class="text-center m0 ">54236.50 CNY </p>
+			</a>
+		</div>
+	</div>
+	<hr style="width: 80%;">
+</div>
+<div class="container pb20">
+	<div class="pos_r row">
+		<div class="col-md-8 p0">
+			<div style="min-height: 330px;" class="row m0">
+				<div class="col-md-3 plr5">
+					<a href="#" class="thumbnail   hq">
+						<p class="text-center m0 ">btc行情</p>
+						<p class="text-center m0 ">54236.50 CNY </p>
+					</a>
+				</div>
+				<div class="col-md-3 plr5">
+					<a href="#" class="thumbnail   hq">
+						<p class="text-center m0 ">btc行情</p>
+						<p class="text-center m0 ">54236.50 CNY </p>
+					</a>
+				</div>
+				<div class="col-md-3 plr5">
+					<a href="#" class="thumbnail   hq">
+						<p class="text-center m0 ">btc行情</p>
+						<p class="text-center m0 ">54236.50 CNY </p>
+					</a>
+				</div>
+				<div class="col-md-3 plr5">
+					<a href="#" class="thumbnail   hq">
+						<p class="text-center m0 ">btc行情</p>
+						<p class="text-center m0 ">54236.50 CNY </p>
+					</a>
+				</div>
+				<div class="col-md-3 plr5">
+					<a href="#" class="thumbnail   hq">
+						<p class="text-center m0 ">btc行情</p>
+						<p class="text-center m0 ">54236.50 CNY </p>
+					</a>
+				</div>
+				<p class="m0 zgzd">今日最高￥40,303.00 今日最低￥40,303.00 涨跌幅0.00% 24小时成交量฿1.62 </p>
+			</div>
+
+		</div>
+		<div class="col-md-4 r_box ">
+			<div class="panel panel-default">
+				<div class="panel-heading bg_ih b0">
+					<ul id="myTab" class="m0">
+						<li class="mrdw pull-left">
+							<a href="javascript:;">默认
+								<i style="visibility:hidden;" class="c_ddd sanjiao glyphicon glyphicon-play"></i>档位&nbsp;
+								<i class="glyphicon glyphicon-chevron-down"></i>
+
+							</a>
+						</li>
+						<li class="mrdw pull-left">
+							<a href="javascript:;">默认
+								<i style="visibility:hidden;" class="c_ddd sanjiao glyphicon glyphicon-play"></i>深度&nbsp;
+								<i class="glyphicon glyphicon-chevron-down"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<table class="table mai">
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+
+				</table>
+				<hr style="width: 90%;margin:10px auto;">
+				<table class="table mai">
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">卖5</td>
+						<td align="center">200</td>
+						<td align="right">200</td>
+						<td class="w85">
+							<div class="progress m0">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+								    style="width: 40%">
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+<div class="bgf3">
+	<div class="container ptb50">
+		<div class="row pb50">
+			<h1 class="text-center fw-b m0 m70">安全&nbsp;&nbsp;可靠&nbsp;&nbsp;便捷</h1>
+			<div class="col-md-3 text-center">
+				<img src="/Public/Images/btc_img/btc_home02.png" alt="">
+				<h3>安全</h3>
+				<p>超过10年金融风控经验团队
+					<br>全方位可定制的安全策略体系</p>
+			</div>
+
+			<div class="col-md-3 text-center">
+				<img src="/Public/Images/btc_img/btc_home03.png" alt="">
+				<h3>用户至上</h3>
+				<p>充值提现快速到账
+					<br>比特币实时到账</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<img src="/Public/Images/btc_img/btc_home04.png" alt="">
+				<h3>专业</h3>
+				<p>重金千万注册顶级域名
+					<br>是您选择的信心保证</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<img src="/Public/Images/btc_img/btc_home01.png" alt="">
+				<h3>客服</h3>
+				<p>全天候客服在线服务
+					<br>保障您的优质使用</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="container ptb50">
+	<div class="row">
+		<div class="col-md-6">
+			<h2 class="pull-left fw-b m0">官方公告</h2>
+			<div class="pull-right btn btn-primary btn-sm">查看更多</div>
+			<div class="clearfix"></div>
+
+			<div class="ptb30">
+				<ul class="list-group">
+					<li class="list-group-item b0">
+						<b>揭露Vpal（v宝）：与比特币等加密货币没有任何关...
+							<span class="pull-right">2017.11.20</span>
+						</b>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h2 class="pull-left fw-b m0">行业公告</h2>
+			<div class="pull-right btn btn-primary btn-sm">查看更多</div>
+			<div class="clearfix"></div>
+
+			<div class="ptb30">
+				<ul class="list-group">
+					<li class="list-group-item b0">
+						<b>揭露Vpal（v宝）：与比特币等加密货币没有任何关...
+							<span class="pull-right">2017.11.20</span>
+						</b>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+					<li class="list-group-item b0">关于上线瑞波（Ripple）交易的公告
+						<span class="pull-right">2017.11.20</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<p>
+				<span class="text-danger">风险提示：</span>比特币不由货币当局发行，不具有法偿性与强制性，具有极高的价格波动风险，请在风险自担的前提下谨慎投资。
+				<br> 由于虚拟币交易风险较大，易受外界因素影响，价格波动较大，我们强烈建议您在自身能承受的风险范围内参与虚拟货币交易 (投资有风险，入市需谨慎)。
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<include file="Public:footer" />
+
+<!-- Slick Slider Plugin -->
+
+<script src="__PUBLIC__/vendor/plugins/slick/slick.js"></script>
+
+<!-- <script src="vendor/plugins/highcharts/highcharts.js"></script> -->
+
+<script type="text/javascript">
+	$('#myTab li').eq(0).addClass('on').find('.sanjiao').attr('style', '');
+	$('#myTab li').click(function () {
+		$(this).addClass('on').siblings('li').removeClass('on').find('.sanjiao').attr('style', 'visibility:hidden');
+		$(this).find('.sanjiao').attr('style', '');
+
+	})
+
+	function copyUrl2()
+
+	{
+
+		var Url2 = document.getElementById("biao1");
+
+		Url2.select(); // 选择对象 
+
+		document.execCommand("Copy"); // 执行浏览器复制命令 
+
+		alert("已复制好，可贴粘。");
+
+	}
+
+
+
+	$(document).ready(function () {
+
+		$('.slick-autoplay').slick({
+
+			dots: true,
+
+			slidesToShow: 1,
+
+			slidesToScroll: 1,
+
+			autoplay: true,
+
+			autoplaySpeed: 2800,
+
+		});
+
+	});
+</script>

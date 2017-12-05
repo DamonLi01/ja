@@ -33,14 +33,27 @@ a:active {
     background-size: 100% 100%;
 }
 .bg-white {
-    background: white;
+    background: white !important;
 }
-
+.bg-f1f1{
+    background-color: #f1f1f1;
+}
+.text-white{
+    color: white;
+}
+.text-red {
+    color: #FE4E48;
+}
 .fz_14 {
     padding-left: 28px;
     font-size: 14px;
 }
-
+.fz-14{
+    font-size: 14px;
+}
+.fz_12{
+    font-size: 12px;
+}
 .nav > li > a {
     padding: 15px;
 }
@@ -81,7 +94,9 @@ a:active {
 .fw {
     font-weight: inherit;
 }
-
+.fwb{
+    font-weight: bold;
+}
 .ml-34 {
     margin-left: -34px;
 }
@@ -105,7 +120,30 @@ a:active {
 .ml17 {
     margin-left: 17px;
 }
-
+.mb36{
+    margin-bottom: 36px;
+}
+.mtb30{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.mtb40{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.mtb10{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mt60{
+    margin-top: 60px;
+}
+ .resize_n{
+    resize: none;
+}
 .pl65 {
     padding-left: 65px;
 }
@@ -114,7 +152,9 @@ a:active {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-
+.pt7{
+    padding-top: 7px;
+}
 .pl7_5 {
     padding-left: 7.5px;
 }
@@ -128,7 +168,9 @@ a:active {
 }
 
 .plr18 {
-    padding: 0 18px;
+
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .w100 {
@@ -189,4 +231,9 @@ form label {
     position: absolute;
     display: inline-block;
     border-right: 1px solid #ddd;
+}
+
+.form-title{
+   font-size: 26px;
+   font-weight: bold;
 }

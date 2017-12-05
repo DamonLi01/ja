@@ -58,12 +58,21 @@
    
     background: url(../images/caiwu_img/EOS.png) no-repeat center;
 }
-
+.icon-back{
+    background: url(../images/adv_img/back_01.png) no-repeat center;
+    
+}
 .icon_b{
     width: 32px;
     height: 32px;
     margin-top: 1px;
     margin-left: -40px;
+}
+.icon_c{
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 25px;
 }
 .icon>.icon {
     position: relative;

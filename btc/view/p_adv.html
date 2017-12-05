@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布广告</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/icon_img.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../lib/bootstrap-switch-master/dist/js/bootstrap-switch.min.js"></script>
+    <script src="../lib/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../lib/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <style>
+        .btn.active,
+        .btn:active {
+            background-color: #4199f6;
+            color: white;
+        }
+
+        .btn.active.focus,
+        .btn.active:focus,
+        .btn.focus,
+        .btn:active.focus,
+        .btn:active:focus,
+        .btn:focus {
+            outline: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <i class="icon icon_c icon-back"></i>
+                    </div>
+
+                    <form class="form-horizontal mt60">
+                        <div class="text-center">
+                            <h3 class="form-title mb36">发布广告</h3>
+                            <p class="fz_12 mb20">如果您经常进行交易，您可以创建自己的交易广告。如果您只是偶尔交易，我们建议您直接搜索交易广告</p>
+                        </div>
+                        <center class="mtb30">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn bg-f1f1 plr18 active">
+                                    <input type="radio" name="options" id=""> 在线出售
+                                </label>
+                                <label class="btn bg-f1f1 plr18">
+                                    <input type="radio" name="options" id=""> 在线购买
+                                </label>
+                            </div>
+                        </center>
+
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">交易币种</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>BTC</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">所在地</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>中国</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">货币</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>人民币</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">溢价</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                                    <span class="input-group-addon">%</span>
+                                </div>
+                                <p class="mtb10 fz_12">市场参考价格：
+                                 <span class="text-red"><span >54192.99</span>CNY/BTC</span> 
+                                    <br> 溢价是指高于当前市场价格多少百分比进行卖出。</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">交易价格</label>
+                            <div class="col-md-4 pt7 fwb text-red">
+                            54192.99 CNY/BTC
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">最小量</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+
+                                    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                                    <span class="input-group-addon">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">最大量</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+
+                                    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                                    <span class="input-group-addon">%</span>
+                                </div>
+                                <p class="mtb10 fz-14">
+                                    您账户中该币种的可用余额会限制您的最大量  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">付款方式</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>支付宝</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">广告留言</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control resize_n" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">开放时间</label>
+                            <div class="col-md-4">
+                                <div class="input-group date form_date " data-date="" data-date-format="yyyy/dd/mm " data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                    <input class="form-control bg-white" size="16" type="text" value="" readonly>
+                                    <!-- <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> -->
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                <input type="hidden" id="dtp_input2" value="" />
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">是否启用安全选项</label>
+                            <div class="col-md-4">
+                                <div id="" class="switch" data-animated="true">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-4 control-label">是否仅限受信任的交易者</label>
+                            <div class="col-md-4">
+                                <div id="" class="switch" data-animated="true">
+                                    <input type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mtb40">
+                            <label for="" class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-block btn-primary btn-419 b0">发布广告</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.switch input').bootstrapSwitch();
+        $('.form_date').datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    </script>
+</body>
+
+</html>
