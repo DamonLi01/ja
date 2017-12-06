@@ -66,6 +66,22 @@
     background: url(../images/zc_img/up.png) no-repeat center;
     
 }
+.icon-btcjy{
+    background: url(../images/gg_img/main2_03.png) no-repeat center;
+    
+}
+.icon-ggmr{
+    background: url(../images/gg_img/main2_07.png) no-repeat center;
+    
+}
+.icon-ggmc{
+    background: url(../images/gg_img/main2_09.png) no-repeat center;
+    
+}
+.icon-usdtjy{
+    background: url(../images/gg_img/main2_11.png) no-repeat center;
+    
+}
 .icon_d{
     width: 35px;
     height: 35px;

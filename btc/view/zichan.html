@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/icon_img.css">
     <style>
+        .list-group-item:first-child,
+        .list-group-item:last-child {
+            border-radius: 0;
+        }
+        .on{
+            background-color: #c7c7c7;
+        }
     </style>
 </head>
 
@@ -19,11 +26,11 @@
             <div class="row">
                 <div class="col-md-8">
                     <div>
-                        <img src="../images/zc_img/banner.jpg" width="100%" alt="banner">
+                        <img src="../images/zc_img/banner.jpg" class="mh300" width="100%" alt="">
                     </div>
-                    <div>
-                        <h2>官方公告</h2>
-                        <dl>
+                    <div class="bg-white plr18">
+                        <h2 class="mtb10 pt10 pb20 fwb text-444">官方公告</h2>
+                        <dl class="zx-list">
                             <dt>揭露Vpal（v宝）：与比特币等加密货币没有任何关...
                                 <span class="pull-right">2017.11.20</span>
                             </dt>
@@ -40,8 +47,8 @@
                                 <span class="pull-right">2017.11.20</span>
                             </dd>
                         </dl>
-                        <ul class="text-center list-inline">
-                            <li class="active">
+                        <ul class="text-center list-inline pb20">
+                            <li class="on">
                                 <a href="">1</a>
                             </li>
                             <li>
@@ -55,9 +62,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h2>行业公告</h2>
-                        <dl>
+                    <div class="bg-white plr18">
+                        <h2 class="mtb10 pt10 pb20 fwb text-444">行业公告</h2>
+                        <dl class="zx-list">
                             <dt>揭露Vpal（v宝）：与比特币等加密货币没有任何关...
                                 <span class="pull-right">2017.11.20</span>
                             </dt>
@@ -74,25 +81,25 @@
                                 <span class="pull-right">2017.11.20</span>
                             </dd>
                         </dl>
-                        <ul class="text-center list-inline">
-                                <li class="active">
-                                    <a href="">1</a>
-                                </li>
-                                <li>
-                                    <a href="">2</a>
-                                </li>
-                                <li>
-                                    <a href="">3</a>
-                                </li>
-                                <li>
-                                    <a href="">4</a>
-                                </li>
-                            </ul>
+                        <ul class="text-center list-inline pb20">
+                            <li class="on">
+                                <a href="">1</a>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <a href="">4</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div>
-                        <ul class="list-group">
+                        <ul class="list-group zx-hq-list m0">
                             <li class="list-group-item">
                                 <p> BTC行情</p>
                                 <span>54236.50 CNY </span>
@@ -119,66 +126,81 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-white">
+                    <div class="bg-white mt8">
                         <div>
-                            <img src="../images/zc_img/phb.jpg" width="100%" alt="">
+                            <img src="../images/zc_img/phb.jpg" class="mh76" width="100%" alt="">
                         </div>
-                        <ul class="list-group">
+                        <ul class="list-group zx-list-phb">
                             <li class="list-group-item">
-                                <img class="pull-left" src="../images/zc_img/user.png" alt="" class="img-circle">
-                                <p>天道酬勤的去卖比特币</p>
-                                <span>交易笔数：1693</span>
+                                <img class="pull-left" src="../images/zc_img/user.png" width="60" height="60" alt="" class="img-circle">
+                                <div class="ml75">
+                                    <p class="fwb fz-16">天道酬勤的去卖比特币</p>
+                                    <span class="fz-12">交易笔数：1693</span>
+                                </div>
+
                                 <div class="pull-right text-center top1">
                                     1
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <img class="pull-left" src="../images/zc_img/user.png" alt="" class="img-circle">
-                                <p>天道酬勤的去卖比特币</p>
-                                <span>交易笔数：1693</span>
+                                <img class="pull-left" src="../images/zc_img/user.png" width="60" height="60" alt="" class="img-circle">
+                                <div class="ml75">
+                                    <p class="fwb fz-16">天道酬勤的去卖比特币</p>
+                                    <span class="fz-12">交易笔数：1693</span>
+                                </div>
+
                                 <div class="pull-right text-center top1">
                                     1
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <img class="pull-left" src="../images/zc_img/user.png" alt="" class="img-circle">
-                                <p>天道酬勤的去卖比特币</p>
-                                <span>交易笔数：1693</span>
+                                <img class="pull-left" src="../images/zc_img/user.png" width="60" height="60" alt="" class="img-circle">
+                                <div class="ml75">
+                                    <p class="fwb fz-16">天道酬勤的去卖比特币</p>
+                                    <span class="fz-12">交易笔数：1693</span>
+                                </div>
+
                                 <div class="pull-right text-center top1">
                                     1
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <img class="pull-left" src="../images/zc_img/user.png" alt="" class="img-circle">
-                                <p>天道酬勤的去卖比特币</p>
-                                <span>交易笔数：1693</span>
+                                <img class="pull-left" src="../images/zc_img/user.png" width="60" height="60" alt="" class="img-circle">
+                                <div class="ml75">
+                                    <p class="fwb fz-16">天道酬勤的去卖比特币</p>
+                                    <span class="fz-12">交易笔数：1693</span>
+                                </div>
+
                                 <div class="pull-right text-center top1">
                                     1
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                <img class="pull-left" src="../images/zc_img/user.png" alt="" class="img-circle">
-                                <p>天道酬勤的去卖比特币</p>
-                                <span>交易笔数：1693</span>
+                                <img class="pull-left" src="../images/zc_img/user.png" width="60" height="60" alt="" class="img-circle">
+                                <div class="ml75">
+                                    <p class="fwb fz-16">天道酬勤的去卖比特币</p>
+                                    <span class="fz-12">交易笔数：1693</span>
+                                </div>
+
                                 <div class="pull-right text-center top1">
                                     1
                                 </div>
                             </li>
                         </ul>
-                        <ul class="text-center list-inline">
-                                <li class="active">
-                                    <a href="">1</a>
-                                </li>
-                                <li>
-                                    <a href="">2</a>
-                                </li>
-                                <li>
-                                    <a href="">3</a>
-                                </li>
-                                <li>
-                                    <a href="">4</a>
-                                </li>
-                            </ul>
+                        <ul class="text-center list-inline pb20">
+                            <li class="on">
+                                <a href="">1</a>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <a href="">4</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
