@@ -59,13 +59,18 @@ a:active {
 }
 
 .text-red {
-    color: #FE4E48;
+    color: #FE4E48 !important;
 }
 
 .text-444 {
     color: #444444;
 }
-
+.text-039{
+    color: #0398e0 !important;
+}
+.vam{
+    vertical-align: middle;
+}
 .fz_14 {
     padding-left: 28px;
     font-size: 14px;
@@ -76,6 +81,9 @@ a:active {
 }
 .fz-20{
     font-size: 20px;
+}
+.fz-26{
+    font-size: 26px;
 }
 .fz-16 {
     font-size: 16px;
@@ -213,7 +221,9 @@ a:active {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
+.mt2{
+    margin-top: 2px;
+}
 .mb20 {
     margin-bottom: 20px;
 }
@@ -233,6 +243,10 @@ a:active {
 .ptb0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+.pb8{
+   padding-bottom: 8px;
+   /* padding-top: 15px; */
 }
 .p10-15{
     padding: 10px 15px;
@@ -259,7 +273,9 @@ a:active {
 .pl75 {
     padding-left: 75 !important;
 }
-
+.pl90{
+    padding-left: 90px;
+}
 .pr7_5 {
     padding-right: 7.5px;
 }
