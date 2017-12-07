@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap-slider/dist/css/bootstrap-slider.min.css">
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <style>
+        .mai tr>td {
+            padding: 3px !important;
+            border: 0 !important;
+        }
+
+        .w85 {
+            width: 85px;
+        }
+
+        form.jy-form label {
+            font-weight: initial !important;
+            position: absolute;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+
+        .slider.slider-horizontal {
+            margin-left: 10px;
+            width: 78% !important;
+        }
+
+        #dot_blue .slider-handle {
+            background-color: #0398e0;
+            background-image: -webkit-linear-gradient(top, #0398e0 0, #0398e0 100%);
+            background-image: -o-linear-gradient(top, #0398e0 0, #0398e0 100%);
+            background-image: linear-gradient(to bottom, #0398e0 0, #0398e0 100%);
+        }
+
+        #dot_blue .slider-tick.in-selection {
+            background-image: -webkit-linear-gradient(top, #0d9bdd 0, #0d9bdd 100%);
+            background-image: -o-linear-gradient(top, #0d9bdd 0, #0d9bdd 100%);
+            background-image: linear-gradient(to bottom, #0d9bdd 0, #0d9bdd 100%);
+        }
+
+        #dot_blue .slider-selection.tick-slider-selection {
+            background-image: -webkit-linear-gradient(top, #0d9bdd 0, #0d9bdd 100%);
+            background-image: -o-linear-gradient(top, #0d9bdd 0, #0d9bdd 100%);
+            background-image: linear-gradient(to bottom, #0d9bdd 0, #0d9bdd 100%);
+        }
+
+        #dot_red .slider-handle {
+            background-color: #fe716d;
+            background-image: -webkit-linear-gradient(top, #fe716d 0, #fe716d 100%);
+            background-image: -o-linear-gradient(top, #fe716d 0, #fe716d 100%);
+            background-image: linear-gradient(to bottom, #fe716d 0, #fe716d 100%);
+        }
+
+        #dot_red .slider-tick.in-selection {
+            background-image: -webkit-linear-gradient(top, #f87875 0, #f87875 100%);
+            background-image: -o-linear-gradient(top, #f87875 0, #f87875 100%);
+            background-image: linear-gradient(to bottom, #f87875 0, #f87875 100%);
+        }
+
+        #dot_red .slider-selection.tick-slider-selection {
+            background-image: -webkit-linear-gradient(top, #f87875 0, #f87875 100%);
+            background-image: -o-linear-gradient(top, #f87875 0, #f87875 100%);
+            background-image: linear-gradient(to bottom, #f87875 0, #f87875 100%);
+        }
+
+        #head.list-inline>li>p {
+            text-align: center;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #head.list-inline>li>p:last-child {
+            color: #dadada;
+            font-size: 14px;
+        }
+
+        #jy-cj1 tr>td:first-child {
+            color: #3dc18e;
+        }
+
+        #jy-cj2 tr>td:first-child {
+            color: #e03b38;
+        }
+
+        #jy-cj1 tr>td,
+        #jy-cj2 tr>td {
+            font-size: 14px;
+        }
+
+        #jy-cj1 tr,
+        #jy-cj2 tr {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <div class="dib">
+                        <img src="../images/usdt_img/bch.png" class="pull-left" width="45" height="45" alt="">
+                    </div>
+                    <div class="dib pb8">
+                        <select class="fz-16 form-control pull-left b0 wauto dib ">
+                            <option>BCH</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="dib pl90">
+                        <p class="m0 fz-26 fwb text-red">$8162.10
+                            <span class="fz-14">+1.41 %</span>
+                        </p>
+                        <p class="m0 fz-16">￥54686.07</p>
+                    </div>
+                    <ul id="head" class="list-inline pull-right">
+
+                        <li>
+                            <p>1,937.00 CNY </p>
+                            <p>最高价</p>
+                        </li>
+                        <li>
+                            <p>1,937.00 CNY </p>
+                            <p>最低价</p>
+                        </li>
+                        <li>
+                            <p>1,937.00 CNY </p>
+                            <p>买一价</p>
+                        </li>
+                        <li>
+                            <p>1,937.00 CNY </p>
+                            <p>卖一价</p>
+                        </li>
+                        <li>
+                            <p>1,937.00 CNY </p>
+                            <p>成交额</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="container">
+            <div class="row  mtb20 ">
+                <div class="col-md-8">
+
+                    <div class="row bg-white m0">
+                        <div class="col-md-6">
+                            <h3 class="fz-20 fwb mtb30 text-red">买入BTC</h3>
+                            <form class="jy-form">
+                                <div class="form-group">
+                                    <label for="" class="fz-14">买入价</label>
+                                    <input type="text" class="text-right pl65 form-control" id="" placeholder="">
+                                    <p class="text-right fz-12 pt10">
+                                        <span> ≈1,937.00 </span>CNY</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="fz-14">买入量</label>
+                                    <input type="text" class="text-right pl65 form-control" id="" placeholder="">
+                                </div>
+
+                                <div id="dot_red" class="form-group">
+                                    <input id="ex13" type="text" name="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"
+                                    />
+                                    <span class="mt2 pull-right">0.00%</span>
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="password" class=" form-control" id="" placeholder="请输入交易密码">
+                                </div>
+                                <div class="form-group mtb30">
+                                    <p class="m0 fz-14">手续费:0.1%</p>
+                                    <p class="fz-14">预计交易额:201223 CNY</p>
+                                    <input type="submit" class=" btn btn-block btn-danger" id="" placeholder="请输入交易密码" value="立即买入">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fz-20 fwb mtb30 text-039">卖出BTC</h3>
+                            <form class="jy-form">
+                                <div class="form-group">
+                                    <label for="" class="fz-14">买入价</label>
+                                    <input type="text" class="text-right pl65 form-control" id="" placeholder="">
+                                    <p class="text-right fz-12 pt10">
+                                        <span> ≈1,937.00 </span>CNY</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="fz-14">买入量</label>
+                                    <input type="text" class="text-right pl65 form-control" id="" placeholder="">
+                                </div>
+
+                                <div id="dot_blue" class="form-group">
+                                    <input id="ex14" type="text" name="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"
+                                    />
+                                    <span class="mt2 pull-right">0.00%</span>
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="password" class=" form-control" id="" placeholder="请输入交易密码">
+                                </div>
+                                <div class="form-group mtb30">
+                                    <p class="m0 fz-14">手续费:0.1%</p>
+                                    <p class="fz-14">预计交易额:201223 CNY</p>
+                                    <input type="button" class=" btn btn-block btn-danger" id="" placeholder="请输入交易密码" value="立即买入">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-white">
+                    <h3 class="fz-20 fwb mtb30">成交时刻</h3>
+
+                    <table id="jy-cj1" class="table mai m0">
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr style="width: 90%;margin:10px auto;">
+                    <table id="jy-cj2" class="table mai">
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="">卖5</td>
+                            <td align="">1348.88</td>
+                            <td align=""> 0.551</td>
+                            <td class="w85">
+                                <div class="progress m0">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 40%">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        <span>委托</span>
+                        <span class="pull-right">更多记录</span>
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>类别</th>
+                                <th>价格(BTC)</th>
+                                <th>数量</th>
+                                <th>已成交</th>
+                                <th>未成交</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-center">您还没有登录，请
+                        <a href="" class="text-red">登录</a> 或
+                        <a href="" class="text-039">注册</a> 后再尝试。</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>成交记录</h3>
+                    <table class="table mai">
+                        <thead>
+                            <tr>
+                                <th>成交数量</th>
+                                <th>成交价格BTC</th>
+
+                                <th>折合美元</th>
+                                <th>时间</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>0.0041</td>
+
+                                <td>33.0854</td>
+                                <td>07:14:17</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>0.0041</td>
+
+                                <td>33.0854</td>
+                                <td>07:14:17</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>0.0041</td>
+
+                                <td>33.0854</td>
+                                <td>07:14:17</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>0.0041</td>
+
+                                <td>33.0854</td>
+                                <td>07:14:17</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>0.0041</td>
+
+                                <td>33.0854</td>
+                                <td>07:14:17</td>
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider = new Slider("#ex13", {
+            ticks: [0, 25, 50, 75, 100],
+            // ticks_labels: ['0', '25', '50', '75', '100'], 定义标记下方的标签
+            // ticks_snap_bounds: 30
+        });
+        var slider = new Slider("#ex14", {
+            ticks: [0, 25, 50, 75, 100],
+            // ticks_labels: ['0', '25', '50', '75', '100'], 定义标记下方的标签
+            // ticks_snap_bounds: 30
+        });
+    </script>
+</body>
+
+</html>
