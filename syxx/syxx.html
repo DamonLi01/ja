@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./jquery-enlargement20160816/dist/zoomify.min.css">
     <title>Document</title>
     <style>
         * {
@@ -142,8 +143,8 @@
                     <th rowspan="2">农户信息</th>
                     <td rowspan="2">
                         <div style="width:80%;margin:0 auto;">
-                            <a href="javacsript:;">
-                                    <img src="./qwe.jpg" width="100%" alt="">
+                            <a class="thumbnail" href="javacsript:;">
+                                    <img src="./qwe.jpg" width="100" alt="">
                             </a>
                            
                         </div>
@@ -186,6 +187,12 @@
         </div>
 
     </div>
+    <script src="./jquery.js"></script>
+    <script src="./jquery-enlargement20160816/dist/zoomify.min.js"></script>
+    <script>    
+    jQuery('.thumbnail img').zoomify();
+
+    </script>
 </body>
 
 </html>
