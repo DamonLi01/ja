@@ -163,6 +163,9 @@ a:active {
 .progress {
     height: 15px!important;
     border-radius: 0;
+    -webkit-box-shadow: initial;
+    box-shadow:initial;
+    background-color: initial;
 }
 
 .w85 {

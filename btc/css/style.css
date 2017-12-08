@@ -88,7 +88,9 @@ a:active {
 .fz-16 {
     font-size: 16px;
 }
-
+.fz-18{
+    font-size: 18px;
+}
 .fz-12 {
     font-size: 12px;
 }
@@ -196,7 +198,9 @@ a:active {
 .mb36 {
     margin-bottom: 36px;
 }
-
+.mt20{
+    margin-top: 20px;
+}
 .mtb30 {
     margin-bottom: 30px;
     margin-top: 30px;
@@ -227,7 +231,9 @@ a:active {
 .mb20 {
     margin-bottom: 20px;
 }
-
+.mb50{
+    margin-bottom: 50px;
+}
 .mt60 {
     margin-top: 60px;
 }
@@ -239,7 +245,9 @@ a:active {
 .pl65 {
     padding-left: 65px;
 }
-
+.pl0{
+    padding-left: 0;
+}
 .ptb0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -282,13 +290,19 @@ a:active {
 .pr20{
     padding-right: 20px;
 }
+.pr25{
+    padding-right: 25px;
+}
 .p0{
     padding: 0;
 }
 .pr0 {
     padding-right: 0;
 }
-
+.plr24{
+    padding-left: 24px;
+    padding-right: 24px;
+}
 .plr18 {
     padding-left: 18px;
     padding-right: 18px;
@@ -338,7 +352,9 @@ form label {
 .mh300 {
     max-height: 300px;
 }
-
+.minh500{
+    min-height: 500px;
+}
 .mh76 {
     max-height: 76px;
 }

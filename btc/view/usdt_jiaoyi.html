@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="../lib/bootstrap-slider/dist/css/bootstrap-slider.min.css">
     <script src="../lib/js/jquery.min.js"></script>
     <script src="../lib/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script src="../lib/highcharts/highstock.js"></script>
+    <script src="../lib/highcharts/exporting.js"></script>
+    <script src="../lib/highcharts/highcharts-zh_CN.js"></script>
+    <script src="../lib/highcharts/drag-panes.js"></script>
+
     <style>
         .mai tr>td {
             padding: 3px !important;
@@ -31,6 +36,14 @@
         .slider.slider-horizontal {
             margin-left: 10px;
             width: 78% !important;
+        }
+
+        .progress {
+            height: 15px!important;
+            border-radius: 0;
+            -webkit-box-shadow: initial;
+            box-shadow: initial;
+            background-color: initial;
         }
 
         #dot_blue .slider-handle {
@@ -99,6 +112,43 @@
         #jy-cj2 tr {
             height: 30px;
         }
+
+        .jy-wt,
+        .jy-cj p {
+            padding: 20px 0 10px 0;
+            margin: 0;
+            font-weight: bold;
+            color: #707070;
+        }
+
+        .jy-wt-list thead,
+        .jy-cj thead {
+            background-color: #f5f5f5;
+            font-size: 14px;
+            color: #707070;
+        }
+        /* .jy-wt-list thead tr th,
+        .jy-cj thead tr th {
+            font-weight: initial;
+        } */
+
+        .jy-wt-list.table>thead>tr>th,
+        .jy-wt-list.table>tbody>tr>td,
+        .jy-cj .table>tbody>tr>td,
+        .jy-cj .table>thead>tr>th {
+            border: 0;
+        }
+
+        .js-cz-line {
+            width: 3px;
+            position: absolute;
+            margin-left: -28px;
+            border-top: 380px solid #eee;
+        }
+
+        .jy-gdjl {
+            color: #fe726e !important;
+        }
     </style>
 </head>
 
@@ -156,8 +206,13 @@
     </header>
     <div class="wrap">
         <div class="container">
+            <div class="row mt20">
+                <div class="col-md-12 bg-white">
+                    <div id="Charts_box" style="width:90%;margin:0 auto; height:350px"></div>
+                </div>
+            </div>
             <div class="row  mtb20 ">
-                <div class="col-md-8">
+                <div class="col-md-8 pl0">
 
                     <div class="row bg-white m0">
                         <div class="col-md-6">
@@ -216,7 +271,7 @@
                                 <div class="form-group mtb30">
                                     <p class="m0 fz-14">手续费:0.1%</p>
                                     <p class="fz-14">预计交易额:201223 CNY</p>
-                                    <input type="button" class=" btn btn-block btn-danger" id="" placeholder="请输入交易密码" value="立即买入">
+                                    <input type="button" class=" btn btn-block btn-primary btn-419 b0" id="" placeholder="请输入交易密码" value="立即买入">
                                 </div>
                             </form>
                         </div>
@@ -354,104 +409,117 @@
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <p>
-                        <span>委托</span>
-                        <span class="pull-right">更多记录</span>
-                    </p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>时间</th>
-                                <th>类别</th>
-                                <th>价格(BTC)</th>
-                                <th>数量</th>
-                                <th>已成交</th>
-                                <th>未成交</th>
-                                <th>状态</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="text-center">您还没有登录，请
-                        <a href="" class="text-red">登录</a> 或
-                        <a href="" class="text-039">注册</a> 后再尝试。</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>成交记录</h3>
-                    <table class="table mai">
-                        <thead>
-                            <tr>
-                                <th>成交数量</th>
-                                <th>成交价格BTC</th>
+            <div class="row ">
+                <div class="col-md-12 p0">
+                    <div class="row m0 minh500 mb50 bg-white">
+                        <div class="col-md-8 pr25">
 
-                                <th>折合美元</th>
-                                <th>时间</th>
+                            <p class="fz-18 jy-wt">
+                                <span>委托记录</span>
+                                <span class="pull-right fz-16 ">
+                                    <a href="" class="jy-gdjl"> 更多记录</a>
+                                </span>
+                            </p>
+                            <table class="jy-wt-list table">
+                                <thead>
+                                    <tr>
+                                        <th>时间</th>
+                                        <th>类别</th>
+                                        <th>价格(BTC)</th>
+                                        <th>数量</th>
+                                        <th>已成交</th>
+                                        <th>未成交</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center">您还没有登录，请
+                                <a href="" class="text-red">登录</a> 或
+                                <a href="" class="text-039">注册</a> 后再尝试。</p>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2</td>
-                                <td>0.0041</td>
+                        </div>
 
-                                <td>33.0854</td>
-                                <td>07:14:17</td>
+                        <div class="jy-cj col-md-4 plr24">
+                            <p>
+                                <span class="fz-18"> 成交记录</span>
+                            </p>
+                            <hr class="js-cz-line">
+                            <table class=" table mai">
+                                <thead>
+                                    <tr>
+                                        <th>成交数量</th>
+                                        <th>成交价格BTC</th>
 
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>0.0041</td>
+                                        <th>折合美元</th>
+                                        <th>时间</th>
 
-                                <td>33.0854</td>
-                                <td>07:14:17</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.0041</td>
 
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>0.0041</td>
+                                        <td>33.0854</td>
+                                        <td>07:14:17</td>
 
-                                <td>33.0854</td>
-                                <td>07:14:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.0041</td>
 
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>0.0041</td>
+                                        <td>33.0854</td>
+                                        <td>07:14:17</td>
 
-                                <td>33.0854</td>
-                                <td>07:14:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.0041</td>
 
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>0.0041</td>
+                                        <td>33.0854</td>
+                                        <td>07:14:17</td>
 
-                                <td>33.0854</td>
-                                <td>07:14:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.0041</td>
 
-                            </tr>
-                        </tbody>
+                                        <td>33.0854</td>
+                                        <td>07:14:17</td>
 
-                    </table>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.0041</td>
+
+                                        <td>33.0854</td>
+                                        <td>07:14:17</td>
+
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script>
+        //滑块开始
         var slider = new Slider("#ex13", {
             ticks: [0, 25, 50, 75, 100],
             // ticks_labels: ['0', '25', '50', '75', '100'], 定义标记下方的标签
@@ -461,6 +529,160 @@
             ticks: [0, 25, 50, 75, 100],
             // ticks_labels: ['0', '25', '50', '75', '100'], 定义标记下方的标签
             // ticks_snap_bounds: 30
+        });
+        //滑块结束
+        $(function () {
+            Highcharts.setOptions({
+                lang: {
+                    rangeSelectorZoom: 'Zoom'
+                }
+            });
+            $.getJSON('https://data.jianshukeji.com/stock/history/000001', function (data) {
+                if (data.code !== 1) {
+                    alert('读取股票数据失败！');
+                    return false;
+                }
+                data = data.data;
+                var ohlc = [],
+                    volume = [],
+                    dataLength = data.length,
+                    // set the allowed units for data grouping
+                    groupingUnits = [
+                        [
+                            'week', // unit name
+                            [1] // allowed multiples
+                        ],
+                        [
+                            'month', [1, 2, 3, 4, 6]
+                        ]
+                    ],
+                    i = 0;
+                for (i; i < dataLength; i += 1) {
+                    ohlc.push([
+                        data[i][0], // the date
+                        data[i][1], // open
+                        data[i][2], // high
+                        data[i][3], // low
+                        data[i][4] // close
+                    ]);
+                    volume.push([
+                        data[i][0], // the date
+                        data[i][5] // the volume
+                    ]);
+                }
+                // create the chart
+                $('#Charts_box').highcharts('StockChart', {
+                    rangeSelector: {
+                        selected: 1,
+                        inputEnabled: false, // 不显示日期输入框
+
+                        inputDateFormat: '%Y-%m-%d',
+
+                        buttons: [{
+                                type: 'hour',
+                                count: 1,
+                                text: '1h'
+                            }, {
+                                type: 'hour',
+                                count: 2,
+                                text: '2h'
+                            }, {
+                                type: 'hour',
+                                count: 6,
+                                text: '6h'
+                            }, {
+                                type: 'hour',
+                                count: 12,
+                                text: '12h'
+                            }, {
+                                type: 'day',
+                                count: 1,
+                                text: '1d'
+                            },
+                            {
+                                type: 'week',
+                                count: 1,
+                                text: '1w'
+                            },
+                            {
+                                type: 'all',
+                                text: 'All'
+                            }
+                        ]
+                    },
+                    // title: {
+                    //     text: '平安银行历史股价'
+                    // },
+                    xAxis: {
+                        dateTimeLabelFormats: {
+                            millisecond: '%H:%M:%S.%L',
+                            second: '%H:%M:%S',
+                            minute: '%H:%M',
+                            hour: '%H:%M',
+                            day: '%m-%d',
+                            week: '%m-%d',
+                            month: '%y-%m',
+                            year: '%Y'
+                        }
+                    },
+                    tooltip: {
+                        split: false,
+                        shared: true,
+                    },
+                    yAxis: [{
+                        labels: {
+                            align: 'right',
+                            x: -3
+                        },
+                        title: {
+                            text: '价格[BTC]'
+                        },
+                        height: '65%',
+                        resize: {
+                            enabled: true
+                        },
+                        lineWidth: 2
+                    }, {
+                        labels: {
+                            align: 'right',
+                            x: -3
+                        },
+                        title: {
+                            text: '成交量[BCD]'
+                        },
+                        top: '65%',
+                        height: '35%',
+                        offset: 0,
+                        lineWidth: 2
+                    }],
+                    series: [{
+                        type: 'candlestick',
+                        name: '平安银行',
+                        color: 'green',
+                        lineColor: 'green',
+                        upColor: 'red',
+                        upLineColor: 'red',
+                        tooltip: {},
+                        navigatorOptions: {
+                            color: Highcharts.getOptions().colors[0]
+                        },
+                        data: ohlc,
+                        dataGrouping: {
+                            units: groupingUnits
+                        },
+                        id: 'sz'
+                    }, {
+                        type: 'column',
+                        data: volume,
+                        yAxis: 1
+                    }],
+                    navigation: {
+                        buttonOptions: {
+                            enabled: false//导出
+                        }
+                    }
+                });
+            });
         });
     </script>
 </body>

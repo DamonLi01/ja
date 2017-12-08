@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <table id="table" cellspacing="0" cellpadding="0" width="600px" border="1">
+        <tr>
+            <th width="100px" height="200px" rowspan="100">生产档案
+                <button id="add_btn" type="button">添加</button>
+            </th>
+            <td width="200px" align="center" rowspan="1">种植时间</td>
+            <td  rowspan="1">
+                <input type="text" name="" id=""> </td>
+        </tr>
+
+        <tr>
+
+            <td width="100px" align="center" rowspan="1">地块地址</td>
+            <td  rowspan="1">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+        </tr>
+
+        <tr>
+
+            <td align="center" rowspan="1">农户信息</td>
+            <td  rowspan="1">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+        </tr>
+
+    </table>
+    <script src="./jquery.js"></script>
+    <script>
+        var table = jQuery('#table');
+        var str =
+            '<tr><td align="center" rowspan="1">自定义标题:<input type="text" name="" id=""></td><td  rowspan="1"> <textarea name="" id="" cols="30" rows="10"placeholder="请输入"></textarea><a onclick="del(this)" href="javascript:;">删除</a></td></tr>';
+        jQuery('#add_btn').click(function () {
+            table.append(str);
+        })
+
+        function del(obj) {
+            jQuery(obj).parent().parent('tr').remove();
+        }
+    </script>
+</body>
+
+</html>
