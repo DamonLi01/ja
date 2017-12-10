@@ -124,6 +124,7 @@ a:active {
 .sanjiao {
     position: absolute;
     margin-top: 34px;
+    margin-left: -8px;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     /* IE 9 */
