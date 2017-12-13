@@ -17,6 +17,7 @@ html {
 
 .wy-swiper-container {
     height: 150px !important;
+    padding-top: 35px;
 }
 
 .wy-nitem {
@@ -114,7 +115,7 @@ html {
 }
 
 .wy-fbgg.weui-tab__bd {
-    margin-top: 35px;
+    padding-top: 35px;
 }
 
 .weui-cells.weui-cells_radio {
@@ -216,4 +217,7 @@ html {
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
+}
+.swiper-container {
+    height: 100%;
 }

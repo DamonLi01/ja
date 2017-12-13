@@ -11,59 +11,81 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
         .wy-navbar {
-            margin-top: 35px;
+            padding-top: 35px;
         }
-        .weui-navbar+.weui-tab__bd{
+
+        .weui-navbar + .weui-tab__bd {
             padding: 0;
         }
+
+        .weui-tab__bd {
+            height: calc(100% - 81px);
+        }
+
     </style>
 </head>
 
 
 <body ontouchstart>
-    <div class="header">
-        <div>
-            我出售的BTC
-        </div>
+<div class="header">
+    <div>
+        我出售的BTC
     </div>
-    <div id="wy-box" class="weui-tab">
-        <div class="weui-navbar wy-navbar">
-            <a href="#tab1" class="weui-navbar__item wy-nitem weui-bar__item--on">
-                BTC
-            </a>
-            <a href="#tab2" class="weui-navbar__item wy-nitem">
-                ETH
-            </a>
-        </div>
-        <div class="weui-tab__bd">
+</div>
+<div id="wy-box" class="weui-tab">
+
+    <div class="weui-navbar wy-navbar">
+        <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
+            BTC
+        </a>
+        <a href="javascript:;" class="weui-navbar__item wy-nitem">
+            ETH
+        </a>
+    </div>
+    <div class="weui-tab__bd">
+        <div class="weui-tab__bd-item weui-tab__bd-item--active">
             <div class="swiper-container">
+
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
 
-                    </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
 
-                    </div>
-                    <div class="swiper-slide">
-
-                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
-    <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
-    <script src="./jquery-weui/dist/lib/fastclick.js"></script>
-    <script src="./jquery-weui/dist/js/swiper.min.js"></script>
-    <script>
-        $(function () {
-            FastClick.attach(document.body);
-        });
-    </script>
+</div>
 
+<script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+<script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
+<script src="./jquery-weui/dist/lib/fastclick.js"></script>
+<script src="./jquery-weui/dist/js/swiper.min.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        onSlideChangeStart: function () {
+            $(".weui-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
+            $(".weui-navbar a").eq(swiper.activeIndex).addClass('weui-bar__item--on');
+        }
+    });
+    $(".weui-navbar a").on('touchstart mousedown', function (e) {
+        e.preventDefault()
+        $(".weui-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
+        $(this).addClass('weui-bar__item--on');
+        swiper.slideTo($(this).index());
 
+    });
+    $(".weui-navbar a").click(function (e) {
+        e.preventDefault();
+    });
+
+</script>
 
 </body>
 
