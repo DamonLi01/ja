@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-weui/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .wy-navbar {
+            margin-top: 35px;
+        }
+        .weui-navbar+.weui-tab__bd{
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<body ontouchstart>
+    <div class="header">
+        <div>
+            我出售的BTC
+        </div>
+    </div>
+    <div id="wy-box" class="weui-tab">
+        <div class="weui-navbar wy-navbar">
+            <a href="#tab1" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                BTC
+            </a>
+            <a href="#tab2" class="weui-navbar__item wy-nitem">
+                ETH
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                    </div>
+                    <div class="swiper-slide">
+
+                    </div>
+                    <div class="swiper-slide">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+    <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
+    <script src="./jquery-weui/dist/lib/fastclick.js"></script>
+    <script src="./jquery-weui/dist/js/swiper.min.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+
+
+
+</body>
+
+</html>
