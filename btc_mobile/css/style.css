@@ -51,10 +51,15 @@ html {
 .pay_cl {
     background-color: #02CB66;
     color: white;
-    padding: 3px 5px;
+    padding: 2px 3px;
     border-radius: 3px;
     font-size: 0.6rem;
     font-weight: initial;
+}
+
+.header .back {
+    position: absolute;
+    left: 8px;
 }
 
 .wy-jy-hp {
@@ -145,13 +150,13 @@ html {
 }
 
 .user_name + p {
-    color: #ccc5c5;
+    color: #e6e9ef;
 }
 
 .wy-jyjl {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
-
+    padding: 5px 0;
     font-size: 12px;
 }
 
@@ -162,7 +167,7 @@ html {
 .wy-jyjl a {
     color: white;
     display: block;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .user_item {
@@ -177,18 +182,22 @@ html {
     border-radius: 25px;
     margin-top: -8px;
 }
+
 .fabu_lo {
     width: 50px;
-
     height: 50px;
     margin: 0 auto;
-    background-color: forestgreen;
+    background-color: #02CB66;
     border-radius: 50%;
     vertical-align: 50px;
     line-height: 70px;
 }
 
-.fabu_lo+p {
+.fabu_lo.wy-out {
+    background-color: #FF4C39;
+}
+
+.fabu_lo + p {
     font-size: 12px;
     color: #000;
     padding-top: 10px;
@@ -198,13 +207,13 @@ html {
     padding: 30px 0;
 }
 
-#fabu .weui-popup__modal {
+/* #fabu .weui-popup__modal {
     background-color: rgba(0, 0, 0, 0);
 }
 
 #fabu .weui-popup__overlay {
     background-color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 #fabu .close_box .weui-flex__item {
     padding: 0 0 15px 0;
@@ -218,6 +227,28 @@ html {
     line-height: 40px;
     border-radius: 50%;
 }
+
 .swiper-container {
     height: 100%;
+}
+
+.wy-reg-btn {
+    border-radius: 50px;
+    background-color: dodgerblue;
+}
+
+.wy-help {
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+}
+
+.wy-reg-agree {
+    display: inline-block;
+}
+
+.wy-reg-agree + a {
+    font-size: 13px;
+    margin-left: -20px;
 }
