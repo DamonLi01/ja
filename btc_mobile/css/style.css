@@ -15,14 +15,24 @@ html {
     position: initial;
 } */
 
-
-
 .wy-nitem {
     padding: 10px 0 !important;
     font-weight: bold;
     background-color: white;
 }
 
+.weui-navbar {
+    z-index: 9;
+}
+
+.swiper-container, .swiper-wrapper {
+    height: 100% !important;
+}
+
+.swiper-slide {
+    height: calc(100% + 50px) !important;
+    overflow: auto !important;
+}
 
 .wy-nitem.weui-bar__item--on {
     color: #1798F2;
