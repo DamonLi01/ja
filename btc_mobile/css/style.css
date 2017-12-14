@@ -10,22 +10,19 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
-.wy-navbar {
+/* .wy-navbar {
     top: initial;
     position: initial;
-}
+} */
 
-.wy-swiper-container {
-    height: 150px !important;
-    padding-top: 35px;
-}
+
 
 .wy-nitem {
     padding: 10px 0 !important;
     font-weight: bold;
     background-color: white;
-    position: initial;
 }
+
 
 .wy-nitem.weui-bar__item--on {
     color: #1798F2;
@@ -60,6 +57,7 @@ html {
 .header .back {
     position: absolute;
     left: 8px;
+    margin-top: 5px;
 }
 
 .wy-jy-hp {
@@ -109,8 +107,8 @@ html {
 
 .header {
     text-align: center;
-    height: 35px;
-    line-height: 35px;
+    height: 45px;
+    line-height: 45px;
     background-color: dodgerblue;
     position: fixed;
     color: white;
@@ -120,7 +118,7 @@ html {
 }
 
 .wy-fbgg.weui-tab__bd {
-    padding-top: 35px;
+    padding-top: 45px;
 }
 
 .weui-cells.weui-cells_radio {
@@ -228,9 +226,9 @@ html {
     border-radius: 50%;
 }
 
-.swiper-container {
+/* .swiper-container {
     height: 100%;
-}
+} */
 
 .wy-reg-btn {
     border-radius: 50px;
