@@ -1,0 +1,112 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+a,
+a:hover {
+    text-decoration: none!important;
+}
+
+.colorboard-font {
+    font-weight: 700;
+    border-left: 5px solid #69b0e4;
+    padding-left: 10px;
+    position: relative;
+    z-index: 99999;
+}
+
+.table-market .exlogo {
+    width: 37px;
+    background-image: url(../images/jyhq_img/exlogos.png);
+    background-repeat: no-repeat;
+    float: left;
+    height: 37px;
+    margin-right: 10px;
+}
+
+.table-market td {
+    padding: 3px !important;
+    line-height: 2.7 !important;
+    border-top: 1px solid #e6e9ee !important;
+}
+
+.table-market td a {
+    color: #333;
+}
+
+.padding {
+    padding: 10px 20px;
+}
+
+.time-out {
+    position: absolute;
+    top: 22px;
+    right: 36px;
+}
+
+.table-market>thead>tr>th {
+    text-align: center;
+    color: #aaa;
+    font-weight: 400;
+}
+
+.mgb-10 {
+    margin-bottom: 10px;
+}
+
+.mgl-12 {
+    margin-left: -20px;
+}
+
+.more-chose {
+    color: #fff;
+    padding: 1px 10px;
+    position: absolute;
+    top: 10px;
+    right: -1px;
+    float: right;
+}
+
+.marketid_1 {
+    background-position-y: -37px;
+}
+
+.marketid_2 {
+    background-position-y: calc(-37px * 2);
+}
+
+.marketid_3 {
+    background-position-y: calc(-37px * 3);
+}
+
+.marketid_4 {
+    background-position-y: calc(-37px * 4);
+}
+
+.marketid_5 {
+    background-position-y: calc(-37px * 5);
+}
+
+.marketid_6 {
+    background-position-y: calc(-37px * 6);
+}
+
+.marketid_7 {
+    background-position-y: calc(-37px * 7);
+}
+
+.marketid_8 {
+    background-position-y: calc(-37px * 8);
+}
+
+.marketid_9 {
+    background-position-y: calc(-37px * 9);
+}
+
+.marketid_10 {
+    background-position-y: calc(-37px * 10);
+}

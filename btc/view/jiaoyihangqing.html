@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jyhq.css">
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-10 padding">
+            <h4 class="colorboard-font">交易所行情</h4>
+            <span class="pull-right  time-out">
+                <span id="refresh_time">6</span>秒后刷新数据</span>
+            <table align="center" class="table table-market table-hover table-striped">
+                <thead align="center">
+                    <tr>
+                        <th style="width: 16%;" class="pal-20 text-left">交易市场</th>
+                        <th style="width: 22%;">最新成交价</th>
+                        <th style="width: 22%;">买一价/卖一价</th>
+                        <th style="width: 22%;">24H最高/24H最低</th>
+                        <th style="width: 11%;">交易量</th>
+                        <th style="width: 7%" align="right">图表</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_1"></span>
+                                OkCoin </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_2"></span>
+                                Huobi </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_3"></span>
+                                BTCC </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_4"></span>
+                                CHBTC </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_5"></span>
+                                Bitfinex </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_6"></span>
+                                Kraken </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_7"></span>
+                                BITSTAMP </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_8"></span>
+                                GDAX </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_9"></span>
+                                BTC-e </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="exlogo marketid_10"></span>
+                                BTCBOX </a>
+                        </td>
+                        <td>
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span> /
+                                <span class="currency_cny">40303.01
+                                    <img src="../images/jyhq_img/arrow-up.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6061.28
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td align="center" class="hidden-im">
+                            <a href="" target="_blank">
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span> /
+                                <span class="currency_usd">6091.66
+                                    <img src="../images/jyhq_img/arrow-down.png">
+                                </span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="center">
+                            <a href="" target="_blank">
+                                <span>1.63</span>
+                            </a>
+                        </td>
+                        <td class="hidden-im" align="right">
+                            <a href="" target="_blank">
+                                <img src="../images/jyhq_img/index_lists.png" alt=""> </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="col-md-12 mgb-10">
+                <h4 class="colorboard-font mgl-12">最新资讯</h4>
+                <span class="more-chose hidden-im">
+                    <a class="more" href="">
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>更多 </a>
+                </span>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img class="img-260-146" alt="" src="https://worldnews.oss-cn-hongkong.aliyuncs.com/20171214/5a31db63ce7d2.png"> </a>
+                            <div class="caption">
+                                <p>
+                                    <a href="">
+                                        12月14日BitcoinWorld行情解码：中山石斗胆喊大家做多!(之二) </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
