@@ -44,7 +44,8 @@
             padding-top: 10px;
         }
 
-        #wy-btc_box {
+        #wy-btc_box,
+        #wy-btc_box2 {
             padding: 0;
             height: auto;
             background-color: #FAFAFA;
@@ -54,14 +55,14 @@
             vertical-align: text-bottom;
         }
 
-        #dr_btn .weui-btn {
+        .dr_btn .weui-btn {
             width: 80%;
             border-radius: 50px;
             color: #1798F2;
             border-color: #1798F2;
         }
 
-        #wy-pwd .weui-cell__ft {
+        .wy-pwd .weui-cell__ft {
             font-size: 14px;
         }
 
@@ -137,7 +138,7 @@
                                 </a>
                             </div>
                             <div id="wy-btc_box" class="weui-tab__bd">
-                                <div id="btcqb1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                                <div class="weui-tab__bd-item weui-tab__bd-item--active">
                                     <div class="weui-row">
                                         <div class="weui-col-100 ptb30 text-center">
                                             <div>向如下地址汇入BTC完成充值
@@ -152,7 +153,7 @@
                                             <div class="mtb15">
                                                 1ASDASF#%#@#$ASGASGASG
                                             </div>
-                                            <div id="dr_btn" class="weui-row">
+                                            <div class="dr_btn weui-row">
                                                 <div class="weui-col-50">
                                                     <a href="javascript:;" class="weui-btn weui-btn_plain-default">一键复制</a>
                                                 </div>
@@ -166,7 +167,7 @@
                                     </div>
 
                                 </div>
-                                <div id="btcqb2" class="weui-tab__bd-item">
+                                <div id="" class="weui-tab__bd-item">
                                     <div class="weui-cells weui-cells_form">
                                         <div class="weui-cell">
                                             <div class="weui-cell__hd">
@@ -184,7 +185,7 @@
                                                 <input class="weui-input" type="text" placeholder="BTC数量不足">
                                             </div>
                                         </div>
-                                        <div id="wy-pwd" class="weui-cell">
+                                        <div class="wy-pwd weui-cell">
                                             <div class="weui-cell__hd">
                                                 <label class="weui-label">资金密码</label>
                                             </div>
@@ -212,7 +213,110 @@
                             </div>
                         </div>
                         <div id="slide_box2" class="swiper-slide">
+                            <div class="weui-cells pt10">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <img src="">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p>总资产</p>
+                                    </div>
+                                    <div class="weui-cell__ft">฿0.00000000</div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        可用资产
+                                        <span>฿0.00000000</span>
+                                    </div>
+                                    <div class="weui-cell__bd wy-djzc">
+                                        冻结资产
+                                        <span>฿0.00000000</span>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="weui-navbar wy-btcqb pt10">
+                                <a href="javascript:;" onclick="tabs(this)" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                                    充值BTC
+                                </a>
+                                <a href="javascript:;" onclick="tabs(this)" class="weui-navbar__item wy-nitem">
+                                    提币BTC
+                                </a>
+                            </div>
+                            <div id="wy-btc_box2" class="weui-tab__bd">
+                                <div class="weui-tab__bd-item weui-tab__bd-item--active">
+                                    <div class="weui-row">
+                                        <div class="weui-col-100 ptb30 text-center">
+                                            <div>向如下地址汇入BTC完成充值
+                                                <img src="./img/ewm.png" class="vcode_img" width="20px" alt="">
+                                            </div>
+                                            <div class="text-red">
+                                                BTC地址只能充值BTC资产
+                                            </div>
+                                            <div class="text-red">
+                                                任何充入BTC地址的非BTC资产不可找回
+                                            </div>
+                                            <div class="mtb15">
+                                                1ASDASF#%#@#$ASGASGASG
+                                            </div>
+                                            <div class="dr_btn weui-row">
+                                                <div class="weui-col-50">
+                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">一键复制</a>
+                                                </div>
+                                                <div class="weui-col-50">
+                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">按钮</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="" class="weui-tab__bd-item">
+                                    <div class="weui-cells weui-cells_form">
+                                        <div class="weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">发送地址</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="请输入BTC地址">
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">BTC数量</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="BTC数量不足">
+                                            </div>
+                                        </div>
+                                        <div class="wy-pwd weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">资金密码</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="请输入资金密码">
+                                            </div>
+                                            <div class="weui-cell__ft">
+                                                <a href="javascript:;"> 忘记密码？</a>
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="备注(仅在交易明细展示)">
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+
+                                            <div class="weui-cell__bd">
+                                                <button type="subimt" class="weui-btn weui-btn_primary">确认发送</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -362,9 +466,9 @@
 
         function tabs(obj) {
             var that = $(obj).index();
-            $(obj).addClass('weui-bar__item--on').siblings().removeClass('weui-bar__item--on');
-            $('#wy-btc_box .weui-tab__bd-item').eq(that).addClass('weui-tab__bd-item--active').siblings().removeClass(
-                'weui-tab__bd-item--active');
+            $(obj).addClass('weui-bar__item--on').siblings('.weui-navbar__item').removeClass('weui-bar__item--on');
+            $(obj).parent().next('.weui-tab__bd').children('.weui-tab__bd-item').eq(that).addClass(
+                'weui-tab__bd-item--active').siblings('.weui-tab__bd-item').removeClass('weui-tab__bd-item--active');
         }
     </script>
 

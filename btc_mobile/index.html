@@ -644,7 +644,7 @@
             <div class="weui-tabbar__icon">
                 <img src="./images/icon_nav_button.png" alt="">
             </div>
-            <p class="weui-tabbar__label">首页</p>
+            <p class="weui-tabbar__label">交易</p>
         </a>
         <a href="javascript:;" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
@@ -666,7 +666,7 @@
             </div>
 
         </a>
-        <a href="javascript:;" class="weui-tabbar__item">
+        <a href="./caiwu.html" class="weui-tabbar__item">
             <div class="weui-tabbar__icon">
                 <img src="./images/icon_nav_article.png" alt="">
             </div>
@@ -778,18 +778,7 @@
         e.preventDefault();
     });
 
-    // $('#wy-slide').pullToRefresh({
-    //     onRefresh: function () {
-    //         setTimeout(function () {
-    //
-    //             $('#wy-slide').pullToRefreshDone();
-    //         }, 2000);
-    //
-    //     },
-    //     onPull: function (percent) {
-    //     },
-    //     distance: 50
-    // });
+
 
     $("#wy-slide").pullToRefresh().on("pull-to-refresh", function () {
         setTimeout(function () {
