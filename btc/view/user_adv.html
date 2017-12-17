@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <style>
+       #user_adv_table.table>tbody>tr>td{
+            line-height: 30px !important;
+        }
+        .btn-primary,.btn-primary:active:hover{
+            background-color: initial !important;
+            border-color: #369bea !important;
+            color: #369bea !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div style="margin: 15px 0;">
+                <span class="h3" style="border-left: 5px solid dodgerblue;padding-left: 10px">我的广告</span>
+                <a href="" class="pull-right btn btn-primary">广告激活条件</a>
+            </div>
+
+            <table id="user_adv_table" class="table table-hover">
+                <thead>
+                <tr class="active">
+                    <th>广告编号</th>
+                    <th>广告类型</th>
+                    <th>国家</th>
+                    <th>价格</th>
+                    <th>币种</th>
+                    <th>方程式 <i class="glyphicon glyphicon-edit text-primary"></i></th>
+                    <th>创建于</th>
+                    <th>状态</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-primary">#mxvasdasd</td>
+                    <td>在线出售</td>
+                    <td class="text-primary">中国</td>
+                    <td class="text-primary">117729.22 CNY</td>
+                    <td class="text-primary">BTC</td>
+                    <td>
+                        <input type="text" class="input-group-sm">
+                    </td>
+                    <td>2017-12-15</td>
+                    <td>未激活</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" type="button">编辑</button>
+                        <button class="btn btn-primary btn-sm" type="button">激活</button>
+                        <button class="btn btn-primary btn-sm" type="button">复制</button>
+                        <button class="btn btn-primary btn-sm" type="button">删除</button>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<script src="../lib/js/jquery.min.js"></script>
+<script src="../lib/js/bootstrap.min.js"></script>
+</body>
+</html>

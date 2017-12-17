@@ -82,7 +82,7 @@ html {
 .pay_cl {
     background-color: #02CB66;
     color: white;
-    padding: 2px 3px;
+    padding: 1px 2px;
     border-radius: 3px;
     font-size: 0.6rem;
     font-weight: initial;
@@ -126,7 +126,8 @@ html {
 .wy-cells .weui-cell__ft {
     padding: 0;
 }
-.wy-xiala {
+
+.wy-xiala:after {
     content: " ";
     display: inline-block;
     height: 6px;
@@ -136,12 +137,9 @@ html {
     border-style: solid;
     -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-    position: relative;
-    top: -2px;
     position: absolute;
-    top: 50%;
-    margin-top: -4px;
-    right: 33%;
+    margin-top: 18px;
+    margin-left: 10px;
     transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     /* Internet Explorer */
@@ -152,6 +150,7 @@ html {
     -o-transform: rotate(135deg);
     /* Opera */
 }
+
 .weui-tab__bd {
     padding-bottom: 53px;
 }
@@ -233,11 +232,12 @@ html {
 
 #fabu_btns {
     background-color: dodgerblue;
-    width: 38px;
-    height: 38px;
-    line-height: 52px;
-    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 86px;
     margin-top: -8px;
+    padding: 10px;
 }
 
 .fabu_lo {
@@ -279,12 +279,19 @@ html {
 #fabu .close_btn {
     display: inline-block;
     background-color: dodgerblue;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    /* line-height: 40px; */
+    border-radius: 75px;
+    padding: 10px;
 }
-
+#fabu .close_btn img{
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
 /* .swiper-container {
     height: 100%;
 } */
