@@ -228,15 +228,10 @@
 <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
 <script src="./jquery-weui/dist/lib/fastclick.js"></script>
 <script src="./jquery-weui/dist/js/swiper.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/my-swiper.js"></script>
 <script>
-    $(function () {
-        FastClick.attach(document.body);
-    });
-</script>
-<script>
-    $('.back').click(function () {
-        window.history.back();
-    });
+
     // select
     var val = $('#menu-list').children('li').eq(0).text();
     $(".wy-xiala").text(val);
@@ -252,25 +247,7 @@
     });
     // select end
 
-    // Swiper
-    var swiper = new Swiper('.swiper-container', {
-        onSlideChangeStart: function () {
-            $(".weui-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-            $(".weui-navbar a").eq(swiper.activeIndex).addClass('weui-bar__item--on');
-        },
-        autoHeight: true
-    });
-    $(".weui-navbar a").on('touchstart mousedown', function (e) {
-        e.preventDefault()
-        $(".weui-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-        $(this).addClass('weui-bar__item--on');
-        swiper.slideTo($(this).index());
 
-    });
-    $(".weui-navbar a").click(function (e) {
-        e.preventDefault();
-    });
-    // Swiper end
 
     $("#slide_box1").pullToRefresh().on("pull-to-refresh", function () {
 

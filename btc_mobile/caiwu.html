@@ -342,11 +342,11 @@
                 </div>
                 <p class="weui-tabbar__label">交易</p>
             </a>
-            <a href="javascript:;" class="weui-tabbar__item">
+            <a href="./dingdan.html" class="weui-tabbar__item">
                 <div class="weui-tabbar__icon">
                     <img src="./images/icon_nav_msg.png" alt="">
                 </div>
-                <p class="weui-tabbar__label">USDT交易</p>
+                <p class="weui-tabbar__label">订单</p>
             </a>
             <a href="javascript:;" data-target="#fabu" class="open-popup weui-tabbar__item">
                 <div id="fabu_btns" class="weui-tabbar__icon">
@@ -404,39 +404,8 @@
     <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
     <script src="./jquery-weui/dist/lib/fastclick.js"></script>
     <script src="./jquery-weui/dist/js/swiper.min.js"></script>
-    <script>
-        $(function () {
-            FastClick.attach(document.body);
-        });
-    </script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            onSlideChangeStart: function () {
-                $(".weui-navbar.wy-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-                $(".weui-navbar.wy-navbar a").eq(swiper.activeIndex).addClass('weui-bar__item--on');
-            },
-            autoHeight: true
-        });
-        $(".weui-navbar.wy-navbar a").on('touchstart mousedown', function (e) {
-            e.preventDefault()
-            $(".weui-navbar.wy-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-            $(this).addClass('weui-bar__item--on');
-            swiper.slideTo($(this).index());
-
-        });
-        $(".weui-navbar.wy-navbar a").click(function (e) {
-            e.preventDefault();
-        });
-
-
-        function tabs(obj) {
-            var that = $(obj).index();
-            $(obj).addClass('weui-bar__item--on').siblings('.weui-navbar__item').removeClass('weui-bar__item--on');
-            $(obj).parent().next('.weui-tab__bd').children('.weui-tab__bd-item').eq(that).addClass(
-                'weui-tab__bd-item--active').siblings('.weui-tab__bd-item').removeClass('weui-tab__bd-item--active');
-        }
-    </script>
-
+    <script src="./js/common.js"></script>
+    <script src="./js/my-swiper.js"></script>
 </body>
 
 </html>

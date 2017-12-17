@@ -10,89 +10,63 @@
     <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        .weui-tab__bd {
-            height: calc(100% - 194px);
+        .wy-navbar {
+            top: 45px;
+            position: fixed;
         }
+
+        .weui-navbar + #wy-caiwu_box.weui-tab__bd {
+            padding-top: 91px;
+            padding-bottom: 0;
+        }
+
+
     </style>
 </head>
 
 
 <body ontouchstart>
 <div class="header">
-    <div>
-        我的
-    </div>
+    <ul class="wy-nav_tab">
+        <li >进行中</li>
+        <li class="active">已完成</li>
+    </ul>
 </div>
 <div id="wy-box" class="weui-tab">
-    <div class=" user_box">
-        <div class="weui-flex">
-            <div class="weui-flex__item">
-                <div class="weui-cells">
-                    <div class="weui-cell user_item">
-                        <div class="weui-cell__hd wy-chd">
-                            <img width="60" src="./images/avatar.jpg">
-                        </div>
-                        <div class="weui-cell__bd">
-                            <p class="user_name">
-                                <a href="./login.html">登录/注册</a>
-                            </p>
-                            <p class="wy-jy-hp">
-                                交易:
-                                <span>783</span>
-                                | 好评:
-                                <span>98%</span>
-                                | 信任:
-                                <span>273</span>
-                            </p>
-                        </div>
+
+
+    <div id="wy-caiwu_box" class="weui-tab__bd">
+        <div class="weui-tab__bd-item ">
+
+        </div>
+        <div class="weui-tab__bd-item weui-tab__bd-item--active">
+            <div class="weui-navbar wy-navbar">
+                <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                    BTC
+                </a>
+                <a href="javascript:;" class="weui-navbar__item wy-nitem">
+                    ETH
+                </a>
+                <a href="javascript:;" class="weui-navbar__item wy-nitem">
+                    BCH
+                </a>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="slide_box1" class="swiper-slide">
+
+                    </div>
+                    <div id="slide_box2" class="swiper-slide">
+
+                    </div>
+                    <div id="slide_box3" class="swiper-slide">
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="weui-flex wy-jyjl">
-            <div class="weui-flex__item">
-                <a href="./user_jyjl.html">我购买的</a>
-            </div>
-            <div class="weui-flex__item">
-                <a href="./user_jyjl.html">我出售的</a>
-            </div>
-        </div>
-    </div>
-    <div class="weui-tab__bd">
-        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-            <div class="weui-cells">
-                <a class="weui-cell weui-cell_access" href="./user_adv.html">
-                    <div class="weui-cell__hd">
-                        <img src="">
-                    </div>
-                    <div class="weui-cell__bd">
-                        <p>我的广告</p>
-                    </div>
-                    <div class="weui-cell__ft"></div>
-                </a>
-                <a class="weui-cell weui-cell_access" href="javascript:;">
-                    <div class="weui-cell__hd">
-                        <img src="">
-                    </div>
-                    <div class="weui-cell__bd">
-                        <p>信息修改</p>
-                    </div>
-                    <div class="weui-cell__ft"></div>
-                </a>
-                <a class="weui-cell weui-cell_access" href="javascript:;">
-                    <div class="weui-cell__hd">
-                        <img src="">
-                    </div>
-                    <div class="weui-cell__bd">
-                        <p>密码修改</p>
-                    </div>
-                    <div class="weui-cell__ft"></div>
-                </a>
 
-            </div>
-
-
-        </div>
     </div>
 
 </div>
@@ -167,12 +141,12 @@
 <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
 <script src="./jquery-weui/dist/lib/fastclick.js"></script>
 <script src="./jquery-weui/dist/js/swiper.min.js"></script>
-<script>
-    $(function () {
-        FastClick.attach(document.body);
-    });
-</script>
+<script src="./js/common.js"></script>
+<script src="./js/my-swiper.js"></script>
 
+<script>
+    top_nav('.wy-nav_tab li','active','#wy-caiwu_box .weui-tab__bd-item','weui-tab__bd-item--active');
+</script>
 
 </body>
 
