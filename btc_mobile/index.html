@@ -11,7 +11,7 @@
     <!--<link rel="stylesheet" href="./jquery-weui/dist/lib/swiper.min.css">-->
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        .weui-navbar + .weui-tab__bd {
+        .weui-navbar+.weui-tab__bd {
             padding-top: 241px;
         }
 
@@ -27,6 +27,7 @@
             position: fixed;
             top: 195px;
         }
+     
     </style>
 </head>
 
@@ -34,738 +35,739 @@
 <body ontouchstart>
 
 
-<div id="wy-box" class="weui-tab">
-    <div class="header">
-        <ul class="wy-nav_tab">
-            <li>买币</li>
-            <li class="active">卖币</li>
-        </ul>
-    </div>
-    <div id="swiper1" class="swiper-container wy-swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img width="100%" height="150" src="./images/swiper-1.jpg"/>
-            </div>
-            <div class="swiper-slide">
-                <img width="100%" height="150" src="./images/swiper-2.jpg"/>
-            </div>
-            <div class="swiper-slide">
-                <img width="100%" height="150" src="./images/swiper-3.jpg"/>
-            </div>
+    <div id="wy-box" class="weui-tab">
+        <div class="header">
+            <ul class="wy-nav_tab">
+                <li class="active">买币</li>
+                <li>卖币</li>
+            </ul>
+            <a href="./search.html" class="wy-help"><i class="weui-icon-search"></i></a>
         </div>
-        <!-- If we need pagination -->
-        <div id="swiper-pagination1" class="swiper-pagination"></div>
-    </div>
-    <div class="weui-navbar wy-navbar">
-        <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
-            BTC
-        </a>
-        <a href="javascript:;" class="weui-navbar__item wy-nitem">
-            ETH
-        </a>
-    </div>
-    <div class="weui-tab__bd">
-        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-
-            <div id="swiper2" class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div id="wy-slide" class="swiper-slide">
-                        <div class="weui-pull-to-refresh__layer">
-                            <div class='weui-pull-to-refresh__arrow'></div>
-                            <div class='weui-pull-to-refresh__preloader'></div>
-                            <div class="down">下拉刷新</div>
-                            <div class="up">释放刷新</div>
-                            <div class="refresh">正在刷新</div>
-                        </div>
-
-                        <div id="wy-list" class="weui-cells wy-cells">
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei33
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="weui-loadmore">
-                            <i class="weui-loading"></i>
-                            <span class="weui-loadmore__tips">正在加载</span>
-                        </div>
-                    </div>
-
-
-                    <div id="wy-slide2" class="swiper-slide">
-                        <div class="weui-pull-to-refresh__layer">
-                            <div class='weui-pull-to-refresh__arrow'></div>
-                            <div class='weui-pull-to-refresh__preloader'></div>
-                            <div class="down">下拉刷新</div>
-                            <div class="up">释放刷新</div>
-                            <div class="refresh">正在刷新</div>
-                        </div>
-                        <div id="wy-list2" class="weui-cells wy-cells">
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-                            <div class="weui-cell weui-cell_access">
-                                <div class="weui-cell__hd wy-chd">
-                                    <img width="40" src="./images/avatar.jpg">
-                                </div>
-                                <div class="weui-cell__bd">
-                                    <p class="wy-fwb">wanmei222
-                                        <span class="pay_cl">支付宝</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        交易:
-                                        <span>783</span>
-                                        | 好评:
-                                        <span>98%</span>
-                                        | 信任:
-                                        <span>273</span>
-                                    </p>
-                                    <p class="wy-jy-hp">
-                                        限额15000-16000CNY
-                                    </p>
-                                </div>
-                                <div class="weui-cell__ft">
-                                    <p class="wy-jye">114535.99CNY</p>
-                                    <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="weui-loadmore">
-                            <i class="weui-loading"></i>
-                            <span class="weui-loadmore__tips">正在加载</span>
-                        </div>
-
-                    </div>
+        <div id="swiper1" class="swiper-container wy-swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img width="100%" height="150" src="./images/swiper-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img width="100%" height="150" src="./images/swiper-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img width="100%" height="150" src="./images/swiper-3.jpg" />
                 </div>
             </div>
+            <!-- If we need pagination -->
+            <div id="swiper-pagination1" class="swiper-pagination"></div>
+        </div>
+        <div class="weui-navbar wy-navbar">
+            <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                BTC
+            </a>
+            <a href="javascript:;" class="weui-navbar__item wy-nitem">
+                ETH
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
 
+                <div id="swiper2" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div id="wy-slide" class="swiper-slide">
+                            <div class="weui-pull-to-refresh__layer">
+                                <div class='weui-pull-to-refresh__arrow'></div>
+                                <div class='weui-pull-to-refresh__preloader'></div>
+                                <div class="down">下拉刷新</div>
+                                <div class="up">释放刷新</div>
+                                <div class="refresh">正在刷新</div>
+                            </div>
+
+                            <div id="wy-list" class="weui-cells wy-cells">
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei33
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-loadmore">
+                                <i class="weui-loading"></i>
+                                <span class="weui-loadmore__tips">正在加载</span>
+                            </div>
+                        </div>
+
+
+                        <div id="wy-slide2" class="swiper-slide">
+                            <div class="weui-pull-to-refresh__layer">
+                                <div class='weui-pull-to-refresh__arrow'></div>
+                                <div class='weui-pull-to-refresh__preloader'></div>
+                                <div class="down">下拉刷新</div>
+                                <div class="up">释放刷新</div>
+                                <div class="refresh">正在刷新</div>
+                            </div>
+                            <div id="wy-list2" class="weui-cells wy-cells">
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+                                <div class="weui-cell weui-cell_access">
+                                    <div class="weui-cell__hd wy-chd">
+                                        <img width="40" src="./images/avatar.jpg">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p class="wy-fwb">wanmei222
+                                            <span class="pay_cl">支付宝</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            交易:
+                                            <span>783</span>
+                                            | 好评:
+                                            <span>98%</span>
+                                            | 信任:
+                                            <span>273</span>
+                                        </p>
+                                        <p class="wy-jy-hp">
+                                            限额15000-16000CNY
+                                        </p>
+                                    </div>
+                                    <div class="weui-cell__ft">
+                                        <p class="wy-jye">114535.99CNY</p>
+                                        <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="weui-loadmore">
+                                <i class="weui-loading"></i>
+                                <span class="weui-loadmore__tips">正在加载</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
-<div class="weui-tab footer-menu">
-    <div class="weui-tabbar">
-        <a href="./index.html" class="weui-tabbar__item weui-bar__item--on">
-            <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
-            <div class="weui-tabbar__icon">
-                <img src="./images/icon_nav_button.png" alt="">
-            </div>
-            <p class="weui-tabbar__label">交易</p>
-        </a>
-        <a href="./dingdan.html" class="weui-tabbar__item">
-            <div class="weui-tabbar__icon">
-                <img src="./images/icon_nav_msg.png" alt="">
-            </div>
-            <p class="weui-tabbar__label">订单</p>
-        </a>
-        <a href="javascript:;" data-target="#fabu" class="open-popup weui-tabbar__item">
-            <div id="fabu_btns" class="weui-tabbar__icon">
-                <img src="./img/jia.png" alt="">
-            </div>
-        </a>
-        <a href="./caiwu.html" class="weui-tabbar__item">
-            <div class="weui-tabbar__icon">
-                <img src="./images/icon_nav_article.png" alt="">
-            </div>
-            <p class="weui-tabbar__label">财务</p>
-        </a>
-        <a href="./user.html" class="weui-tabbar__item">
-            <div class="weui-tabbar__icon">
-                <img src="./images/icon_nav_cell.png" alt="">
-            </div>
-            <p class="weui-tabbar__label">我的</p>
-        </a>
-    </div>
-</div>
-<div id="fabu" class="weui-popup__container popup-bottom">
-    <div class="weui-popup__overlay"></div>
-    <div class="weui-popup__modal">
-        <div class="weui-flex" style="text-align: center;">
-            <div class="weui-flex__item">
-                <a href="./fabu.html">
-                    <div class="fabu_lo">
-                        <img src="./img/pays.png" width="32" alt="">
-                    </div>
-                    <p>发布购买广告</p>
-                </a>
-            </div>
-            <div class="weui-flex__item">
-                <a href="./fabu.html">
-                    <div class="fabu_lo wy-out">
-                        <img src="./img/chushou.png" width="32" alt="">
-                    </div>
-                    <p>发布出售广告</p>
-                </a>
-            </div>
-        </div>
-        <div class="weui-flex close_box" style="text-align: center;">
-            <div class="weui-flex__item">
-                <a href="javascript:;" class='close-popup'>
-                    <div class="close_btn">
-                        <img src="./img/jia.png" width="100%" alt="">
-                    </div>
-                </a>
-            </div>
+    <div class="weui-tab footer-menu">
+        <div class="weui-tabbar">
+            <a href="./index.html" class="weui-tabbar__item weui-bar__item--on">
+                <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
+                <div class="weui-tabbar__icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">交易</p>
+            </a>
+            <a href="./dingdan.html" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./images/icon_nav_msg.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">订单</p>
+            </a>
+            <a href="javascript:;" data-target="#fabu" class="open-popup weui-tabbar__item">
+                <div id="fabu_btns" class="weui-tabbar__icon">
+                    <img src="./img/jia.png" alt="">
+                </div>
+            </a>
+            <a href="./caiwu.html" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./images/icon_nav_article.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">财务</p>
+            </a>
+            <a href="./user.html" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./images/icon_nav_cell.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">我的</p>
+            </a>
         </div>
     </div>
-</div>
+    <div id="fabu" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+            <div class="weui-flex" style="text-align: center;">
+                <div class="weui-flex__item">
+                    <a href="./fabu.html">
+                        <div class="fabu_lo">
+                            <img src="./img/pays.png" width="32" alt="">
+                        </div>
+                        <p>发布购买广告</p>
+                    </a>
+                </div>
+                <div class="weui-flex__item">
+                    <a href="./fabu.html">
+                        <div class="fabu_lo wy-out">
+                            <img src="./img/chushou.png" width="32" alt="">
+                        </div>
+                        <p>发布出售广告</p>
+                    </a>
+                </div>
+            </div>
+            <div class="weui-flex close_box" style="text-align: center;">
+                <div class="weui-flex__item">
+                    <a href="javascript:;" class='close-popup'>
+                        <div class="close_btn">
+                            <img src="./img/jia.png" width="100%" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
-<script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
-<script src="./jquery-weui/dist/lib/fastclick.js"></script>
-<script src="./jquery-weui/dist/js/swiper.min.js"></script>
-<script src="./js/common.js"></script>
+    <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+    <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
+    <script src="./jquery-weui/dist/lib/fastclick.js"></script>
+    <script src="./jquery-weui/dist/js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
 
 
-<script>
-    var swiper1 = new Swiper('#swiper1', {
-        pagination: '#swiper-pagination1',
-        loop: true,
-        autoplay: 3000,
+    <script>
+        var swiper1 = new Swiper('#swiper1', {
+            pagination: '#swiper-pagination1',
+            loop: true,
+            autoplay: 3000,
 
-    });
-    var swiper2 = new Swiper('#swiper2', {
-        onSlideChangeStart: function () {
+        });
+        var swiper2 = new Swiper('#swiper2', {
+            onSlideChangeStart: function () {
+                $(".wy-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
+                $(".wy-navbar a").eq(swiper2.activeIndex).addClass('weui-bar__item--on');
+            },
+            autoHeight: true
+        });
+        $(".wy-navbar a").on('touchstart mousedown', function (e) {
+            e.preventDefault()
             $(".wy-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-            $(".wy-navbar a").eq(swiper2.activeIndex).addClass('weui-bar__item--on');
-        },
-        autoHeight: true
-    });
-    $(".wy-navbar a").on('touchstart mousedown', function (e) {
-        e.preventDefault()
-        $(".wy-navbar .weui-bar__item--on").removeClass('weui-bar__item--on');
-        $(this).addClass('weui-bar__item--on');
-        swiper2.slideTo($(this).index());
+            $(this).addClass('weui-bar__item--on');
+            swiper2.slideTo($(this).index());
 
-    });
-    $(".wy-navbar a").click(function (e) {
-        e.preventDefault();
-    });
+        });
+        $(".wy-navbar a").click(function (e) {
+            e.preventDefault();
+        });
 
 
-    $("#wy-slide").pullToRefresh().on("pull-to-refresh", function () {
-        setTimeout(function () {
+        $("#wy-slide").pullToRefresh().on("pull-to-refresh", function () {
+            setTimeout(function () {
 
 
-            $("#wy-slide").pullToRefreshDone(); // 重置下拉刷新
-        }, 1500);   //模拟延迟
-    });
-    $("#wy-slide2").pullToRefresh().on("pull-to-refresh", function () {
-        setTimeout(function () {
+                $("#wy-slide").pullToRefreshDone(); // 重置下拉刷新
+            }, 1500); //模拟延迟
+        });
+        $("#wy-slide2").pullToRefresh().on("pull-to-refresh", function () {
+            setTimeout(function () {
 
 
-            $("#wy-slide2").pullToRefreshDone(); // 重置下拉刷新
-        }, 1500);   //模拟延迟
-    });
+                $("#wy-slide2").pullToRefreshDone(); // 重置下拉刷新
+            }, 1500); //模拟延迟
+        });
 
 
-    $('#wy-slide').infinite().on("infinite", function () {
+        $('#wy-slide').infinite().on("infinite", function () {
 
 
-    });
+        });
 
 
-    $('#wy-slide2').infinite().on("infinite", function () {
+        $('#wy-slide2').infinite().on("infinite", function () {
 
 
-    });
-    top_nav('.wy-nav_tab li','active');
-</script>
+        });
+        top_nav('.wy-nav_tab li', 'active');
+    </script>
 
 </body>
 

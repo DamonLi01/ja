@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/chat.css">
+
+</head>
+
+<body>
+    <div class="container intro-container">
+        <div class="intro-info">
+            <div class="col-md-6">
+                <div class="intro-info-left">
+                    <div class="user-img">
+                        <a href="" style="position: relative;">
+
+                            <img src="https://bitcoin-world-public.oss-cn-hongkong.aliyuncs.com/bitcoinworld/userHeaderPic/20171206033815787.jpg">
+                        </a>
+                        <div class="status">
+
+
+                            <div class="status-dot-gray inline"></div>
+                            <span>离线状态</span>
+
+                        </div>
+                    </div>
+                    <div class="intro-info-name">
+                        <div class="intro-info-detail">
+                            <div class="user-name">
+                                <img src="">
+                                <a href="">
+                                    <span>wx18031359899</span>
+                                </a>
+                            </div>
+                            <div class="intro-detail">
+                                <p>
+                                    简介:&nbsp;&nbsp; 单在人在，到账秒放！
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="trade-relate">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="../images/chat_img/safe.png">
+                            </div>
+                            <div class="text-tip">被
+                                <span>51</span>人信任</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../images/chat_img/money.png">
+                            </div>
+                            <div class="text-tip">交易量
+                                <span>1123.40201588</span>ETC</div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="../images/chat_img/trade.png">
+                            </div>
+                            <div class="text-tip">完成
+                                <span> 60 </span>笔交易</div>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="container main-container mgt-xs-0 mt20">
+        <div class="fl width-60per chat-container">
+            <div class="row">
+                <div class="chat-box col-xs-8">
+                    <form id="inputForm" class="form-horizontal" action="" method="post">
+
+                        <div class="send-conetnt">
+                            <div class="send-conetnt-add">
+                                <img src="../images/chat_img/msg_add.png" class="ext">
+                            </div>
+                            <div class="send-conetnt-input">
+                                <input name="content" id="content" type="text" class="send-text" maxlength="128" required="">
+                                <div class="dot"></div>
+                                <a title="常用回复" class="quickReply_icon"></a>
+                                <div class="quickReply_content" style="display: none" id="quickReply">
+                                    <ul>
+                                        <li>
+                                            <a class="first" href="" title="常用回复" target="_blank">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li onclick="reply(this)">
+                                            <a title="您好，在吗？我在比特币世界看到您发布的广告">您好，在吗？我在比特币世界看到您发布的广告</a>
+                                        </li>
+                                        <li onclick="reply(this)">
+                                            <a title="您好，请问我怎么付款？">您好，请问我怎么付款？</a>
+                                        </li>
+                                        <li onclick="reply(this)">
+                                            <a title="您好，我已经付款完成，请放行比特币！">您好，我已经付款完成，请放行比特币！</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="send-conetnt-btn">
+                                <button id="submit" type="submit" class="send_icon">发送</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="chat-content">
+                        <div class="div_scroll chat-content-height" style="background-color: #fff">
+                            <div style="height:auto; width:auto;background-color: #fff" id="contentTable">
+                                <div class="item item-me ">
+                                    <div class="photo-box photo-52">
+                                        <b style="position: relative">
+                                            <img src="https://bitcoin-world-public.oss-cn-hongkong.aliyuncs.com/bitcoinworld/userHeaderPic/20171206033815787.jpg">
+                                        </b>
+                                        <span class="long-id box_name">
+                                            <a  title="wx18031359899"> wx18031359899</a>
+                                        </span>
+                                    </div>
+                                    <span class="i18n-time-zone-date-message">2017-12-18 16:40:59</span>
+                                    <div class="chat">
+                                        <i></i>你好
+                                    </div>
+                                </div>
+                                <div class="item item-service">
+                                    <div class="photo-box photo-52">
+                                        <b style="position: relative">
+                                            <img src="https://bitcoin-world-public.oss-cn-hongkong.aliyuncs.com/bitcoinworld/userHeaderPic/201712/songjean.jpg">
+                                        </b>
+                                        <span class="long-id box_name">
+                                            <a title="songjean">
+                                                songjean
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <span class="i18n-time-zone-date-message">2017-12-18 15:55:51</span>
+                                    <div class="chat">
+                                        <i></i>123123
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-4">
+                    <!--交易数据-->
+                    <div class="chat-download">
+                        <a href="javascript:void(0);">
+                            <img src="../images/chat_img/download-logo.png" alt="">
+                            <span>导出聊天内容</span>
+                        </a>
+                    </div>
+                    <div class="trade-container">
+                        <div class="title">
+                            <span>交易数据</span>
+                        </div>
+                        <ul class="trade-list">
+
+                            <li>
+                                <div>交易量:</div>
+                                <span>96.88574779</span>ETH
+                            </li>
+
+                            <li>
+                                <div>交易量:</div>
+                                <span>5.17922327</span>LTC
+                            </li>
+
+                            <li>
+                                <div>好评率:</div>
+                                <span>100.0%</span>
+                            </li>
+                            <li>
+                                <div>平均放行时间:</div>
+                                <span>0</span>分钟
+                            </li>
+                            <li>
+                                <div>平均回复时间:</div>
+                                <span>5-10分钟</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="trade-container" style="padding: 0px 14px 12px;">
+                        <ul class="detail-list">
+                            <li>
+                                <div>当前价格:</div>
+                                <span class="font-green">248</span>CNY／ETC
+                            </li>
+                            <li>
+                                <div>付款方式:</div>
+                                <b>
+                                    支付宝, 国内银行转账
+                                </b>
+                            </li>
+                            <li>
+                                <div>交易限额:</div>
+                                <span>
+                                    200 - 25000 CNY
+                                </span>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+
+
+                        <a href="" class="btn btn-green" style="display: block; width: auto;">
+                            <span>买入</span>
+                        </a>
+
+
+                    </div>
+
+                    <div class="adList-container">
+                        <div class="title">
+                            <span>广告列表</span>
+                        </div>
+                        <ul class="trade-list">
+
+
+
+                            <li class="ad-tip">
+                                <span>暂无其他广告</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

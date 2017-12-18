@@ -340,3 +340,8 @@ html {
     font-size: 13px;
     margin-left: -20px;
 }
+
+.weui-icon-search{
+    font-size: 20px;
+    color: white;
+}
