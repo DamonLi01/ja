@@ -189,11 +189,15 @@ html {
 .weui-cells.weui-cells_radio {
     text-align: center;
 }
-
-.pull-right {
-    float: right;
+ul{
+    list-style: none;
 }
-
+.pull-right {
+    float: right !important;;
+}
+.pull-left{
+    float: left !important;
+}
 .user_box {
     padding-top: 35px;
 }
