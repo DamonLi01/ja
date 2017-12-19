@@ -19,6 +19,13 @@
             padding-top: 91px;
             padding-bottom: 0;
         }
+
+        .weui-btn.weui-btn_primary {
+            margin-top: 10px !important;
+            width: 50% !important;
+            border-radius: 30px;
+            background-color: dodgerblue;
+        }
     </style>
 </head>
 
@@ -31,24 +38,73 @@
         <div>搜索</div>
     </div>
     <div id="wy-box" class="weui-tab">
+        <div class="weui-navbar wy-navbar">
+            <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                找广告
+            </a>
+            <a href="javascript:;" class="weui-navbar__item wy-nitem">
+                找用户
+            </a>
+
+        </div>
         <div id="wy-caiwu_box" class="weui-tab__bd">
             <div class="weui-tab__bd-item weui-tab__bd-item--active">
-                <div class="weui-navbar wy-navbar">
-                    <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
-                        找广告
-                    </a>
-                    <a href="javascript:;" class="weui-navbar__item wy-nitem">
-                        找用户
-                    </a>
 
-                </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div id="slide_box1" class="swiper-slide">
+                            <form action="">
+                                <div class="weui-cells weui-cells_form">
+                                    <div class="weui-cell weui-cell_access">
+                                        <div class="weui-cell__hd">
+                                            <label class="weui-label">选择币种</label>
+                                        </div>
+                                        <div class="weui-cell__bd">
+                                            <input class="weui-input" id="bizhong" type="text" value="BTC" readonly="">
+                                        </div>
+                                        <div class="weui-cell__ft">
 
+                                        </div>
+                                    </div>
+                                    <div class="weui-cell ">
+                                        <div class="weui-cell__hd">
+                                            <label class="weui-label">价格区间</label>
+                                        </div>
+                                        <div class="weui-cell__bd">
+                                            <input class="weui-input wy-w40 text-center zgzd_btn" type="text" placeholder="最低价">
+                                            <span>-</span>
+                                            <input class="weui-input wy-w40 text-center zgzd_btn" type="text" placeholder="最高价">
+                                        </div>
+
+                                    </div>
+                                    <div class="weui-cell weui-cell_access">
+                                        <div class="weui-cell__hd">
+                                            <label class="weui-label">付款方式</label>
+                                        </div>
+                                        <div class="weui-cell__bd">
+                                            <input class="weui-input" id="pay" type="text" value="支付宝" readonly="">
+                                        </div>
+                                        <div class="weui-cell__ft">
+
+                                        </div>
+                                    </div>
+                                    <div class="weui-cell">
+                                        <button type="subimt" class="weui-btn weui-btn_primary">搜索</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div id="slide_box2" class="swiper-slide">
-
+                            <form action="">
+                                <div class="weui-cell ">
+                                    <div class="weui-cell__bd">
+                                        <input class="weui-input" type="text" placeholder="请输入用户昵称">
+                                    </div>
+                                </div>
+                                <div class="weui-cell">
+                                    <button type="subimt" class="weui-btn weui-btn_primary">搜索</button>
+                                </div>
+                            </form>
                         </div>
 
                     </div>
@@ -66,7 +122,16 @@
     <script src="./jquery-weui/dist/js/swiper.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/my-swiper.js"></script>
-
+    <script>
+        $("#bizhong").select({
+            title: "交易币种",
+            items: ["BTC", "2", "3", "4", "5", "6"]
+        });
+        $("#pay").select({
+            title: "付款方式",
+            items: ["支付宝", "微信", "3", "4", "5", "6"]
+        });
+    </script>
 
 </body>
 

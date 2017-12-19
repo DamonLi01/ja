@@ -1,0 +1,58 @@
+.weui-tab__bd {
+    padding-top: 45px;
+}
+
+.wy-jycs {
+    text-align: center;
+    font-size: 14px;
+}
+
+.wy-jycs .weui-flex__item p:first-child {
+    font-weight: bold;
+}
+
+.wy-jycs .weui-flex__item p:last-child,
+.wy-jy-hp {
+    color: #A4A8B2;
+}
+
+.weui-input {
+    width: 65%;
+}
+
+#cny,
+#num {
+    padding-left: 45px;
+}
+
+.wy-btc {
+    position: absolute;
+    margin-left: 2px;
+}
+
+.wy-cny {
+    position: absolute;
+}
+
+.wy-zh {
+    margin-left: -10px;
+}
+
+.wy-gm-bt {
+    border-top: 1px solid #A4A8B2;
+}
+
+.wy-gm-btn {
+    padding: 0 30px;
+    background-color: dodgerblue !important;
+    color: white;
+    height: 53px;
+}
+
+.wy-lianxi {
+    vertical-align: bottom;
+}
+
+.text-999 {
+    color: #999999;
+}

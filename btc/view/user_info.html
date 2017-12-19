@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .info-photo {
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+
+        .f14 {
+            font-size: 14px!important;
+        }
+
+        .fl,
+        .swiper-container-no-flexbox .swiper-slide {
+            float: left;
+        }
+
+        .photo-box {
+            text-align: center;
+            position: relative;
+        }
+
+        .photo-70 img {
+            height: 62px;
+            width: 62px;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+        }
+
+        .fa-stack,
+        img {
+            vertical-align: middle;
+        }
+
+        .photo-box img {
+            border-radius: 50%;
+            border: 1px solid #E5E5E5;
+            background-color: #F5F5F5;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+        }
+
+        .tradeline {
+            position: absolute;
+        }
+
+        .online::before {
+            background: url(../images/goumai_img/chat-green.png) center no-repeat;
+        }
+
+        .offline::before,
+        .online::before {
+            content: " ";
+            position: absolute;
+            left: -3px;
+            top: 6px;
+            width: 3px;
+            height: 9px;
+            display: block;
+        }
+
+        .online {
+            background: #83d944!important;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .tradeline {
+            line-height: 18px;
+            font-size: 12px;
+            color: #fff;
+            padding: 0 5px;
+            top: 32px;
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        .info-text-name {
+            padding-top: 54px;
+            width: 150px;
+            position: relative;
+        }
+
+        .info-sidebar,
+        .info-text,
+        .info-text-name,
+        .name-info,
+        .panel60 ul li {
+            display: inline-block;
+        }
+
+        .fr {
+            float: right!important;
+        }
+
+        .info-text-name .user-name {
+            font-size: 20px;
+            color: #1f7fbf;
+            line-height: 25px;
+            font-weight: 400;
+            width: 170px;
+        }
+
+        .text-ellipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .hot a,
+        .social-r-btns,
+        .text-ellipsis,
+        .tradeline {
+            white-space: nowrap;
+        }
+
+        .info-text-name .text-ellipsis a {
+            color: #1f7fbf!important;
+        }
+
+        .name-info {
+            padding-top: 34px;
+            width: 500px;
+        }
+
+        .revenue-info {
+            float: left;
+            width: 30%;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+            line-height: 30px;
+        }
+
+        .mg20 {
+            margin-top: 5px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .btn,
+        a.btn,
+        button.btn,
+        input.btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-size: 16px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #42A5F5;
+            color: #42A5F5;
+            padding: 0 15px;
+            text-decoration: none;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .tabs a:hover,
+        a.btn-padsm,
+        input.btn-padsm {
+            text-decoration: none!important;
+        }
+
+        a.btn-padsm,
+        input.btn-padsm {
+            height: 28px;
+            line-height: 28px;
+            min-width: 70px;
+            font-size: 14px;
+        }
+
+        .btn-primary,
+        a.btn-primary,
+        button.btn-primary,
+        input.btn-primary {
+            background-color: #42a5f5;
+            border-color: #42a5f5;
+            color: #fff;
+        }
+
+        .clearfix,
+        .orange {
+            display: block;
+        }
+
+        .mgt-20,
+        .smt-20 {
+            margin-top: 20px;
+        }
+
+        .back,
+        .clearfix,
+        .content_wrap,
+        .ico_detail,
+        .ico_detail_body,
+        .ico_detail_right,
+        .ico_list_right {
+            position: relative;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .panel30,
+        .panel60 {
+            margin-bottom: 20px;
+            -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .1);
+            -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .1);
+            box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .1);
+            border: 0;
+            height: 276px;
+            background: #fff;
+        }
+
+        *,
+         :after,
+         :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .panel30 {
+            width: 18%;
+            float: left;
+        }
+
+        .panel30-head {
+            background-color: #69B0E4;
+            color: #FFF;
+            margin: 0;
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            font-size: 16px;
+        }
+
+        .margin-bottom-0,
+        ul {
+            margin-bottom: 0;
+        }
+
+        blockquote,
+        body,
+        button,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        textarea,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .panel-maininfo ul li {
+            list-style-type: none;
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: -1px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .panel60 {
+            width: 80%;
+            float: right;
+        }
+
+        .panel30-head {
+            background-color: #69B0E4;
+            color: #FFF;
+            margin: 0;
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            font-size: 16px;
+        }
+
+        .panel-maininfo ul li {
+            list-style-type: none;
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: -1px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .panel60 ul li {
+            width: 360px;
+        }
+
+        dl,
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        dl,
+        ol,
+        ul {
+            margin-top: 0;
+        }
+
+        .info-sidebar,
+        .info-text,
+        .info-text-name,
+        .name-info,
+        .panel60 ul li {
+            display: inline-block;
+        }
+
+        .bd-e6 {
+            border-top: 1px dashed #e6e6e6;
+        }
+
+        .tabs {
+            background: #f9f9f9;
+        }
+
+        .tabs li:first-child {
+            border-left: none!important;
+        }
+
+        .tabs li {
+            float: left;
+        }
+
+        .ico-dis,
+        .tabs li,
+        .tabs li a {
+            display: inline-block;
+        }
+
+        .tabs li a {
+            color: #666;
+            font-size: 15px;
+            padding: 0 20px;
+            line-height: 47px;
+        }
+
+        .current {
+            border-top: 4px solid #49A8F5;
+            border-bottom: #fff;
+            color: #007AFF;
+            background: #fff;
+        }
+
+        .color-white,
+        .panel {
+            position: relative;
+            zoom: 1;
+            background: #fff;
+        }
+
+        .tabs-content {
+            padding: 20px 15px;
+            border-top: none;
+        }
+
+        .pad-sm,
+        .padding-10 {
+            padding: 10px;
+        }
+
+        .panel {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        }
+
+        .no-data-container {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .tabs .current a {
+            color: #49A8F5;
+            font-size: 15px;
+            line-height: 44px;
+        }
+
+        .info-table>tbody>tr>td,
+        .info-table>thead>tr>th {
+            padding: 10px 2px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .btn-red,
+        a.btn-red,
+        button.btn-red,
+        input.btn-red {
+            background-color: #e84844;
+            border: 1px solid #e84844;
+            transition: .5s;
+            color: #fff;
+        }
+
+        button.btn,
+        input.btn {
+            height: 38px;
+        }
+
+        .btn-sell.focus,
+        .btn-sell.focus.btn-buy:focus,
+        .btn-sell:focus,
+        .btn-sell:hover {
+            color: #fff;
+            background: red;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container f14">
+        <div class="info-photo" style="min-height:100px;">
+            <div class="pad-wid-100 fl">
+                <div class="user-info-list" style="height: 100px;width: 320px">
+                    <div class="photo-box photo-70 fl" style="padding-top: 32px; position: relative;">
+                        <a href="/user/chat?receiver=wx18031359899" style="position: relative">
+
+                            <img src="https://bitcoin-world-public.oss-cn-hongkong.aliyuncs.com/bitcoinworld/userHeaderPic/20171206033815787.jpg" alt="">
+                        </a>
+
+                        <a href="/user/chat?receiver=wx18031359899" class="tradeline online">
+                            <span>点我聊天</span>
+                        </a>
+
+
+
+                    </div>
+                    <div class="info-text-name fr">
+                        <p class="user-name text-ellipsis">
+                            <img src="/static/images/chat/level_2.png">
+
+                            <a href="/user/chat?receiver=wx18031359899">wx18031359899</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pad-wid-100 fl">
+
+                <div class="name-info">
+                    <div class="revenue-info mg20">
+                        <span>平均放行时间</span>
+                        <p>0 分钟</p>
+                    </div>
+                    <div class="revenue-info mg20">
+                        <span>信任人数</span>
+                        <p>被 58 人信任</p>
+                    </div>
+                    <div class="revenue-info mg20" style="border-right: none;">
+                        <span>交易量</span>
+                        <p>0.0000 BTC</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pad-wid-100 fr" style="margin-bottom: 20px;">
+                <div class="item item-social mgt-20 fr">
+                    <div class="info-btn center" style="margin-top: 65px;">
+                        <a href="javascript:addTrustInfo('4c79c5d83d924357b76e4cc1486f01c6');" class="btn btn-padsm btn-primary">信任</a>
+                        <a href="javascript:addBlockedInfo('4c79c5d83d924357b76e4cc1486f01c6');" class="btn btn-padsm btn-primary" style="background: #666;border-color: #666;">屏蔽</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mgt-20 clearfix panel-maininfo">
+            <div class="panel30" style="height:auto;">
+                <div class="panel30-head">验证信息</div>
+                <ul>
+                    <li>
+
+                        <img title="已激活" src="../images/chat_img/mail.png" alt="已激活"> 邮件已验证
+
+
+                    </li>
+                    <li>
+
+                        <img title="已激活" src="../images/chat_img/phone.png" alt="已激活"> 手机已验证
+
+
+                    </li>
+                    <li>
+
+                        <img title="已激活" src="../images/chat_img/accound.png" alt="已激活"> 身份证已验证
+
+
+                    </li>
+                </ul>
+            </div>
+            <div class="panel60" style="height:auto;">
+                <div class="panel30-head">个人信息</div>
+                <div class="col-md-6">
+                    <ul>
+
+                        <li>
+                            <span>好评</span>:&nbsp;100.0%</li>
+
+                        <li>
+                            <span>注册时间:&nbsp;</span>
+                            <span class="i18n-time-zone-date-register">2017-12-06</span>
+                        </li>
+                        <li>
+                            <span>语言:&nbsp;</span>中文
+                        </li>
+                        <li>
+                            最后一次登录时间:&nbsp;
+                            <span class="i18n-time-zone-date-login">2 hours ago</span>
+                        </li>
+                        <li>
+                            首次交易时间:&nbsp;
+                            <span class="i18n-time-zone-date">2017-12-06 15:46:05</span>
+                        </li>
+                        <li>
+                            <span>平均放行时间:&nbsp;</span>0 分钟
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>
+                            平均回复时间:&nbsp;
+                            <span>5-10分钟</span>
+                        </li>
+                        <li>
+                            <span>交易笔数:&nbsp;</span>126</li>
+
+                        <li>
+                            <span>ETC交易量:&nbsp;</span>
+                            <span>1168.72399495</span>ETC
+                        </li>
+
+                        <li>
+                            <span>ETH交易量:&nbsp;</span>
+                            <span>102.27999779</span>ETH
+                        </li>
+
+                        <li>
+                            <span>LTC交易量:&nbsp;</span>
+                            <span>6.43922327</span>LTC
+                        </li>
+
+                        <li>
+                            <span>最近30天交易币数&nbsp;</span>0.0000&nbsp;BTC
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <ul>
+
+
+                        <li class="info">
+                            <span>简介:&nbsp;单在人在，到账秒放！</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel-info mgt-20">
+            <div class="panel30-head">wx18031359899的BTC广告</div>
+            <div class="panel-wraper bd-e6 back-white">
+                <ul class="tabs clearfix mgt-20">
+                    <li class="current">
+                        <a class="first" href="#buyOnlineBTC" data-hash="buyOnlineBTC">在线购买 </a>
+                    </li>
+                    <li>
+                        <a href="#saleOnlineBTC" data-hash="saleOnline" btc="">在线出售</a>
+                    </li>
+                    <li>
+                        <a href="#buyLocalBTC" data-hash="buyLocalBTC">本地购买</a>
+                    </li>
+                    <li>
+                        <a href="#saleLocalBTC" data-hash="saleLocalBTC">本地出售</a>
+                    </li>
+                    <li>
+                        <a href="#reviewBTC" data-hash="reviewBTC">评 价</a>
+                    </li>
+                </ul>
+                <div class="panel tabs-content padding-10">
+                    <div class="content-box" id="buyOnlineBTC-box">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="saleOnlineBTC-box" style="display:none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="buyLocalBTC-box" style="display:none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="saleLocalBTC-box" style="display:none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="reviewBTC-box" style="display:none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有反馈</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-info mgt-20">
+            <div class="panel30-head">wx18031359899的ETH广告</div>
+            <div class="panel-wraper bd-e6 back-white">
+                <ul class="tabs clearfix mgt-20">
+                    <li class="current">
+                        <a class="first" href="#buyOnlineETH" data-hash="buyOnlineETH">在线购买 </a>
+                    </li>
+                    <li class="">
+                        <a href="#saleOnlineETH" data-hash="saleOnline" eth="">在线出售</a>
+                    </li>
+                    <li class="">
+                        <a href="#buyLocalETH" data-hash="buyLocalETH">本地购买</a>
+                    </li>
+                    <li class="">
+                        <a href="#saleLocalETH" data-hash="saleLocalETH">本地出售</a>
+                    </li>
+                    <li class="">
+                        <a href="#reviewETH" data-hash="reviewETH">评 价</a>
+                    </li>
+                </ul>
+                <div class="panel tabs-content padding-10">
+                    <div class="content-box" id="buyOnlineETH-box" style="">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="saleOnlineETH-box" style="display: none;">
+
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info-table">
+                            <colgroup>
+                                <col width="12%">
+                                <col width="13%">
+                                <col width="22%">
+                                <col class="hide-sm">
+                                <col width="10%">
+                                <col width="15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th align="left">币种</th>
+                                    <th align="left">地区</th>
+                                    <th align="left">付款方式</th>
+                                    <th align="center" class="hide-sm">说明</th>
+                                    <th align="center" class="hide-sm">交易限额</th>
+                                    <th align="center">价格</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td align="left">ETH</td>
+                                    <td>
+                                        中国
+
+                                    </td>
+                                    <td class="text-ellipsis white-space">
+                                        <a class="f14" title="   微信支付   支付宝   国内银行转账">
+
+                                            微信支付 支付宝 国内银行转账
+                                        </a>
+                                    </td>
+                                    <td align="center" class="hide-sm">
+                                        <div style="white-space:nowrap; text-overflow:ellipsis; overflow: hidden; max-width:200px;height: 20px; line-height: 20px; "
+                                            title=""></div>
+                                    </td>
+                                    <td align="center" class="hide-sm">
+
+
+                                        100 - 35000
+
+
+
+
+
+                                    </td>
+                                    <td align="center">
+                                        <span class="f16 green">5280 CNY</span>
+                                    </td>
+                                    <td align="right">
+                                        <button type="button" class="btn btn-sell sm-f12 btn-red" onclick="adDetail('exhjs6c1', 'buyonline','wechat', 'china')">
+
+                                            卖出
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="content-box" id="buyLocalETH-box" style="display: none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="saleLocalETH-box" style="display: none;">
+
+                        <div class="no-data-container">
+                            <div class="no-data-tip">还没有相关广告</div>
+                        </div>
+
+
+                    </div>
+                    <div class="content-box" id="reviewETH-box" style="display: none;">
+
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info-table">
+                            <colgroup>
+                                <col width="15%" class="no-f col-pho-2">
+                                <col class="no-f col-pho-4">
+                                <col width="20%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th align="left">评价级别</th>
+                                    <th align="left">评价内容</th>
+                                    <th align="center">时间</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-19 08:35:41</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">交易迅速便捷，感謝！</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-19 00:34:39</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-18 23:46:05</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-18 22:28:38</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-18 14:29:21</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">非常好</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-18 10:43:58</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+
+                                    <td>好评</td>
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-18 09:02:04</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+
+                                    <td>好评</td>
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 22:40:00</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 22:35:10</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 22:30:41</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 21:43:19</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 17:09:30</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-17 16:43:14</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-16 19:22:30</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">完美交易</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-15 13:21:31</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-14 13:53:19</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">好好快快秒男，</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-13 21:00:41</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">好买家</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-13 20:45:25</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-13 20:28:07</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-13 18:33:27</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-12 12:04:47</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-12 10:19:45</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-12 09:59:31</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-12 09:13:38</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-11 18:03:57</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left">杠杠的！！</td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-11 17:48:29</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-10 21:32:01</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-10 21:03:04</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-10 15:30:10</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-06 15:58:02</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td>可信任的</td>
+
+
+
+
+
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="i18n-time-zone-date">2017-12-06 15:47:55</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script>
+        $(".tabs a[href^='#']").click(function () {
+            $(this).parent().parent().parent().find('.tabs li').removeClass('current');
+            $(this).parent().parent().parent().find('.content-box:visible').hide();
+            var c = $(this).attr('href');
+            $(this).parent().parent().parent().find(c + '-box').show();
+            $(this).parent().addClass('current');
+            location.hash = $(this).data('hash');
+        });
+    </script>
+</body>
+
+</html>
