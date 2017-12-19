@@ -1,6 +1,9 @@
 $.showLoading();
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
-        $.hideLoading();
+        setTimeout(function () {
+            $.hideLoading();
+        }, 500);
+
     }
 }

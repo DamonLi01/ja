@@ -9,49 +9,9 @@
     <link rel="stylesheet" href="./jquery-weui/dist/lib/weui.min.css">
     <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/chat_mobile.css">
     <style>
-        .weui-tab__bd {
-            padding-top: 45px;
-        }
 
-        .wy-gm-bt {
-            border-top: 1px solid #A4A8B2;
-        }
-
-        .wy-gm-btn {
-            padding: 0 30px;
-            background-color: dodgerblue !important;
-            color: white;
-            height: 53px;
-        }
-
-        .chat_me, .chat {
-            padding: 10px;
-        }
-
-        .chat_me img, .chat img {
-            border-radius: 50px;
-        }
-
-        .chat_me .chat_box {
-            padding-left: 60px;
-        }
-
-        .chat .chat_box {
-            padding-right: 60px;
-        }
-
-
-        .chat .wy-name {
-            text-align: right;
-        }
-
-        .chat .chat_box span:first-child, .chat_me .chat_box span:first-child {
-            padding-right: 20px;
-        }
-        .clearfix{
-            clear: both;
-        }
     </style>
 </head>
 
@@ -71,16 +31,23 @@
             <div>
                 <ul>
                     <li class="chat_me">
-                        <img width="50" class="pull-left"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAeFBMVEUAwAD///+U5ZTc9twOww7G8MYwzDCH4YcfyR9x23Hw+/DY9dhm2WZG0kbT9NP0/PTL8sux7LFe115T1VM+zz7i+OIXxhes6qxr2mvA8MCe6J6M4oz6/frr+us5zjn2/fa67rqB4IF13XWn6ad83nxa1loqyirn+eccHxx4AAAC/klEQVRo3u2W2ZKiQBBF8wpCNSCyLwri7v//4bRIFVXoTBBB+DAReV5sG6lTXDITiGEYhmEYhmEYhmEYhmEY5v9i5fsZGRx9PyGDne8f6K9cfd+mKXe1yNG/0CcqYE86AkBMBh66f20deBc7wA/1WFiTwvSEpBMA2JJOBsSLxe/4QEEaJRrASP8EVF8Q74GbmevKg0saa0B8QbwBdjRyADYxIhqxAZ++IKYtciPXLQVG+imw+oo4Bu56rjEJ4GYsvPmKOAB+xlz7L5aevqUXuePWVhvWJ4eWiwUQ67mK51qPj4dFDMlRLBZTqF3SDvmr4BwtkECu5gHWPkmDfQh02WLxXuvbvC8ku8F57GsI5e0CmUwLz1kq3kD17R1In5816rGvQ5VMk5FEtIiWislTffuDpl/k/PzscdQsv8r9qWq4LRWX6tQYtTxvI3XyrwdyQxChXioOngH3dLgOFjk0all56XRi/wDFQrGQU3Os5t0wJu1GNtNKHdPqYaGYQuRDfbfDf26AGLYSyGS3ZAK4S8XuoAlxGSdYMKwqZKM9XJMtyqXi7HX/CiAZS6d8bSVUz5J36mEMFDTlAFQzxOT1dzLRljjB6+++ejFqka+mXIe6F59mw22OuOw1F4T6lg/9VjL1rLDoI9Xzl1MSYDNHnPQnt3D1EE7PrXjye/3pVpr1Z45hMUdcACc5NVQI0bOdS1WA0wuz73e7/5TNqBPhQXPEFGJNV2zNqWI7QKBd2Gn6AiBko02zuAOXeWIXjV0jNqdKegaE/kJQ6Bfs4aju04lMLkA2T5wBSYPKDGF3RKhFYEa6A1L1LG2yacmsaZ6YPOSAMKNsO+N5dNTfkc5Aqe26uxHpx7ZirvgCwJpWq/lmX1hA7LyabQ34tt5RiJKXSwQ+0KU0V5xg+hZrd4Bn1n4EID+WkQdgLfRNtvil9SPfwy+WQ7PFBWQz6dGWZBLkeJFXZGCfLUjCgGgqXo5TuSu3cugdcTv/HjqnBTEMwzAMwzAMwzAMwzAMw/zf/AFbXiOA6frlMAAAAABJRU5ErkJggg==">
+                        <div class="pull-left">
+                            <img width="50"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAeFBMVEUAwAD///+U5ZTc9twOww7G8MYwzDCH4YcfyR9x23Hw+/DY9dhm2WZG0kbT9NP0/PTL8sux7LFe115T1VM+zz7i+OIXxhes6qxr2mvA8MCe6J6M4oz6/frr+us5zjn2/fa67rqB4IF13XWn6ad83nxa1loqyirn+eccHxx4AAAC/klEQVRo3u2W2ZKiQBBF8wpCNSCyLwri7v//4bRIFVXoTBBB+DAReV5sG6lTXDITiGEYhmEYhmEYhmEYhmEY5v9i5fsZGRx9PyGDne8f6K9cfd+mKXe1yNG/0CcqYE86AkBMBh66f20deBc7wA/1WFiTwvSEpBMA2JJOBsSLxe/4QEEaJRrASP8EVF8Q74GbmevKg0saa0B8QbwBdjRyADYxIhqxAZ++IKYtciPXLQVG+imw+oo4Bu56rjEJ4GYsvPmKOAB+xlz7L5aevqUXuePWVhvWJ4eWiwUQ67mK51qPj4dFDMlRLBZTqF3SDvmr4BwtkECu5gHWPkmDfQh02WLxXuvbvC8ku8F57GsI5e0CmUwLz1kq3kD17R1In5816rGvQ5VMk5FEtIiWislTffuDpl/k/PzscdQsv8r9qWq4LRWX6tQYtTxvI3XyrwdyQxChXioOngH3dLgOFjk0all56XRi/wDFQrGQU3Os5t0wJu1GNtNKHdPqYaGYQuRDfbfDf26AGLYSyGS3ZAK4S8XuoAlxGSdYMKwqZKM9XJMtyqXi7HX/CiAZS6d8bSVUz5J36mEMFDTlAFQzxOT1dzLRljjB6+++ejFqka+mXIe6F59mw22OuOw1F4T6lg/9VjL1rLDoI9Xzl1MSYDNHnPQnt3D1EE7PrXjye/3pVpr1Z45hMUdcACc5NVQI0bOdS1WA0wuz73e7/5TNqBPhQXPEFGJNV2zNqWI7QKBd2Gn6AiBko02zuAOXeWIXjV0jNqdKegaE/kJQ6Bfs4aju04lMLkA2T5wBSYPKDGF3RKhFYEa6A1L1LG2yacmsaZ6YPOSAMKNsO+N5dNTfkc5Aqe26uxHpx7ZirvgCwJpWq/lmX1hA7LyabQ34tt5RiJKXSwQ+0KU0V5xg+hZrd4Bn1n4EID+WkQdgLfRNtvil9SPfwy+WQ7PFBWQz6dGWZBLkeJFXZGCfLUjCgGgqXo5TuSu3cugdcTv/HjqnBTEMwzAMwzAMwzAMwzAMw/zf/AFbXiOA6frlMAAAAABJRU5ErkJggg==">
+
+                        </div>
+
                         <div class="chat_box">
 
                             <div class="wy-name">
-                                <span class="">username</span>
-                                <span>2017-12-18 22:35:53</span>
+                                <span class="chat-name">123123123123</span>
+
                             </div>
-                            <div>你好</div>
+                            <div class="pull-left chat-content">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</div>
+                            <i class="chat-left-icon"></i>
+                            <div class="clearfix"></div>
                         </div>
+
                     </li>
                     <li class="chat">
                         <img width="50" class="pull-right"
@@ -88,10 +55,10 @@
                         <div class="chat_box">
 
                             <div class="wy-name">
-                                <span>2017-12-18 22:35:53</span>
-                                <span class="">username</span>
+                                <span class="chat-name">123123123123</span>
                             </div>
-                            <div class="pull-right">你好</div>
+                            <div class="pull-right chat-content">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</div>
+                            <i class="chat-right-icon"></i>
                             <div class="clearfix"></div>
                         </div>
                     </li>
@@ -102,10 +69,10 @@
         </div>
         <div class="weui-tab footer-menu wy-gm-bt">
             <div class="weui-cells">
-                <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell weui-cell_vcode wy-cell_vcode">
 
                     <div class="weui-cell__bd">
-                        <input class="weui-input" type="text" placeholder="">
+                        <input class="weui-input chat-input" type="text" placeholder="">
                     </div>
                     <div class="weui-cell__ft">
                         <button class="weui-vcode-btn weui-btn_default wy-gm-btn">发送</button>

@@ -1,0 +1,98 @@
+.weui-tab__bd {
+    padding-top: 45px;
+}
+
+.wy-gm-bt {
+    border-top: 1px solid #A4A8B2;
+}
+
+.wy-gm-btn {
+    padding: 0 30px;
+    background-color: dodgerblue !important;
+    color: white;
+    height: 53px;
+}
+
+.chat_me, .chat {
+    padding: 10px;
+}
+
+.chat_me img, .chat img {
+    border-radius: 50px;
+    display: block;
+}
+
+.chat_me .chat_box {
+    padding-left: 60px;
+}
+
+.chat .chat_box {
+    padding-right: 60px;
+}
+
+.chat .wy-name {
+    text-align: right;
+}
+
+.chat .chat_box span:first-child, .chat_me .chat_box span:first-child {
+    padding-right: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.chat-name {
+    width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-content {
+    border-radius: 10px;
+    padding: 2px 12px;
+    margin-top: -5px;
+    background-color: #f5f5f5;
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+.chat_box .chat-left-icon{
+    display: block;
+    width: 18px;
+    height: 11px;
+    position: absolute;
+    transform: rotate(180deg);
+    margin-left: -10px;
+    margin-top: -6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/arrow-right.png");
+
+}
+.chat_box .chat-right-icon{
+    display: block;
+    width: 18px;
+    height: 11px;
+    position: absolute;
+    transform: rotate(-55deg);
+    margin-left: -10px;
+    margin-top: -6px;
+    right: 60px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/arrow-right.png");
+
+}
+.chat-input{
+    background-color: #F5F5F5;
+    height: 40px;
+    padding: 0 5px;
+    margin: 0 10px;
+    width: 93%;
+    border-radius: 10px;
+}
+.wy-cell_vcode{
+    padding: 0;
+}
