@@ -115,7 +115,12 @@ body {
 .wy-fwb {
     font-weight: bold;
 }
-
+.wy-fz20{
+    font-size: 20px;
+}
+.wy-fz14{
+    font-size: 14px;
+}
 .wy-cells .weui-btn_plain-primary {
     border-radius: 50px;
     border-color: #239DF3;

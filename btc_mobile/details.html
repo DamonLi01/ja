@@ -8,15 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./jquery-weui/dist/lib/weui.min.css">
     <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
         .wy-navbar {
-            top: 45px;
+            top: 184px;
             position: fixed;
         }
 
         .weui-navbar+.weui-tab__bd {
-            padding-top: 91px;
+            padding-top: 230px;
             padding-bottom: 0;
         }
 
@@ -40,6 +41,24 @@
 
         #menu-list li.active {
             color: dodgerblue;
+        }
+
+        .fs_initial {
+            font-size: initial !important;
+        }
+
+        #mingxi_box {
+            position: fixed;
+            top: 45px;
+            width: 100%;
+        }
+
+        .wy_zonge p {
+            text-align: center;
+        }
+
+        .wy_zonge {
+            padding: 20px 0;
         }
     </style>
 </head>
@@ -69,20 +88,40 @@
         </div>
     </div>
     <div id="wy-box" class="weui-tab">
-        <div class="weui-flex">
-            <div class="weui-flex__item">
-                <div class="weui-cells weui-cells_form">
-                    <div class="weui-cell">
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" type="text">
+        <div id="mingxi_box">
+            <div class="weui-flex ">
+                <div class="weui-flex__item">
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <!-- <input type="text" class="weui-input" placeholder="请选择" /> -->
+                                <input type="text" class="weui-input" id='datetime-picker' />
+                            </div>
+                            <div class="weui-cell__ft fs_initial">
+                                <i class="fa fa-calendar"></i>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+            <div class="weui-flex wy_zonge">
+                <div class="weui-flex__item">
+                    <p class="wy-fz14">当月收到BTC</p>
+                    <p class="wy-fwb wy-fz20">0.00000000</p>
+                </div>
+                <div class="weui-flex__item">
+                    <p class="wy-fz14">当月发送BTC</p>
+                    <p class="wy-fwb wy-fz20">0.00000000</p>
+                </div>
+
+            </div>
         </div>
+
         <div class="weui-navbar wy-navbar">
             <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
                 全部明细BTC
+
             </a>
             <a href="javascript:;" class="weui-navbar__item wy-nitem">
                 收到BTC
@@ -115,6 +154,7 @@
                                         </p>
                                         <p class="wy-jy-hp">
                                             交易:
+
                                             <span>783</span>
                                             | 好评:
                                             <span>98%</span>
@@ -305,8 +345,8 @@
                 </div>
             </div>
         </div>
-
     </div>
+
 
     <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
     <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
@@ -315,6 +355,7 @@
     <script src="./js/common.js"></script>
     <script src="./js/my-swiper.js"></script>
     <script>
+        $("#datetime-picker").datetimePicker();
         // select
         var val = $('#menu-list').children('li').eq(0).text();
         $(".wy-xiala span").text(val);
