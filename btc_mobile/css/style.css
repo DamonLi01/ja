@@ -67,13 +67,7 @@ body {
     padding-top: 10px;
 }
 
-#wy-list .weui-cell__ft:after,
-#wy-list2 .weui-cell__ft:after {
-    content: initial !important;
-    height: 0 !important;
-    width: 0 !important;
-    border: 0 !important;
-}
+
 
 .ptb30 {
     padding: 30px 0;
@@ -177,7 +171,10 @@ body {
 .weui-tab__bd {
     padding-bottom: 53px;
 }
-
+.weui-cells_form .weui-cell__ft{
+    font-size: 14px;
+    color: #333;
+}
 .footer-menu {
     position: fixed !important;
     z-index: 9;

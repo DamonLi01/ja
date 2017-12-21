@@ -56,3 +56,7 @@
 .text-999 {
     color: #999999;
 }
+.wy-pb_btn,.wy-xr_btn{
+    background-color: dodgerblue;
+    padding: 0 10px;
+}

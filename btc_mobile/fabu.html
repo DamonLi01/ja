@@ -32,181 +32,176 @@
         .footer-menu {
             background-color: #f5f5f5;
         }
+
+        .wy-bfb {
+            font-size: 14px !important;
+            font-weight: bold;
+        }
+
+        .wy-fbgg img {
+            vertical-align: middle;
+            width: 20px;
+        }
     </style>
 </head>
 
 
 <body ontouchstart>
-    <div class="header">
-        <div>
-            <a href="JavaScript:history.back();">
-                <img class="back" height="35" src="./img/back.png" alt="">
-            </a>
-            发布广告
-        </div>
+<div class="header">
+    <div>
+        <a href="JavaScript:history.back();">
+            <img class="back" height="35" src="./img/back.png" alt="">
+        </a>
+        发布广告
     </div>
-    <form action="">
-        <div id="wy-box" class="weui-tab">
-            <div class="wy-fbgg weui-tab__bd">
-                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
-                    <div class="weui-cells weui-cells_form">
+</div>
+<form action="">
+    <div id="wy-box" class="weui-tab">
+        <div class="wy-fbgg weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui-cells weui-cells_form">
 
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label class="weui-label">交易币种</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" id="bizhong" type="text" value="" readonly="">
-                            </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">交易币种</label>
                         </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label class="weui-label">货币</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" id="huobi" type="text" value="" readonly="">
-                            </div>
-                        </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label for="" class="weui-label">溢价</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" type="number" value="">
-                            </div>
-                            <div class="weui-cell__ft">
-                                <svg t="1513134373710" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="961"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
-                                    <defs>
-                                        <style type="text/css"></style>
-                                    </defs>
-                                    <path d="M779.030 517.49c-119.52 4.95-181.71 75.6-186.57 212.22 4.86 126.81 65.88 192.6 182.97 197.55 121.95-2.43 184.14-68.31 186.57-197.55-2.43-139.050-63.45-209.79-182.97-212.22zM779.030 854.090c-58.5-2.43-87.84-45.090-87.84-128.070 0-90.18 29.25-135.36 87.84-135.36 56.070 2.43 85.32 47.52 87.84 135.36 0 82.98-29.25 125.64-87.84 128.070zM431.54 301.67c-4.95-136.53-65.88-207.27-182.97-212.22-121.95 2.43-184.14 73.17-186.57 212.22 4.86 134.1 65.88 203.67 182.97 208.53 121.86-4.86 184.050-74.43 186.57-208.53zM157.13 297.98c0-87.84 30.51-131.67 91.44-131.67 56.070 0 84.15 43.92 84.15 131.67 0 90.27-29.25 135.36-87.84 135.36-56.070-4.86-85.32-49.95-87.75-135.36zM676.61 89.45l-442.62 845.1h113.4l442.62-845.1z"
-                                        p-id="962"></path>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="weui-cell weui-cell_vcode">
-                            <div class="weui-cells__tips">市场参考价格:564564654CNY/BTC
-                                <br> 溢价是指高于当前市场价格多少百分比进行卖出。
-                            </div>
-
-                        </div>
-                        <div class="weui-cell ">
-                            <div class="weui-cell__hd">
-                                <label for="" class="weui-label">交易价格:</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                564564654
-                                <span class="pull-right">CNY</span>
-                            </div>
-
-                        </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label for="" class="weui-label">最小量</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" type="number" value="">
-                            </div>
-                            <div class="weui-cell__ft">
-
-                            </div>
-                        </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label for="" class="weui-label">最大量</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" type="number" value="">
-                            </div>
-                            <div class="weui-cell__ft">
-
-                            </div>
-                        </div>
-                        <div class="weui-cell weui-cell_vcode">
-                            <div class="weui-cells__tips">
-                                您账户该币种的可用余额会限制您的最大量
-                            </div>
-                        </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label class="weui-label">付款方式</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" id="pay" type="text" value="" readonly="">
-                            </div>
-                        </div>
-
-                        <div class="weui-cell">
-                            <div class="weui-cell__bd">
-                                <textarea class="weui-textarea" placeholder="广告留言" rows="3"></textarea>
-                                <div class="weui-textarea-counter">
-                                    <span>0</span>/200</div>
-                            </div>
-                        </div>
-                        <div class="weui-cell">
-                            <div class="weui-cell__hd">
-                                <label class="weui-label">开放时间</label>
-                            </div>
-                            <div class="weui-cell__bd">
-                                <input class="weui-input" id="mydate" type="text" value="" readonly="">
-                            </div>
-                        </div>
-
-
-                        <div class="weui-cell weui-cell_switch">
-                            <div class="weui-cell__bd">是否启用安全选项</div>
-                            <div class="weui-cell__ft">
-                                <input class="weui-switch" type="checkbox">
-                            </div>
-                        </div>
-                        <div class="weui-cell weui-cell_switch">
-                            <div class="weui-cell__bd">是否仅限受信任的交易者</div>
-                            <div class="weui-cell__ft">
-                                <input class="weui-switch" type="checkbox">
-                            </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="bizhong" type="text" value="BTC" readonly="">
                         </div>
 
                     </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">货币</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="huobi" type="text" value="CNY" readonly="">
+                        </div>
+
+                    </div>
+                    <div class="weui-cell ">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">价格:</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            56456465
+                        </div>
+                        <div class="weui-cell__ft">
+                            CNY
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">溢价</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number" placeholder="根据市场价格的溢价比例" value="">
+                        </div>
+                        <div class="weui-cell__ft wy-bfb">
+                            %
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">最小量</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number" placeholder="每一笔交易的最小限额" value="">
+                        </div>
+                        <div class="weui-cell__ft">
+                            CNY
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label for="" class="weui-label">最大量</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number" placeholder="每一笔交易的最大限额" value="">
+                        </div>
+                        <div class="weui-cell__ft">
+                            CNY
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">付款方式</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="pay" type="text" value="" placeholder="请选择付款方式" readonly="">
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea class="weui-textarea" placeholder="广告留言(下单前后可见)
+请说明有关您交易的相关条款" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">开放时间</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="mydate" type="text" value="" readonly="">
+                        </div>
+                    </div>
 
 
-
-
+                    <div class="weui-cell weui-cell_switch">
+                        <div class="weui-cell__bd">是否启用安全选项</div>
+                        <div class="weui-cell__ft">
+                            <input class="weui-switch" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_switch">
+                        <div class="weui-cell__bd">是否仅限受信任的交易者</div>
+                        <div class="weui-cell__ft">
+                            <input class="weui-switch" type="checkbox">
+                        </div>
+                    </div>
 
                 </div>
 
-            </div>
-            <div class="weui-tab footer-menu">
-                <button type="subimt" class="weui-btn weui-btn_primary">发布</button>
-            </div>
-    </form>
-    <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
-    <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
-    <script src="./jquery-weui/dist/lib/fastclick.js"></script>
-    <script src="./jquery-weui/dist/js/swiper.min.js"></script>
-    <script>
-        $(function () {
-            FastClick.attach(document.body);
-        });
-    </script>
-    <script>
-        $("#bizhong").select({
-            title: "交易币种",
-            items: ["1", "2", "3", "4", "5", "6"]
-        });
 
-        $("#huobi").select({
-            title: "货币",
-            items: ["1", "2", "3", "4", "5", "6"]
-        });
-        $("#pay").select({
-            title: "付款方式",
-            items: ["支付宝", "微信", "3", "4", "5", "6"]
-        });
+            </div>
 
-        $("#mydate").calendar();
-    </script>
+        </div>
+        <div class="weui-tab footer-menu">
+            <button type="subimt" class="weui-btn weui-btn_primary">发布</button>
+        </div>
+</form>
+<script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+<script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
+<script src="./jquery-weui/dist/lib/fastclick.js"></script>
+<script src="./jquery-weui/dist/js/swiper.min.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script>
+    $("#bizhong").select({
+        title: "交易币种",
+        items: ["BTC", "2", "3", "4", "5", "6"]
+    });
+
+    $("#huobi").select({
+        title: "货币",
+        items: ["CNY", "2", "3", "4", "5", "6"]
+    });
+    $("#pay").select({
+        title: "付款方式",
+        items: ["支付宝", "微信", "3", "4", "5", "6"]
+    });
+
+    $("#mydate").calendar();
+
+
+
+
+</script>
 </body>
 
 </html>
