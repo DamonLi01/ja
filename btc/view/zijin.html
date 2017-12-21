@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icon_img.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .bi_list {
+            margin: 15px 15px 5px 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .bi_list a {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 0px 20px;
+            height: 34px;
+            line-height: 32px;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #5d686d;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .bi_list a.on,
+        .bi_list a:hover {
+            border: 1px solid #de211d;
+            color: #de211d;
+            background-color: #fdfafa;
+        }
+
+        .add_box {
+            border: 1px dashed #e5e5e5;
+            padding: 50px 0;
+            margin-left: 15px;
+            color: #999 !important;
+        }
+
+        .add_box:hover {
+            text-decoration: none;
+            color: #de211d !important;
+            border-color: #de211d;
+        }
+
+        .minh500 {
+            min-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul id="nav_left" class="text-center bg-white  nav nav-pills nav-stacked">
+                        <li>
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black  icon-caichan"></i>
+                                </i>
+                                <span class="fz_14">账户财产</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="icon ml-32">
+                                    <i class="icon icon_white icon-chongbi"></i>
+                                </i>
+                                <span class="fz_14">充币</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon ml-32">
+                                    <i class="icon icon_black icon-tibi"></i>
+                                </i>
+                                <span class="fz_14">提币</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black icon-zijin"></i>
+                                </i>
+                                <span class="fz_14">资金账户</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black icon-zonghe"></i>
+                                </i>
+                                <span class="fz_14">综合账单</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tibi col-md-10 minh500 bg-white">
+                    <div class="plr18">
+                        <h3 class="geren_title fw">
+                            <i class="icon ml-54">
+                                <i class="icon icon_black icon-zijin ml-6"></i>
+                            </i>
+                            资金账户
+                        </h3>
+                    </div>
+                    <hr>
+                    <div class="bi_list">
+                        <a class="on" href="javascript:;">BTC</a>
+                        <a href="javascript:;">LTC</a>
+                    </div>
+                    <a href="javascript:;" class="add_box col-md-3 text-center">
+                        <div>
+                            <i class="glyphicon glyphicon-plus"></i>
+                        </div>
+                        <div>
+                            添加地址
+                        </div>
+                    </a>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#nav_left li').click(function () {
+                $(this).addClass('active').siblings('li').removeClass('active').find('.icon_white').addClass(
+                    'icon_black').removeClass('icon_white');
+                $(this).find('.icon_black').addClass('icon_white');
+            })
+        })
+    </script>
+</body>
+
+</html>

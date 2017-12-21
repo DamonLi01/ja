@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .adv_list li {
+            float: left;
+            padding: 10px 0 10px 20px;
+        }
+
+        .adv_list {
+
+            border-bottom: 2px solid #f5f5f5;
+        }
+
+        .adv_list li a {
+            padding-right: 20px;
+            display: block;
+            border-right: 1px solid #f5f5f5;
+        }
+
+        .adv_list li:last-child a {
+            border: 0;
+        }
+
+        .adv_list li.on {
+            border-bottom: 2px solid dodgerblue;
+        }
+
+        .btn-smer, a.btn-smer, button.btn-smer, input.btn-smer {
+            height: 28px;
+            line-height: 26px;
+            padding: 0 5px;
+            font-size: 12px;
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+        }
+        .table>tbody>tr>td{
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="adv_list">
+                <ul>
+                    <li class="on"><a href="javascript:;">进行中的交易</a></li>
+                    <li><a href="javascript:;">进行中的交易</a></li>
+                    <li><a href="javascript:;">进行中的交易</a></li>
+                    <li><a href="javascript:;">进行中的交易</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="table-responsive ">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>订单编号</th>
+                            <th>创建于</th>
+                            <th>交易币种</th>
+                            <th>交易类型</th>
+                            <th>交易</th>
+                            <th>数量</th>
+                            <th>金额</th>
+                            <th>手续费</th>
+                            <th>状态</th>
+                            <th>状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>262074204169</td>
+                            <td>2017-12-19 10:50:04</td>
+                            <td>BTC</td>
+                            <td>在线购买</td>
+                            <td> hhenry</td>
+                            <td>0.076058</td>
+                            <td>10000 CNY</td>
+                            <td>--</td>
+                            <td>已取消</td>
+                            <td><a href="javascript:;" class="btn btn-smer">查看/留言</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

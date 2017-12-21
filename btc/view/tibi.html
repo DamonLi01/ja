@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icon_img.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .cb_xiala {
+            display: inline-block;
+        }
+
+        .bi_list {
+            margin: 0 15px 15px 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .bi_list a {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 0px 20px;
+            height: 34px;
+            line-height: 32px;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #5d686d;
+            position: relative;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        .input-group-addon {
+            border-radius: 0 !important;
+        }
+
+
+
+        .bi_list a.on,
+        .bi_list a:hover {
+            border: 1px solid #3dc18e;
+            color: #3dc18e;
+            background-color: #fdfafa;
+        }
+
+
+        .bt_line {
+            border-bottom: 1px dashed #777;
+        }
+
+        .bt_line:hover,
+        a:link:visited:hover:active,
+        a {
+            text-decoration: none !important;
+        }
+
+        .tibi .btn.btn-primary {
+            background-color: #42a5f5;
+            border: 1px solid #42a5f5;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul id="nav_left" class="text-center bg-white  nav nav-pills nav-stacked">
+                        <li>
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black  icon-caichan"></i>
+                                </i>
+                                <span class="fz_14">账户财产</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="icon ml-32">
+                                    <i class="icon icon_white icon-chongbi"></i>
+                                </i>
+                                <span class="fz_14">充币</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon ml-32">
+                                    <i class="icon icon_black icon-tibi"></i>
+                                </i>
+                                <span class="fz_14">提币</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black icon-zijin"></i>
+                                </i>
+                                <span class="fz_14">资金账户</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="icon">
+                                    <i class="icon icon_black icon-zonghe"></i>
+                                </i>
+                                <span class="fz_14">综合账单</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tibi col-md-10 bg-white">
+                    <div class="plr18">
+                        <h3 class="geren_title fw">
+                            <i class="icon ml-54">
+                                <i class="icon icon_black  icon-tibi ml-6"></i>
+                            </i>
+                            提币
+                        </h3>
+                    </div>
+                    <hr>
+                    <div class="bi_list">
+                        <a class="on" href="javascript:;">BTC</a>
+                        <a href="javascript:;">LTC</a>
+                    </div>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">地址:</label>
+                            <div class="col-xs-4">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">可提现:</label>
+                            <div class="col-xs-4 pt7">
+                                <a href="javascript:;" class="bt_line" data-toggle="tooltip" data-placement="top" title="可提现金额 = 账户余额 - 网络手续费">0.0000 BTC</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">提现:</label>
+                            <div class="col-xs-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="">
+                                    <a href="javascript:;" class="input-group-addon btn btn-primary">全部提现</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">手续费模式:</label>
+                            <div class="col-xs-4">
+                                <select class="form-control">
+                                    <option>标准( 0.0001 BTC )</option>
+                                    <option>极速 ( 0.001 BTC )</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">验证方式:</label>
+                            <div class="col-xs-4">
+                                <select class="form-control">
+                                    <option>手机</option>
+                                    <option>邮箱</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">提现验证码:</label>
+                            <div class="col-xs-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="">
+                                    <a href="javascript:;" class="input-group-addon btn btn-primary">发送验证码</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">资金密码:</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">备注:</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label"></label>
+                            <div class="col-xs-4">
+                                <input type="button" class="btn btn-block btn-primary" value="确认提现">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="mtb40">
+                        <div class="alert alert-danger">
+                            <h5>
+                                <span style="color:#333">比特币提现</span> 费率规则：
+                            </h5>
+                            <p>* 提现时支付的网络手续费为BTC 网络收取，最低0.0006BTC/笔，用户可自选，为了快速到账，可以适当提高网络手续费；</p>
+                            <p>* 可提现金额≤账户可用资产-未经确认的数字资产。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class="active">
+                                    <th>时间</th>
+                                    <th>类型</th>
+                                    <th>金额(BTC)</th>
+                                    <th>处理时间</th>
+                                    <th>确认次数</th>
+                                    <th>状态</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-center">
+                            暂时没有相关记录。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#nav_left li').click(function () {
+                $(this).addClass('active').siblings('li').removeClass('active').find('.icon_white').addClass(
+                    'icon_black').removeClass('icon_white');
+                $(this).find('.icon_black').addClass('icon_white');
+            })
+        })
+    </script>
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+</body>
+
+</html>
