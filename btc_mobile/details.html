@@ -14,10 +14,11 @@
         .wy-navbar {
             top: 184px;
             position: fixed;
+            padding-top: 10px;
         }
 
         .weui-navbar + .weui-tab__bd {
-            padding-top: 230px;
+            padding-top: 240px;
             padding-bottom: 0;
         }
 
@@ -144,7 +145,7 @@
                         </div>
 
                         <div class="weui-cells wy-cells">
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -170,7 +171,7 @@
                                     <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
                                 </div>
                             </div>
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -214,7 +215,7 @@
                             <div class="refresh">正在刷新</div>
                         </div>
                         <div class="weui-cells wy-cells">
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -239,7 +240,7 @@
                                     <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
                                 </div>
                             </div>
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -282,7 +283,7 @@
                             <div class="refresh">正在刷新</div>
                         </div>
                         <div class="weui-cells wy-cells">
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -307,7 +308,7 @@
                                     <a href="./goumai.html" class="weui-btn weui-btn_plain-primary">购买BTC</a>
                                 </div>
                             </div>
-                            <div class="weui-cell weui-cell_access">
+                            <div class="weui-cell ">
                                 <div class="weui-cell__hd wy-chd">
                                     <img width="40" src="./images/avatar.jpg">
                                 </div>
@@ -359,9 +360,9 @@
     var nyear = ndate.getFullYear();
     var nmon = ndate.getMonth() + 1;
 
-console.log($("#my-date").picker)
+
     yearArr = [];
-    for (var i = nyear; i >= 1970; i--) {
+    for (var i = 1970; i <= nyear; i++) {
         yearArr.push(i);
     }
     $("#my-date").val(nyear+' - '+nmon);

@@ -1,0 +1,71 @@
+.wy-navbar {
+    top: 45px;
+    position: fixed;
+}
+
+.weui-navbar+#wy-caiwu_box.weui-tab__bd {
+    padding-top: 91px;
+    padding-bottom: 0;
+}
+
+.wy-djzc {
+    font-size: 14px;
+    text-align: right;
+}
+
+.wy-kyzc {
+    font-size: 14px;
+}
+
+.wy-djzc:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+
+.wy-btcqb {
+    position: initial;
+    padding-top: 10px;
+}
+
+#wy-btc_box,
+#wy-btc_box2 {
+    padding: 0;
+    height: auto;
+}
+
+.vcode_img {
+    vertical-align: text-bottom;
+}
+
+.dr_btn .weui-btn {
+    width: 80%;
+    border-radius: 50px;
+    color: #1798F2;
+    border-color: #1798F2;
+}
+
+.wy-pwd .weui-cell__ft {
+    font-size: 14px;
+}
+
+.weui-btn.weui-btn_primary {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 50% !important;
+    border-radius: 20px;
+    background-color: dodgerblue;
+}
+
+.weui-btn_primary:not(.weui-btn_disabled):active {
+    background-color: dodgerblue;
+}

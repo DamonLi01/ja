@@ -134,6 +134,7 @@ body {
 
 .wy-cells .wy-jye {
     color: #02CB66;
+    font-size: 16px;
 }
 
 .wy-cells .weui-cell__ft {
@@ -346,7 +347,7 @@ ul {
 } */
 
 .wy-reg-btn {
-    border-radius: 50px;
+
     background-color: dodgerblue;
 }
 

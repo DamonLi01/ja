@@ -10,79 +10,9 @@
     <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
     <link rel="stylesheet" href="./lib/jquery-enlargement/dist/zoomify.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/caiwu.css">
     <style>
-        .wy-navbar {
-            top: 45px;
-            position: fixed;
-        }
 
-        .weui-navbar+#wy-caiwu_box.weui-tab__bd {
-            padding-top: 91px;
-            padding-bottom: 0;
-        }
-
-        .wy-djzc {
-            font-size: 14px;
-            text-align: right;
-        }
-
-        .wy-kyzc {
-            font-size: 14px;
-        }
-
-        .wy-djzc:after {
-            content: " ";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            height: 1px;
-            border-bottom: 1px solid #ccc;
-            color: #ccc;
-            -webkit-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-            -webkit-transform: scaleY(.5);
-            transform: scaleY(.5);
-        }
-
-        .wy-btcqb {
-            position: initial;
-            padding-top: 10px;
-        }
-
-        #wy-btc_box,
-        #wy-btc_box2 {
-            padding: 0;
-            height: auto;
-            background-color: #FAFAFA;
-        }
-
-        .vcode_img {
-            vertical-align: text-bottom;
-        }
-
-        .dr_btn .weui-btn {
-            width: 80%;
-            border-radius: 50px;
-            color: #1798F2;
-            border-color: #1798F2;
-        }
-
-        .wy-pwd .weui-cell__ft {
-            font-size: 14px;
-        }
-
-        .weui-btn.weui-btn_primary {
-            margin-top: 10px !important;
-            margin-bottom: 10px !important;
-            width: 50% !important;
-            border-radius: 20px;
-            background-color: dodgerblue;
-        }
-
-        .weui-btn_primary:not(.weui-btn_disabled):active {
-            background-color: dodgerblue;
-        }
     </style>
 </head>
 
@@ -323,11 +253,112 @@
                                 </div>
                             </div>
 
-
-
                         </div>
                         <div id="slide_box3" class="swiper-slide">
+                            <div class="weui-cells">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <img src="">
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <p>总资产</p>
+                                    </div>
+                                    <div class="weui-cell__ft">฿0.00000000</div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd wy-kyzc">
+                                        可用资产
+                                        <span>฿0.00000000</span>
+                                    </div>
+                                    <div class="weui-cell__bd wy-djzc">
+                                        冻结资产
+                                        <span>฿0.00000000</span>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="weui-navbar wy-btcqb pt10">
+                                <a href="javascript:;" onclick="tabs(this)" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                                    充值BTC
+                                </a>
+                                <a href="javascript:;" onclick="tabs(this)" class="weui-navbar__item wy-nitem">
+                                    提币BTC
+                                </a>
+                            </div>
+                            <div id="wy-btc_box2" class="weui-tab__bd">
+                                <div class="weui-tab__bd-item weui-tab__bd-item--active">
+                                    <div class="weui-row">
+                                        <div class="weui-col-100 ptb30 text-center">
+                                            <div>向如下地址汇入BTC完成充值
+                                                <img src="./img/ewm.png" class="vcode_img" width="20px" alt="">
+                                            </div>
+                                            <div class="text-red">
+                                                BTC地址只能充值BTC资产
+                                            </div>
+                                            <div class="text-red">
+                                                任何充入BTC地址的非BTC资产不可找回
+                                            </div>
+                                            <div class="mtb15">
+                                                1ASDASF#%#@#$ASGASGASG
+                                            </div>
+                                            <div class="dr_btn weui-row">
+                                                <div class="weui-col-50">
+                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">一键复制</a>
+                                                </div>
+                                                <div class="weui-col-50">
+                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">管理地址</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="" class="weui-tab__bd-item">
+                                    <div class="weui-cells weui-cells_form">
+                                        <div class="weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">发送地址</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="请输入BTC地址">
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">BTC数量</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="BTC数量不足">
+                                            </div>
+                                        </div>
+                                        <div class="wy-pwd weui-cell">
+                                            <div class="weui-cell__hd">
+                                                <label class="weui-label">资金密码</label>
+                                            </div>
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="请输入资金密码">
+                                            </div>
+                                            <div class="weui-cell__ft">
+                                                <a href="javascript:;"> 忘记密码？</a>
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+
+                                            <div class="weui-cell__bd">
+                                                <input class="weui-input" type="text" placeholder="备注(仅在交易明细展示)">
+                                            </div>
+                                        </div>
+                                        <div class="weui-cell">
+
+                                            <div class="weui-cell__bd">
+                                                <button type="subimt" class="weui-btn weui-btn_primary">确认发送</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -340,16 +371,16 @@
     </div>
     <div class="weui-tab footer-menu">
         <div class="weui-tabbar">
-            <a href="./index.html" class="weui-tabbar__item weui-bar__item--on">
+            <a href="./index.html" class="weui-tabbar__item ">
                 <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span> -->
                 <div class="weui-tabbar__icon">
-                    <img src="./images/icon_nav_button.png" alt="">
+                    <img src="./img/jiaoyi1.png" alt="">
                 </div>
                 <p class="weui-tabbar__label">交易</p>
             </a>
             <a href="./dingdan.html" class="weui-tabbar__item">
                 <div class="weui-tabbar__icon">
-                    <img src="./images/icon_nav_msg.png" alt="">
+                    <img src="./img/dindan.png" alt="">
                 </div>
                 <p class="weui-tabbar__label">订单</p>
             </a>
@@ -358,15 +389,16 @@
                     <img src="./img/jia.png" alt="">
                 </div>
             </a>
-            <a href="./caiwu.html" class="weui-tabbar__item">
+            <a href="./caiwu.html" class="weui-tabbar__item weui-bar__item--on">
                 <div class="weui-tabbar__icon">
-                    <img src="./images/icon_nav_article.png" alt="">
+                    <img src="./img/qianbao.png" alt="">
                 </div>
                 <p class="weui-tabbar__label">财务</p>
             </a>
             <a href="./user.html" class="weui-tabbar__item">
                 <div class="weui-tabbar__icon">
-                    <img src="./images/icon_nav_cell.png" alt="">
+                    <img src="./img/user.png" alt="">
+
                 </div>
                 <p class="weui-tabbar__label">我的</p>
             </a>
