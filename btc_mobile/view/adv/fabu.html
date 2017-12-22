@@ -6,42 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./jquery-weui/dist/lib/weui.min.css">
-    <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../jquery-weui/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../../jquery-weui/dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/fabu.css">
     <style>
-        .weui-cells {
-            font-size: 0.7rem;
-        }
 
-        .weui-btn {
-            font-size: 0.7rem;
-        }
-
-        .weui-btn.weui-btn_primary {
-            margin-top: 10px !important;
-            width: 40% !important;
-            border-radius: 20px;
-            background-color: dodgerblue;
-        }
-
-        .weui-btn_primary:not(.weui-btn_disabled):active {
-            background-color: dodgerblue;
-        }
-
-        .footer-menu {
-            background-color: #f5f5f5;
-        }
-
-        .wy-bfb {
-            font-size: 14px !important;
-            font-weight: bold;
-        }
-
-        .wy-fbgg img {
-            vertical-align: middle;
-            width: 20px;
-        }
     </style>
 </head>
 
@@ -49,9 +19,7 @@
 <body ontouchstart>
 <div class="header">
     <div>
-        <a href="JavaScript:history.back();">
-            <img class="back" height="35" src="./img/back.png" alt="">
-        </a>
+        <img class="back" height="35" src="../../img/back.png" alt="">
         发布广告
     </div>
 </div>
@@ -172,15 +140,12 @@
             <button type="subimt" class="weui-btn weui-btn_primary">发布</button>
         </div>
 </form>
-<script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
-<script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
-<script src="./jquery-weui/dist/lib/fastclick.js"></script>
-<script src="./jquery-weui/dist/js/swiper.min.js"></script>
-<script>
-    $(function () {
-        FastClick.attach(document.body);
-    });
-</script>
+<script src="../../jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+<script src="../../jquery-weui/dist/js/jquery-weui.min.js"></script>
+<script src="../../jquery-weui/dist/lib/fastclick.js"></script>
+<script src="../../jquery-weui/dist/js/swiper.min.js"></script>
+<script src="../../js/common.js"></script>
+
 <script>
     $("#bizhong").select({
         title: "交易币种",
@@ -197,8 +162,6 @@
     });
 
     $("#mydate").calendar();
-
-
 
 
 </script>

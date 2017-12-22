@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./jquery-weui/dist/lib/weui.min.css">
-    <link rel="stylesheet" href="./jquery-weui/dist/css/jquery-weui.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../jquery-weui/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../../jquery-weui/dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <style>
-        .weui-tab__bd {
-            padding-top: 91px !important;
-        }
 
-        .wy-navbar {
-            top: 45px;
-            position: fixed;
-        }
     </style>
 </head>
 
@@ -26,17 +20,17 @@
     <div class="header">
         <div>
 
-            <img class="back" height="35" src="./img/back.png" alt=""> 找回密码
-
+            <img class="back" height="35" src="../../img/back.png" alt=""> 登录
+            <a href="../reg/reg.html" class="wy-help">注册</a>
         </div>
     </div>
     <div id="wy-box" class="weui-tab">
         <div class="weui-navbar wy-navbar">
             <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
-                手机找回
+                手机登录
             </a>
             <a href="javascript:;" class="weui-navbar__item wy-nitem">
-                邮箱找回
+                邮箱登录
             </a>
         </div>
         <div class="weui-tab__bd">
@@ -57,41 +51,29 @@
                                 </div>
 
 
-                                <div class="weui-cell weui-cell_vcode">
-                                    <div class="weui-cell__hd">
-                                        <label class="weui-label">验证码</label>
-                                    </div>
-                                    <div class="weui-cell__bd">
-                                        <input class="weui-input" type="text" placeholder="请输入验证码">
-                                    </div>
-                                    <div class="weui-cell__ft">
-                                        <button class="weui-vcode-btn">获取验证码</button>
-                                    </div>
-                                </div>
                                 <div class="weui-cell">
                                     <div class="weui-cell__hd">
-                                        <label class="weui-label">新密码</label>
+                                        <label class="weui-label">密码</label>
                                     </div>
                                     <div class="weui-cell__bd">
-                                        <input class="weui-input" type="password" placeholder="请输入新密码">
+                                        <input class="weui-input" type="password" placeholder="请输入密码">
                                     </div>
                                 </div>
-                                <div class="weui-cell">
-                                    <div class="weui-cell__hd">
-                                        <label class="weui-label">确认密码</label>
-                                    </div>
-                                    <div class="weui-cell__bd">
-                                        <input class="weui-input" type="password" placeholder="请重新输入新密码">
+
+                                <div class="weui-cells">
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <button type="submit" class="wy-reg-btn weui-btn">登录</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="weui-cells">
                                     <div class="weui-cell">
                                         <div class="weui-cell__bd">
-                                            <button type="submit" class="wy-reg-btn weui-btn">确定</button>
+                                            <a href="../pwd/forgetpwd.html">忘记密码？</a>
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                         <div id="slide_box2" class="swiper-slide">
@@ -107,41 +89,29 @@
                                 </div>
 
 
-                                <div class="weui-cell weui-cell_vcode">
-                                    <div class="weui-cell__hd">
-                                        <label class="weui-label">验证码</label>
-                                    </div>
-                                    <div class="weui-cell__bd">
-                                        <input class="weui-input" type="text" placeholder="请输入验证码">
-                                    </div>
-                                    <div class="weui-cell__ft">
-                                        <button class="weui-vcode-btn">获取验证码</button>
-                                    </div>
-                                </div>
                                 <div class="weui-cell">
                                     <div class="weui-cell__hd">
-                                        <label class="weui-label">新密码</label>
+                                        <label class="weui-label">密码</label>
                                     </div>
                                     <div class="weui-cell__bd">
-                                        <input class="weui-input" type="password" placeholder="请输入新密码">
+                                        <input class="weui-input" type="password" placeholder="请输入密码">
                                     </div>
                                 </div>
-                                <div class="weui-cell">
-                                    <div class="weui-cell__hd">
-                                        <label class="weui-label">确认密码</label>
-                                    </div>
-                                    <div class="weui-cell__bd">
-                                        <input class="weui-input" type="password" placeholder="请重新输入新密码">
+
+                                <div class="weui-cells">
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <button type="submit" class="wy-reg-btn weui-btn">登录</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="weui-cells">
                                     <div class="weui-cell">
                                         <div class="weui-cell__bd">
-                                            <button type="submit" class="wy-reg-btn weui-btn">确定</button>
+                                            <a href="../pwd/forgetpwd.html">忘记密码？</a>
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
 
@@ -152,12 +122,12 @@
 
     </div>
 
-    <script src="./jquery-weui/dist/lib/jquery-2.1.4.js"></script>
-    <script src="./jquery-weui/dist/js/jquery-weui.min.js"></script>
-    <script src="./jquery-weui/dist/lib/fastclick.js"></script>
-    <script src="./jquery-weui/dist/js/swiper.min.js"></script>
-    <script src="./js/common.js"></script>
-    <script src="./js/my-swiper.js"></script>
+    <script src="../../jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+    <script src="../../jquery-weui/dist/js/jquery-weui.min.js"></script>
+    <script src="../../jquery-weui/dist/lib/fastclick.js"></script>
+    <script src="../../jquery-weui/dist/js/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/my-swiper.js"></script>
 
 </body>
 

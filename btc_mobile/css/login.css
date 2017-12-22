@@ -1,0 +1,9 @@
+.weui-tab__bd {
+    padding-top: 91px !important;
+    padding-bottom: 0;
+}
+
+.wy-navbar {
+    top: 45px;
+    position: fixed;
+}

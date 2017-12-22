@@ -1,0 +1,15 @@
+.weui-navbar+.weui-tab__bd {
+    padding-top: 241px;
+}
+
+.wy-swiper-container {
+    height: 150px !important;
+    position: fixed;
+    width: 100%;
+    top: 45px;
+}
+
+.wy-navbar {
+    position: fixed;
+    top: 195px;
+}

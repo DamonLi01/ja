@@ -1,0 +1,31 @@
+.wy-navbar {
+    top: 45px;
+    position: fixed;
+}
+
+.weui-navbar + .weui-tab__bd {
+    padding-top: 91px;
+    padding-bottom: 0;
+}
+
+.header {
+    min-height: 45px;
+}
+
+.wy-xiala {
+    height: 45px;
+}
+
+#menu-list {
+    background: white;
+    color: black;
+}
+
+#menu-list li {
+
+    border-bottom: 1px solid silver;
+}
+
+#menu-list li.active {
+    color: dodgerblue;
+}

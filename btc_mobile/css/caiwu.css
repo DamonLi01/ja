@@ -3,7 +3,7 @@
     position: fixed;
 }
 
-.weui-navbar+#wy-caiwu_box.weui-tab__bd {
+.weui-navbar + #wy-caiwu_box.weui-tab__bd {
     padding-top: 91px;
     padding-bottom: 0;
 }
@@ -38,7 +38,8 @@
 }
 
 #wy-btc_box,
-#wy-btc_box2 {
+#wy-btc_box2,
+#wy-btc_box3 {
     padding: 0;
     height: auto;
 }

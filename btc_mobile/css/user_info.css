@@ -1,0 +1,16 @@
+.wy-navbar {
+    top: 155px;
+    position: fixed;
+    padding-top: 10px;
+}
+
+.user_infos {
+    position: fixed;
+    top: 45px;
+    width: 100%;
+}
+
+.weui-tab__bd {
+    padding-top: 211px !important;
+    padding-bottom: 0;
+}

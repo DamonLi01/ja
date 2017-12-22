@@ -1,0 +1,9 @@
+.wy-navbar {
+    top: 45px;
+    position: fixed;
+}
+
+.weui-navbar + #wy-caiwu_box.weui-tab__bd {
+    padding-top: 91px;
+    padding-bottom: 0;
+}

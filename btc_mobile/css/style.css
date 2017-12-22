@@ -67,8 +67,6 @@ body {
     padding-top: 10px;
 }
 
-
-
 .ptb30 {
     padding: 30px 0;
 }
@@ -109,12 +107,15 @@ body {
 .wy-fwb {
     font-weight: bold;
 }
-.wy-fz20{
+
+.wy-fz20 {
     font-size: 20px;
 }
-.wy-fz14{
+
+.wy-fz14 {
     font-size: 14px;
 }
+
 .wy-cells .weui-btn_plain-primary {
     border-radius: 50px;
     border-color: #239DF3;
@@ -172,10 +173,12 @@ body {
 .weui-tab__bd {
     padding-bottom: 53px;
 }
-.weui-cells_form .weui-cell__ft{
+
+.weui-cells_form .weui-cell__ft {
     font-size: 14px;
     color: #333;
 }
+
 .footer-menu {
     position: fixed !important;
     z-index: 9;
@@ -217,7 +220,15 @@ ul {
 }
 
 .user_box {
-    padding-top: 45px;
+
+    position: fixed;
+    width: 100%;
+    top: 45px;
+    z-index: 1;
+}
+
+.user_box + .weui-tab__bd {
+    padding-top: 204px;
 }
 
 .user_box,
