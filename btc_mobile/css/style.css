@@ -8,6 +8,8 @@ body {
     font-family: Helvetica;
 }
 
+
+
 /* .wy-navbar {
     top: initial;
     position: initial;
@@ -35,7 +37,18 @@ body {
 .text-center {
     text-align: center !important;
 }
-
+.address_media_box{
+    position: fixed;
+    top: 45px;
+    z-index: 2;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #FEEFB8;
+    
+}
+.address_media_box p{
+    color: #000;
+}
 .text-red {
     color: #FF5745 !important;
 }
@@ -114,6 +127,18 @@ body {
 
 .wy-fz14 {
     font-size: 14px;
+}
+
+.wy-fz16 {
+    font-size: 16px;
+}
+
+.wy-bg-fef {
+    background-color: #FEFCEC;
+}
+
+.wy-mt10 {
+    margin-top: 10px;
 }
 
 .wy-cells .weui-btn_plain-primary {
@@ -220,7 +245,6 @@ ul {
 }
 
 .user_box {
-
     position: fixed;
     width: 100%;
     top: 45px;
@@ -345,6 +369,10 @@ ul {
     padding: 10px;
 }
 
+.hide {
+    display: none;
+}
+
 #fabu .close_btn img {
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -358,7 +386,6 @@ ul {
 } */
 
 .wy-reg-btn {
-
     background-color: dodgerblue;
 }
 

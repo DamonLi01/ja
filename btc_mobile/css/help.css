@@ -2,3 +2,45 @@
     padding-top: 45px;
     padding-bottom: 0;
 }
+
+.wy_help_list .weui-cell__ft.on:after {
+    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    /* IE 9 */
+    -webkit-transform: rotate(135deg);
+    /* Safari and Chrome */
+}
+
+.wy-jb-tips {
+    font-size: 15px;
+    color: #F87837;
+}
+
+#wy-jubao-box .weui-tab__bd {
+    background-color: #EFF3F6;
+}
+
+#wy-jubao-box+.footer-menu .weui-btn_primary {
+    background-color: dodgerblue;
+}
+
+#wy-jubao-box+.footer-menu .weui-cells {
+    font-size: 0.7rem;
+}
+
+#wy-jubao-box+.footer-menu .weui-btn {
+    font-size: 0.7rem;
+}
+
+.address_btn {
+    height: 100%;
+    border-radius: 0;
+    background-color: dodgerblue !important;
+}
+#address_box .weui-tab__bd{
+    padding-top: 80px;
+    padding-bottom: 53px;
+}
+#address_box .weui-cell__hd{
+    min-width: 30PX;
+}

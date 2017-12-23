@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../jquery-weui/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../../jquery-weui/dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/help.css">
+    <style>
+
+    </style>
+</head>
+
+
+<body ontouchstart>
+    <div class="header">
+        <div>
+            <img class="back" height="35" src="../../img/back.png" alt=""> 信息修改
+        </div>
+    </div>
+    <div id="wy-box" class="weui-tab">
+        <div class="weui-tab__bd">
+            <div class="weui-tab__bd-item weui-tab__bd-item--active">
+                <form action="" class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">国籍</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="guoji" type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">证件类型</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="zhengjian" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">真实姓名</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="text" placeholder="请填写你的真实姓名">
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">证件号码</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="text" placeholder="请填写你的证件号码">
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">性别</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="sex" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">所在地区</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" id="city-picker" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                            <label class="weui-label">详细地址</label>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="text" placeholder="请输入详细地址">
+                        </div>
+                    </div>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <button type="submit" class="wy-reg-btn weui-btn">确定提交</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../jquery-weui/dist/lib/jquery-2.1.4.js"></script>
+    <script src="../../jquery-weui/dist/js/jquery-weui.min.js"></script>
+    <script src="../../jquery-weui/dist/lib/fastclick.js"></script>
+    <script src="../../jquery-weui/dist/js/swiper.min.js"></script>
+    <script src="../../jquery-weui/dist/js/city-picker.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script>
+        $("#city-picker").cityPicker({
+            title: "请选择所在地区"
+        });
+        $("#guoji").select({
+            title: "选择国籍",
+            items: ["中国", "中国", "中国"]
+        });
+        $("#zhengjian").select({
+            title: "选择证件类型",
+            items: ["身份证", "身份证", "身份证"]
+        });
+        $("#sex").select({
+            title: "选择性别",
+            items: ["男", "女"]
+        });
+    </script>
+
+</body>
+
+</html>
