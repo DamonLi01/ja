@@ -3,12 +3,16 @@
     position: fixed;
 }
 
-.weui-navbar+#wy-caiwu_box.weui-tab__bd {
+.weui-navbar + #wy-caiwu_box.weui-tab__bd {
     padding-top: 91px;
     padding-bottom: 0;
 }
 
 .weui-btn.weui-btn_primary {
     margin-top: 10px !important;
-    background-color: dodgerblue!important;
+    background-color: dodgerblue !important;
+}
+#search_results_box.weui-tab__bd {
+    padding-top: 45px !important;
+    padding-bottom: 0;
 }

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c0ad3f-8789-48f0-b9f7-ab926e60ca54" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/btc_mobile/view/search/search_results.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/btc_mobile/css/search.css" afterPath="$PROJECT_DIR$/btc_mobile/css/search.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,81 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/user_info.html">
+      <file leaf-file-name="search_results.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btc_mobile/view/search/search_results.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5454">
-              <caret line="202" column="50" lean-forward="false" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+            <state relative-caret-position="514">
+              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goumai.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/css/goumai.css">
+      <file leaf-file-name="search.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btc_mobile/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+            <state relative-caret-position="459">
+              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_jyjl.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/user_jyjl.html">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/btc_mobile/view/search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4968">
-              <caret line="184" column="50" lean-forward="false" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4725">
-              <caret line="175" column="12" lean-forward="false" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fabu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/fabu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
-              <caret line="77" column="87" lean-forward="false" selection-start-line="77" selection-start-column="87" selection-end-line="77" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16470">
-              <caret line="610" column="54" lean-forward="false" selection-start-line="610" selection-start-column="54" selection-end-line="610" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goumai.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/goumai.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_adv.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/btc_mobile/user_adv.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="184" column="50" lean-forward="false" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
+            <state relative-caret-position="246">
+              <caret line="95" column="100" lean-forward="true" selection-start-line="95" selection-start-column="100" selection-end-line="95" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -161,6 +113,8 @@
         <option value="$PROJECT_DIR$/btc_mobile/fabu.html" />
         <option value="$PROJECT_DIR$/btc_mobile/goumai.html" />
         <option value="$PROJECT_DIR$/btc_mobile/user_adv.html" />
+        <option value="$PROJECT_DIR$/btc_mobile/css/search.css" />
+        <option value="$PROJECT_DIR$/btc_mobile/view/search/search_results.html" />
       </list>
     </option>
   </component>
@@ -176,7 +130,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="387" />
     <option name="y" value="44" />
     <option name="width" value="1400" />
@@ -197,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,24 +162,18 @@
             <path>
               <item name="ja2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ja2" type="462c0819:PsiDirectoryNode" />
-              <item name="btc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ja2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ja2" type="462c0819:PsiDirectoryNode" />
               <item name="btc_mobile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ja2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ja2" type="462c0819:PsiDirectoryNode" />
               <item name="btc_mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -278,16 +227,17 @@
       <workItem from="1513691655399" duration="3252000" />
       <workItem from="1513862373406" duration="7225000" />
       <workItem from="1513946217777" duration="930000" />
+      <workItem from="1514126473969" duration="1034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46812000" />
+    <option name="totallyTimeSpent" value="47846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="387" y="44" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21965317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -317,36 +267,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/btc_mobile/goumai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="115" column="51" lean-forward="true" selection-start-line="115" selection-start-column="51" selection-end-line="115" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19332">
-          <caret line="716" column="12" lean-forward="false" selection-start-line="716" selection-start-column="12" selection-end-line="716" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/search.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -355,27 +276,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user_jyjl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6210">
-          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="231" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user_adv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/fabu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user_jyjl.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user_adv.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/fabu.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/js/my-swiper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -384,13 +287,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/dingdan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/dingdan.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -399,13 +296,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/caiwu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10098">
-          <caret line="407" column="45" lean-forward="false" selection-start-line="407" selection-start-column="45" selection-end-line="407" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/caiwu.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5643">
@@ -506,20 +397,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="131" column="6" lean-forward="false" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/caiwu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10098">
-          <caret line="407" column="45" lean-forward="false" selection-start-line="407" selection-start-column="45" selection-end-line="407" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/caiwu.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/js/my-swiper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -536,13 +415,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/dingdan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/dingdan.html" />
     <entry file="file://$PROJECT_DIR$/btc/css/news.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -572,13 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/search.html" />
     <entry file="file://$PROJECT_DIR$/btc/view/chat.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2619">
@@ -593,80 +460,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="366" column="30" lean-forward="false" selection-start-line="366" selection-start-column="30" selection-end-line="366" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/btc_mobile/chat.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/details.html" />
     <entry file="file://$PROJECT_DIR$/btc_mobile/css/goumai.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
+        <state relative-caret-position="648">
           <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user_info.html">
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user_info.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user_jyjl.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/fabu.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/goumai.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/user_adv.html" />
+    <entry file="file://$PROJECT_DIR$/btc_mobile/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5454">
-          <caret line="202" column="50" lean-forward="false" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user_jyjl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4968">
-          <caret line="184" column="50" lean-forward="false" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
+        <state relative-caret-position="27">
+          <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/btc_mobile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16470">
-          <caret line="610" column="54" lean-forward="false" selection-start-line="610" selection-start-column="54" selection-end-line="610" selection-end-column="54" />
+        <state relative-caret-position="297">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/css/style.css">
+    <entry file="file://$PROJECT_DIR$/btc_mobile/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4725">
-          <caret line="175" column="12" lean-forward="false" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+        <state relative-caret-position="459">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/fabu.html">
+    <entry file="file://$PROJECT_DIR$/btc_mobile/view/search/search_results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="77" column="87" lean-forward="false" selection-start-line="77" selection-start-column="87" selection-end-line="77" selection-end-column="87" />
+        <state relative-caret-position="514">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/goumai.html">
+    <entry file="file://$PROJECT_DIR$/btc_mobile/view/search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btc_mobile/user_adv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="184" column="50" lean-forward="false" selection-start-line="184" selection-start-column="50" selection-end-line="184" selection-end-column="50" />
+        <state relative-caret-position="246">
+          <caret line="95" column="100" lean-forward="true" selection-start-line="95" selection-start-column="100" selection-end-line="95" selection-end-column="100" />
           <folding />
         </state>
       </provider>
