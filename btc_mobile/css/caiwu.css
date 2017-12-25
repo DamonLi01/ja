@@ -49,7 +49,8 @@
 }
 
 .dr_btn .weui-btn {
-    width: 80%;
+    width: 60%;
+    font-size: 15px;
     border-radius: 50px;
     color: #1798F2;
     border-color: #1798F2;

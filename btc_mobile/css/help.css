@@ -20,15 +20,15 @@
     background-color: #EFF3F6;
 }
 
-#wy-jubao-box+.footer-menu .weui-btn_primary {
+#wy-jubao-box .wy-jubao_btn .weui-btn_primary {
     background-color: dodgerblue;
 }
 
-#wy-jubao-box+.footer-menu .weui-cells {
+#wy-jubao-box .wy-jubao_btn.weui-cells {
     font-size: 0.7rem;
 }
 
-#wy-jubao-box+.footer-menu .weui-btn {
+#wy-jubao-box .wy-jubao_btn .weui-btn {
     font-size: 0.7rem;
 }
 

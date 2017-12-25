@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /* .wy-navbar {
     top: initial;
     position: initial;
@@ -37,18 +36,20 @@ body {
 .text-center {
     text-align: center !important;
 }
-.address_media_box{
+
+.address_media_box {
     position: fixed;
     top: 45px;
     z-index: 2;
     padding: 10px 0;
     width: 100%;
     background-color: #FEEFB8;
-    
 }
-.address_media_box p{
+
+.address_media_box p {
     color: #000;
 }
+
 .text-red {
     color: #FF5745 !important;
 }
@@ -95,10 +96,21 @@ body {
 .pay_cl {
     background-color: #02CB66;
     color: white;
-    padding: 1px 2px;
-    border-radius: 3px;
+    padding: 0 1px;
+    border-radius: 2px;
     font-size: 0.6rem;
     font-weight: initial;
+    display: inline-block;
+    vertical-align: top;
+    /* position: absolute;
+    margin-left: 5px; */
+}
+
+.wy-mai_name {
+    display: inline-block;
+    /* max-width: 80px;
+    overflow: auto;
+    text-overflow: ellipsis; */
 }
 
 .header .back {
@@ -115,6 +127,10 @@ body {
 
 .wy-jy-hp {
     font-size: 0.6rem;
+}
+
+.wy-jy-hp>span {
+    display: inline-block
 }
 
 .wy-fwb {
@@ -141,10 +157,15 @@ body {
     margin-top: 10px;
 }
 
+.wy-mb-8 {
+    margin-bottom: -8px;
+}
+
 .wy-cells .weui-btn_plain-primary {
     border-radius: 50px;
     border-color: #239DF3;
     color: #239DF3;
+    font-size: 15px;
 }
 
 .wy-cells .weui-btn {
@@ -160,7 +181,7 @@ body {
 
 .wy-cells .wy-jye {
     color: #02CB66;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .wy-cells .weui-cell__ft {
@@ -182,16 +203,12 @@ body {
     margin-left: 10px;
     transform: rotate(135deg);
     -ms-transform: rotate(135deg);
-
     /* Internet Explorer */
     -moz-transform: rotate(135deg);
-
     /* Firefox */
     -webkit-transform: rotate(135deg);
-
     /* Safari 和 Chrome */
     -o-transform: rotate(135deg);
-
     /* Opera */
 }
 
@@ -226,6 +243,7 @@ body {
 
 .wy-fbgg.weui-tab__bd {
     padding-top: 45px;
+    padding-bottom: 0;
 }
 
 .weui-cells.weui-cells_radio {
@@ -251,7 +269,7 @@ ul {
     z-index: 1;
 }
 
-.user_box + .weui-tab__bd {
+.user_box+.weui-tab__bd {
     padding-top: 204px;
 }
 
@@ -269,7 +287,7 @@ ul {
     color: white;
 }
 
-.user_name + p {
+.user_name+p {
     color: #e6e9ef;
 }
 
@@ -307,14 +325,14 @@ ul {
     display: inline-block;
     line-height: initial;
     list-style-type: none;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 5px;
     margin-top: 7px;
 }
 
 .wy-nav_tab li {
     float: left;
-    padding: 3px 10px;
+    padding: 3px 15px;
 }
 
 .wy-nav_tab li.active {
@@ -336,7 +354,7 @@ ul {
     background-color: #FF4C39;
 }
 
-.fabu_lo + p {
+.fabu_lo+p {
     font-size: 12px;
     color: #000;
     padding-top: 10px;
@@ -345,6 +363,7 @@ ul {
 #fabu .weui-flex__item {
     padding: 30px 0;
 }
+
 
 /* #fabu .weui-popup__modal {
     background-color: rgba(0, 0, 0, 0);
@@ -363,7 +382,6 @@ ul {
     background-color: dodgerblue;
     width: 30px;
     height: 30px;
-
     /* line-height: 40px; */
     border-radius: 75px;
     padding: 10px;
@@ -380,6 +398,7 @@ ul {
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
+
 
 /* .swiper-container {
     height: 100%;
@@ -400,7 +419,7 @@ ul {
     display: inline-block;
 }
 
-.wy-reg-agree + a {
+.wy-reg-agree+a {
     font-size: 13px;
     margin-left: -20px;
 }
