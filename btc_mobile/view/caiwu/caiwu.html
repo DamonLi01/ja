@@ -90,7 +90,7 @@
                                             </div>
                                             <div class="dr_btn weui-row">
                                                 <div class="weui-col-50">
-                                                    <a href="javascript:;"  class="weui-btn weui-btn_plain-default">一键复制</a>
+                                                    <a href="javascript:;" id="copy_one" onclick="copy('copy_one','btc_address')" class="weui-btn weui-btn_plain-default">一键复制</a>
                                                 </div>
                                                 <div class="weui-col-50">
                                                     <a href="../caiwu/address.html" class="weui-btn weui-btn_plain-default">管理地址</a>
@@ -191,12 +191,12 @@
                                             <div class="text-red">
                                                 任何充入BTC地址的非BTC资产不可找回
                                             </div>
-                                            <div class="mtb15">
+                                            <div class="mtb15" id="eth_address">
                                                 1ASDASF#%#@#$ASGASGASG
                                             </div>
                                             <div class="dr_btn weui-row">
                                                 <div class="weui-col-50">
-                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">一键复制</a>
+                                                    <a href="javascript:;" id="copy_two" onclick="copy('copy_two','eth_address')" class="weui-btn weui-btn_plain-default">一键复制</a>
                                                 </div>
                                                 <div class="weui-col-50">
                                                     <a href="../caiwu/address.html" class="weui-btn weui-btn_plain-default">管理地址</a>
@@ -298,12 +298,12 @@
                                             <div class="text-red">
                                                 任何充入BTC地址的非BTC资产不可找回
                                             </div>
-                                            <div class="mtb15">
+                                            <div class="mtb15" id="bch_address">
                                                 1ASDASF#%#@#$ASGASGASG
                                             </div>
                                             <div class="dr_btn weui-row">
                                                 <div class="weui-col-50">
-                                                    <a href="javascript:;" class="weui-btn weui-btn_plain-default">一键复制</a>
+                                                    <a href="javascript:;" id="copy_three" onclick="copy('copy_three','bch_address')" class="weui-btn weui-btn_plain-default">一键复制</a>
                                                 </div>
                                                 <div class="weui-col-50">
                                                     <a href="../caiwu/address.html" class="weui-btn weui-btn_plain-default">管理地址</a>
@@ -442,10 +442,30 @@
     <script src="../../jquery-weui/dist/lib/fastclick.js"></script>
     <script src="../../jquery-weui/dist/js/swiper.min.js"></script>
     <script src="../../lib/jquery-enlargement/dist/zoomify.min.js"></script>
+    <script src="../../lib/clipboard/dist/clipboard.min.js"></script>
     <script src="../../js/common.js"></script>
     <script src="../../js/my-swiper.js"></script>
     <script>
         $('.vcode_img').zoomify();
+    </script>
+    <script>
+        function copy(btn, copycontent) {
+            var clipboard = new Clipboard('#' + btn, {
+                target: function () {
+                    return document.querySelector('#' + copycontent);
+                }
+            });
+
+            clipboard.on('success', function (e) {
+
+                $.toptip('复制成功', 'success');
+            });
+
+            clipboard.on('error', function (e) {
+                $.toptip('复制失败', 'error');
+
+            });
+        }
     </script>
 </body>
 
