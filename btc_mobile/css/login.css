@@ -7,3 +7,8 @@
     top: 45px;
     position: fixed;
 }
+
+#wy-login-box .weui-tab__bd, #wy-forget-box .weui-tab__bd {
+    padding-top: 45px !important;
+    padding-bottom: 0;
+}

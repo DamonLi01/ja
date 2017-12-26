@@ -19,13 +19,23 @@
 <body ontouchstart>
     <div class="header">
         <div>
+
             <img class="back" height="35" src="../../img/back.png" alt=""> 登录
             <a href="../reg/reg.html" class="wy-help">注册</a>
         </div>
     </div>
-    <div id="wy-login-box" class="weui-tab">
+    <div id="wy-box" class="weui-tab">
+        <div class="weui-navbar wy-navbar">
+            <a href="javascript:;" class="weui-navbar__item wy-nitem weui-bar__item--on">
+                手机登录
+            </a>
+            <a href="javascript:;" class="weui-navbar__item wy-nitem">
+                邮箱登录
+            </a>
+        </div>
         <div class="weui-tab__bd">
             <div class="weui-tab__bd-item weui-tab__bd-item--active">
+
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div id="slide_box1" class="swiper-slide">
@@ -39,6 +49,8 @@
                                         <input class="weui-input" type="number" placeholder="请输入手机号">
                                     </div>
                                 </div>
+
+
                                 <div class="weui-cell">
                                     <div class="weui-cell__hd">
                                         <label class="weui-label">密码</label>
@@ -64,6 +76,45 @@
                                 </div>
                             </form>
                         </div>
+                        <div id="slide_box2" class="swiper-slide">
+                            <form action="" class="weui-cells weui-cells_form">
+
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">邮箱</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <input class="weui-input" type="number" placeholder="请输入邮箱">
+                                    </div>
+                                </div>
+
+
+                                <div class="weui-cell">
+                                    <div class="weui-cell__hd">
+                                        <label class="weui-label">密码</label>
+                                    </div>
+                                    <div class="weui-cell__bd">
+                                        <input class="weui-input" type="password" placeholder="请输入密码">
+                                    </div>
+                                </div>
+
+                                <div class="weui-cells">
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <button type="submit" class="wy-reg-btn weui-btn">登录</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="weui-cells">
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <a href="../pwd/forgetpwd.html">忘记密码？</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
             </div>

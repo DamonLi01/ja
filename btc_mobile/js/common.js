@@ -23,3 +23,6 @@ function tabs(obj) {
 $('.back').click(function () {
     window.history.back();
 });
+
+
+
