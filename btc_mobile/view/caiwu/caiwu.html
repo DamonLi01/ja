@@ -448,25 +448,6 @@
     <script>
         $('.vcode_img').zoomify();
     </script>
-    <script>
-        function copy(btn, copycontent) {
-            var clipboard = new Clipboard('#' + btn, {
-                target: function () {
-                    return document.querySelector('#' + copycontent);
-                }
-            });
-
-            clipboard.on('success', function (e) {
-
-                $.toptip('复制成功', 'success');
-            });
-
-            clipboard.on('error', function (e) {
-                $.toptip('复制失败', 'error');
-
-            });
-        }
-    </script>
 </body>
 
 </html>

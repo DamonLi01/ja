@@ -26,3 +26,46 @@ $('.back').click(function () {
 
 
 
+function copy(btn, copycontent) {
+    var clipboard = new Clipboard('#' + btn, {
+        target: function () {
+            return document.querySelector('#' + copycontent);
+        }
+    });
+
+    clipboard.on('success', function (e) {
+
+        $.toptip('复制成功', 'success');
+    });
+
+    clipboard.on('error', function (e) {
+        $.toptip('复制失败', 'error');
+
+    });
+}
+
+// select
+var val = $('#menu-list').children('li').eq(0).text();
+var optype = false;
+$(".wy-xiala").text(val);
+$(".wy-xiala").click(function () {
+    optype = true;
+    $('#menu-list').show().children('li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        var val1 = $(this).text();
+        $(".wy-xiala").text(val1);
+        $('#menu-list').hide();
+        optype = false;
+    });
+
+    $('.weui-tab__bd').click(function () {
+        if (optype === true) {
+            $('#menu-list').hide();
+            optype = false;
+        }
+    })
+
+
+});
+
+// select end
