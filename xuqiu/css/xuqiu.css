@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    min-width: 1230px;
+}
+
+a,
+a:link:visited:hover:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.wrap .banner img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.left_box,
+.right_box,
+.fbxq_left_box,
+.fbxq_right_box {
+    float: left;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.qy_title {
+    font-size: 22px;
+    color: #202020;
+    line-height: 50px;
+    height: 50px;
+    background: url(../img/titlebg.png) no-repeat left bottom;
+    padding-left: 14px;
+    margin-top: 10px;
+}
+
+.qy_tab {
+    padding-left: 260px;
+    margin: 30px 0;
+}
+
+.qy_tab > a {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 16px;
+}
+
+.qy_tab > a.on,
+.qiye_list > li > a.on,
+.fbxq_left_box > ul > li > a.on {
+    color: #00a0e9;
+}
+
+.left_box > ul > li > a {
+    display: inline-block;
+    width: 240px;
+    line-height: 50px;
+    background-color: #00a0e9;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.qiye_list {
+    width: 950px;
+    background-color: #fff;
+    padding: 0 25px;
+}
+
+.qiye_list > li {
+    border-bottom: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.qiye_list > li > a {
+    width: 100%;
+    display: block;
+}
+
+.qiye_list > li > a > div {
+    padding-left: 20px;
+    display: block;
+}
+
+.qiye_list > li > a > img {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -12px;
+}
+
+.qiye_name {
+    display: inline-block;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 需求发布 */
+
+.fbxq_p {
+    padding-left: 12px;
+    margin: 15px 0;
+}
+
+.fbxq_left_box > ul > li > a {
+    margin: 12px 20px;
+    display: inline-block;
+}
+
+.fbxq_left_box {
+    width: 240px;
+}
+
+.fbxq_right_box {
+    width: 950px;
+}
+
+input[name=service] {
+    width: 0;
+}
+
+.service_box > label {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    margin: 0 33px 13px 0;
+}
+
+.service_box {
+    margin-top: 12px;
+}
+
+.fbxq_yusuan > select {
+    width: 260px;
+    height: 30px;
+}
+
+.fbxq_xm_title > input {
+    width: 600px;
+    height: 30px;
+}
+
+.fbxq_xm_title {
+    padding-left: 23px;
+}
+
+.fbxq_xm_title > label,
+.fbxq_yusuan > label,
+.fbxq_info > label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.fbxq_info {
+    padding-top: 10px;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.fbxq_info > textarea {
+    width: 887px;
+    height: 232px;
+    resize: none;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.fbxq_lxfs > label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.fbxq_lxfs > input {
+    width: 340px;
+    height: 30px;
+}
+
+.fbxq_yzm {
+    width: 100px !important;
+}
+
+.fbxq_hq {
+    background-color: #0089e1;
+    color: white;
+    padding: 4.5px 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.fbxq_lxfs {
+    margin-bottom: 10px;
+}
+
+.fbxq_subimt {
+    position: absolute;
+    margin-top: 23px;
+}
+
+.fbxq_subimt > button {
+    width: 440px;
+    padding: 8px 0;
+    background-color: #0089e1;
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 67px;
+}
+
+.fbxq_right_box input {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.text_red {
+    color: #ff0000 !important;
+}
+
+.text_blue {
+    color: #0066cc !important;
+}
+
+.text_gray {
+    color: #949494 !important;
+}
+
+.fbxq_list_ding {
+    padding: 2px 4px;
+    background-color: #ff6600;
+    color: white;
+    display: inline-block;
+}
+
+.fbxq_list_ji {
+    padding: 2px 4px;
+    background-color: #ec2828;
+    color: white;
+    display: inline-block;
+}

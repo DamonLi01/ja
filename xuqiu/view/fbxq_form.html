@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/xuqiu.css">
+    <title>发布需求</title>
+
+    <style>
+        .container {
+            min-height: 900px;
+        }
+
+        .service_box>label.on {
+            color: #00a0e9;
+            border: 1px solid #00a0e9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="banner">
+            <img src="../img/ft_banner.jpg" alt="">
+        </div>
+        <div class="container">
+            <h1 class="qy_title">发布需求</h1>
+            <p class="fbxq_p">让人才和公司主动找你</p>
+
+
+            <div class="clearfix" style="background-color:#f3f3f3;min-height:500px;">
+                <div class="fbxq_left_box">
+                    <ul>
+                        <li>
+                            <a href="">平台库</a>
+                        </li>
+                        <li>
+                            <a href="">企业库</a>
+                        </li>
+                        <li>
+                            <a href="">场地库</a>
+                        </li>
+                        <li>
+                            <a href="">人才库</a>
+                        </li>
+                        <li>
+                            <a href="">物流库</a>
+                        </li>
+                        <li>
+                            <a href="">项目库</a>
+                        </li>
+                        <li>
+                            <a href="">产品库</a>
+                        </li>
+                        <li>
+                            <a href="">金融库</a>
+                        </li>
+                        <li>
+                            <a href="" class="on">其 &nbsp; 他</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fbxq_right_box clearfix">
+                    <form action="">
+                        <p>选择您需要的服务</p>
+                        <div class="service_box">
+                            <label>开办公司
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>企业管理
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>品牌设计
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>营销推广
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>文案策划
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>影视动漫游戏
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>人力资源
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>行政后勤
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>代办事物
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                            <label>其他
+                                <input type="radio" name="service" id="" value="">
+                            </label>
+                        </div>
+                        <div class="fbxq_yusuan dib">
+                            <label for="">项目预算</label>
+                            <br>
+                            <select name="" id="">
+                                <option value="">面议</option>
+                                <option value="">0-500</option>
+                                <option value="">500-1000</option>
+                                <option value="">1000-3000</option>
+                                <option value="">5000-10000</option>
+                                <option value="">10000以上</option>
+                            </select>
+                        </div>
+                        <div class="fbxq_xm_title dib">
+                            <label for="">项目标题</label>
+                            <br>
+                            <input type="text" placeholder="请填写项目标题">
+                        </div>
+                        <div class="fbxq_info">
+                            <label for="">补充详细信息(选填)</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="填写项目详细需求"></textarea>
+                        </div>
+                        <div class="fbxq_yusuan">
+                            <label for="">项目完成时间</label>
+                            <br>
+                            <select name="" id="">
+                                <option value="">长期</option>
+                                <option value="">5天内</option>
+                                <option value="">15天内</option>
+                                <option value="">1个月内</option>
+                                <option value="">3个月内</option>
+                                <option value="">6个月内</option>
+                                <option value="">1年及以上</option>
+                            </select>
+                        </div>
+                        <div class="fbxq_lxfs">
+                            <label for="">请留下您的联系方式，以便我们能及时联系到你</label>
+                            <br>
+                            <input type="text" placeholder="请输入您的手机号">
+                            <input class="fbxq_yzm" type="text" placeholder="验证码">
+                            <a class="fbxq_hq" href="">立即获取</a>
+                        </div>
+                        <div class="fbxq_subimt">
+                            <button type="subimt">立即发布需求</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery.min.js"></script>
+    <script>
+        $('.service_box>label').click(function () {
+                $(this).addClass('on').siblings().removeClass('on');
+        })
+    </script>
+</body>
+
+</html>
