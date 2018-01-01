@@ -107,6 +107,7 @@ ul {
     position: absolute;
     margin-top: 12px;
     margin-left: -12px;
+    border: 0;
 }
 
 .qiye_name {
@@ -172,13 +173,15 @@ input[name=service] {
     height: 30px;
 }
 
-.fbxq_xm_title > input {
+.fbxq_xm_title >div> input {
     width: 600px;
     height: 30px;
+    line-height: 30px;
 }
 
 .fbxq_xm_title {
     padding-left: 23px;
+    vertical-align: bottom;
 }
 
 .fbxq_xm_title > label,
@@ -209,9 +212,10 @@ input[name=service] {
     margin: 10px 0;
 }
 
-.fbxq_lxfs > input {
+.fbxq_lxfs >div> input {
     width: 340px;
     height: 30px;
+    line-height: 30px;
 }
 
 .fbxq_yzm {
@@ -427,9 +431,12 @@ input[name=service] {
     padding-bottom: 50px;
 }
 
+.ptb5{
+    padding: 5px 0\9;
+}
 .info_eye {
     width: 24px;
-    vertical-align: middle;
+    vertical-align: -6px;
 }
 
 .info_left > img {
