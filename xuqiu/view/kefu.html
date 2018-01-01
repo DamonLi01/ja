@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a,
+        a:link:visited:hover:active {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .menu_side {
+            display: inline-block;
+            border: 1px solid #00a0e9;
+            border-radius: 5px;
+            position: fixed;
+            right: 20px;
+            bottom: 40%;
+
+        }
+
+        .menu_side > .plus {
+            background: url("../img/kefu.png") no-repeat right;
+            background-position: -27px -30px;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .menu_side_list > li {
+            background-color: #00a0e9;
+            margin: 0 10px 10px;
+            border-radius: 5px;
+
+        }
+
+        .menu_side_list > li > a {
+            height: 36px;
+            width: 43px;
+            display: block;
+            line-height: 36px;
+            padding-left: 43px;
+            overflow: hidden;
+            text-align: justify;
+            color: white;
+        }
+
+        .menu_side_list > li > a:after {
+            display: inline-block;
+            content: '';
+            padding-left: 100%;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .menu_side_kefu {
+            background: url("../img/kefu.png") no-repeat center;
+            background-position: -2px -58px;
+        }
+
+        .menu_side_QRCode {
+            background: url("../img/kefu.png") no-repeat center;
+            background-position: -2px -103px;
+        }
+
+        .menu_side_fk {
+            background: url("../img/kefu.png") no-repeat center;
+            background-position: -2px -148px;
+        }
+
+        .menu_side_top {
+            background: url("../img/kefu.png") no-repeat center;
+            background-position: -2px -191px;
+        }
+    </style>
+</head>
+<body>
+<div class="menu_side">
+    <div class="plus pull-right"></div>
+    <div style="clear: both"></div>
+    <ul class="menu_side_list">
+        <li><a href="" class="menu_side_kefu"> 客服</a></li>
+        <li><a href="" class="menu_side_QRCode">扫二维码</a></li>
+        <li><a href="" class="menu_side_fk">意见反馈</a></li>
+        <li><a href="" class="menu_side_top">返回顶端</a></li>
+    </ul>
+</div>
+<script src="../jquery.min.js"></script>
+<script>
+    $(function () {
+        var optype = true;
+        $('.menu_side>.plus').click(function () {
+            if (optype) {
+                $(this).css('background-position', '-29px -5px').siblings('.menu_side_list').find('li').css({
+                    "padding": "0 55px 0 40px"
+                }).find('a').css({
+                    "width": "107px"
+                });
+                optype = false;
+            } else {
+                $(this).css('background-position', '-27px -30px').siblings('.menu_side_list').find('li').css({
+                    "padding": "0"
+                }).find('a').css({
+                    "width": "43px"
+                });
+                optype = true;
+            }
+        })
+    })
+</script>
+</body>
+</html>
