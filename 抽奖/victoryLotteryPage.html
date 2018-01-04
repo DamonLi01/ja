@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="__TMPL__/public/assets/js/jquery-3.2.1.min.js"></script>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>优胜奖抽奖系统</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		input[type=button] {
+			background-color: #f8312b;
+			border: 0;
+			color: #fff;
+			width: 200px;
+			height: 50px;
+			font-size: 26px;
+		}
+
+		input[type=button]:last-child {
+			background-color: #F0B13F;
+		}
+
+		.box {
+			background: url(./bg.jpg) no-repeat;
+			background-size: 100% 100%;
+			width: 100%;
+			padding-top: 515px;
+		}
+
+		html,
+		body,
+		.box {
+			height: 100%;
+		}
+
+		.mingdan>tbody>tr>td {
+			font-size: 30px;
+			padding: 10px 0;
+			color: #f8312b;
+		}
+
+		.mingdan>tbody {
+
+			background-color: white;
+		}
+
+		.mingdan2>thead>tr>th {
+			border-bottom: 2px solid #C7C7C7;
+			background-color: white;
+			color: #333333;
+		}
+
+		.mingdan2>tbody>tr:nth-child(odd) {
+			background-color: white;
+		}
+
+		.mingdan2>tbody>tr:nth-child(even) {
+			background-color: #EEEEEE;
+		}
+
+		.mingdan2>tbody>tr>td,
+		.mingdan2>thead>tr>th {
+			font-size: 30px;
+			padding: 10px 5px;
+		}
+
+
+		.table_box1 {
+			width: 90%;
+			border: 2px solid #000000;
+			border-radius: 15px;
+			overflow: auto;
+			height: 400px;
+			background-color: white;
+		}
+
+		.table_box2 img {
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+		}
+		.table_box2 {
+			width: 90%;
+			border: 2px solid #000000;
+			border-radius: 15px;
+			overflow: hidden;
+		}
+		.table_box2 table tbody {
+			display: block;
+			height: 400px;
+			overflow-y: auto;
+		}
+
+		.table_box2 table thead,
+		tbody tr {
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.table_box2 table thead {
+			width: 100%;
+		}
+
+		.table_box2 table thead th {
+			background: white;
+			font-weight: initial;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<table width="100%" border="0" id="lotterySheet">
+			<!-- <tr>
+    <td height="46" colspan="4" align="center" style="font:24px"><strong>学习十九大精神竞赛优胜奖抽奖结果</strong></td>
+  </tr> -->
+			<tr>
+				<td height="46" colspan="4" align="center">
+					<input name="" id="importDataButton" type="button" value="导入数据" style="font:20px" onclick="importData()" />
+					<br />
+					<br />
+					<!-- 成功导入数据<span id="userCount"></span>条 -->
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="4" align="center" id="imgTd">
+					<!-- <img src="" width="255" height="255" id="lotteryImage" /> -->
+					<div class="table_box1">
+						<table width="100%" cellspacing="0" cellpadding="0" class="table mingdan">
+							<tbody>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td width="190" align="center">1. 方*泰</td>
+
+									<td width="278" align="center">1827**79442</td>
+								</tr>
+							</tbody>
+
+						</table>
+					</div>
+
+				</td>
+			</tr>
+			<!-- <tr>
+    <td height="52" colspan="2" align="center" style="font:20px"><strong>微信昵称：<span id="wechatName"></span></strong></td>
+    <td colspan="2" align="center" style="font:20px"><strong>手机号码：<span id="mobile"></span></strong></td>
+  </tr> -->
+			<tr>
+				<td style="padding: 50px 0;" height="57" colspan="4" align="center">
+					<input name="" id="beginRollingButton" type="button" value="开始滚动" onclick="beginRolling()" style="margin-left:20px" disabled="disabled"
+					/>
+					<input name="" type="button" value="停止滚动" onclick="stopRolling()" style="margin-left:20px" id="stopRollingButton" disabled="disabled"
+					/>
+					<input name="" id="confirmUserButton" type="button" value="确定人选" onclick="confirmUser()" style="margin-left:20px" disabled="disabled"
+					/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<div class="table_box2">
+						<table cellspacing="0" class="mingdan2" width="100%">
+							<thead>
+								<tr>
+									<th align="center">序号</th>
+									<th align="center">微信昵称</th>
+									<th align="center">微信头像</th>
+									<th align="center">手机号码</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+								<tr>
+									<td align="center">1</td>
+									<td align="center">方*泰</td>
+									<td align="center">
+										<img src="./touxiang.png" alt="">
+									</td>
+									<td align="center">1827**79442</td>
+								</tr>
+							</tbody>
+						</table>
+					
+					</div>
+
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	var r;
+	var userObjectList;
+	var getId = 1;
+	var randIndex;
+
+	<!--导入信息随机切换-->
+	function doRolling() {
+		var imgTd = document.getElementById("imgTd");
+		var count = userObjectList.length;
+		do {
+			randIndex = Math.floor(Math.random() * count);
+		} while (!userObjectList[randIndex])
+
+		document.getElementById("wechatName").innerHTML = userObjectList[randIndex].nick_name;
+		document.getElementById("mobile").innerHTML = userObjectList[randIndex].mobile;
+		var newImg = document.getElementById("img" + userObjectList[randIndex].id).cloneNode(true);
+		imgTd.removeChild(imgTd.firstChild);
+		imgTd.appendChild(newImg);
+		imgTd.firstChild.setAttribute("id", "lotteryImage");
+
+	}
+
+	<!--点击开始滚动-->
+	function beginRolling() {
+		document.getElementById("beginRollingButton").setAttribute("disabled", "disabled");
+		document.getElementById("stopRollingButton").removeAttribute("disabled");
+		r = setInterval("doRolling()", 30);
+		document.getElementById("confirmUserButton").setAttribute("disabled", "disabled")
+	}
+
+	<!--点击停止滚动按钮-->
+	function stopRolling() {
+		document.getElementById("stopRollingButton").setAttribute("disabled", "disabled");
+		document.getElementById("beginRollingButton").removeAttribute("disabled");
+		window.clearInterval(r);
+		document.getElementById("confirmUserButton").removeAttribute("disabled", "disabled")
+	}
+
+	<!--确定抽奖用户-->
+	function confirmUser() {
+		var table = document.getElementById("lotterySheet");
+		var imgObj = document.getElementById("lotteryImage");
+		oneRow = table.insertRow(); //插入一行
+		cell1 = oneRow.insertCell();
+		cell2 = oneRow.insertCell();
+		cell3 = oneRow.insertCell();
+		cell4 = oneRow.insertCell();
+		cell1.setAttribute("align", "center");
+		cell2.setAttribute("align", "center");
+		cell3.setAttribute("align", "center");
+		cell4.setAttribute("align", "center");
+		cell1.innerHTML = getId;
+		cell2.innerHTML = document.getElementById("wechatName").innerHTML;
+		cell3.innerHTML = '<img src="' + imgObj.getAttribute("src") + '" width="215" height="215" />';
+		cell4.innerHTML = document.getElementById("mobile").innerHTML;
+		document.getElementById("confirmUserButton").setAttribute("disabled", "disabled");
+		<!--删除数组中指定的元素，防止用户重复中奖-->
+		userObjectList.splice(randIndex, 1);
+		getId++;
+	}
+
+	<!--打开开始滚动按钮可用功能-->
+	function openRolling() {
+		document.getElementById("beginRollingButton").removeAttribute("disabled");
+	}
+
+	<!--导入数据进行抽奖-->
+	function importData() {
+		//POST数据
+		var src = '/portal/Index/getVictoryUserList' + '?';
+		var url = src + '&math=' + Math.random();
+		//发送ajax	   
+		$.ajax({
+			type: "POST",
+			url: url,
+			dataType: "json",
+			data: null,
+			success: function (json) {
+				var userArr = JSON.parse(json);
+				var count = userArr.length;
+				userObjectList = userArr;
+				document.getElementById("userCount").innerHTML = count;
+				alert("成功导入优胜奖用户数据" + count + "条");
+				document.getElementById("importDataButton").setAttribute("disabled", "disabled"); <!--document.getElementById("beginRollingButton").removeAttribute("disabled");	-->
+
+				var t = setTimeout("openRolling()", 8000)
+				<!--将数组第一个人作为滚动用户的开始-->
+				document.getElementById("lotteryImage").setAttribute("src", userArr[0].avatar_url);
+				document.getElementById("wechatName").innerHTML = userArr[0].nick_name;
+				document.getElementById("mobile").innerHTML = userArr[0].mobile;
+				var table = document.getElementById("lotterySheet");
+				var userArr = JSON.parse(json);
+				count = userArr.length;
+				var rows = table.rows.length;
+				if (rows > 6) {
+					for (var k = rows; k > 6; k--)
+						table.deleteRow(k - 1); //这里删除的是倒数第二行，也就是第三行
+				}
+				for (var i = 0; i < count; i++) {
+					oneRow = table.insertRow(); //插入一行  
+					oneRow.style.display = "none";
+					cell1 = oneRow.insertCell();
+					cell2 = oneRow.insertCell();
+					cell3 = oneRow.insertCell();
+					cell4 = oneRow.insertCell();
+					cell1.setAttribute("align", "center");
+					cell2.setAttribute("align", "center");
+					cell3.setAttribute("align", "center");
+					cell4.setAttribute("align", "center");
+					cell1.innerHTML = userArr[i].id;
+					cell2.innerHTML = userArr[i].nick_name;
+					cell3.innerHTML = '<img id="img' + userArr[i].id + '" src="' + userArr[i].avatar_url +
+						'" width="255" height="255" />';
+					cell4.innerHTML = userArr[i].mobile;
+				}
+			},
+			error: function () {
+				alert('网络传输异常');
+				return false;
+			}
+		});
+	}
+</script>
+
+</html>
