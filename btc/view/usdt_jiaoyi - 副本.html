@@ -554,7 +554,7 @@
                 rangeSelectorZoom: ''
             },
             global: {
-                useUTC:false
+                useUTC: false
             }
         });
         $.getJSON('http://api.zb.com/data/v1/kline?market=btc_usdt', function (data) {
@@ -568,11 +568,8 @@
                 dataLength = data.length,
                 // set the allowed units for data grouping
                 groupingUnits = [[
-                    'week',                         // unit name
-                    [1]                             // allowed multiples
-                ], [
-                    'month',
-                    [1, 2, 3, 4, 6]
+                    'second',
+                    [5]
                 ]],
                 i = 0;
             for (i; i < dataLength; i += 1) {
@@ -598,25 +595,25 @@
 
                             setInterval(function () {
 
-                                // $.getJSON('http://api.zb.com/data/v1/kline?market=btc_usdt', function (data) {
-                                //
-                                //     console.log(data.data[672][0])
-                                // });
+                                $.getJSON('http://api.zb.com/data/v1/kline?market=btc_usdt', function (data) {
+                                    var dataLength = data.data.length - 1;
 
-                                // var x = (new Date()).getTime();
+                                    var data = data.data;
+                                    var x = (new Date()).getTime();
+                                    series.addPoint([
+                                        x,
+                                        data[dataLength][1],
+                                        data[dataLength][2],
+                                        data[dataLength][3],
+                                        data[dataLength][4],
+                                    ], true, true);
+                                    series1.addPoint([
+                                        x,
+                                        data[dataLength][5]
+                                    ], true, true);
+                                    console.log(x+ " "+ data[dataLength][0])
+                                });
 
-                                series.addPoint([
-                                     ohlc[672][0],
-                                    ohlc[672][1],
-                                    ohlc[672][2],
-                                    ohlc[672][3],
-                                    ohlc[672][4],
-                                ], true, true);
-                                series1.addPoint([
-                                    volume[672][0],
-                                    volume[672][1]
-                                ], true, true);
-                                console.log(ohlc[672][0])
                             }, 5000);
                         }
                     }
@@ -630,8 +627,8 @@
                     inputEnabled: false, // 不显示日期输入框
                     buttons: [{
                         type: 'hour',
-                        count: 2,
-                        text: '2h'
+                        count: 12,
+                        text: '12h'
                     }]
                 },
                 // navigator:{
@@ -697,19 +694,19 @@
                         color: Highcharts.getOptions().colors[0]
                     },
                     data: ohlc,
-                    // dataGrouping: {
-                    //     units: groupingUnits
-                    // },
+                    dataGrouping: {
+                        units: groupingUnits
+                    },
                     id: 'sz'
                 },
                     {
-                    type: 'column',
-                    data: volume,
-                    yAxis: 1,
-                    // dataGrouping: {
-                    //     units: groupingUnits
-                    // }
-                }
+                        type: 'column',
+                        data: volume,
+                        yAxis: 1,
+                        dataGrouping: {
+                            units: groupingUnits
+                        }
+                    }
                 ]
             });
         });
