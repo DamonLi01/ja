@@ -209,7 +209,7 @@
     <div class="container">
         <div class="row mt20">
             <div class="col-md-12 bg-white">
-                <div id="container" style="width:90%;margin:0 auto; height:350px"></div>
+                <div id="container" style="width:90%;margin:0 auto; height:450px"></div>
             </div>
         </div>
         <div class="row  mtb20 ">
@@ -552,12 +552,15 @@
         Highcharts.setOptions({
             lang: {
                 rangeSelectorZoom: ''
+            },
+            global: {
+                useUTC:false
             }
         });
         $.getJSON('http://api.zb.com/data/v1/kline?market=btc_usdt', function (data) {
             <!-- if (data.code !== 1) { -->
-                <!-- alert('读取股票数据失败！'); -->
-                <!-- return false; -->
+            <!-- alert('读取股票数据失败！'); -->
+            <!-- return false; -->
             <!-- } -->
             data = data.data;
             var ohlc = [],
@@ -592,31 +595,51 @@
                         load: function () {
                             var series = this.series[0];
                             var series1 = this.series[1];
-                            var num = 0;
+
                             setInterval(function () {
 
-                                var x = (new Date()).getTime();
+                                // $.getJSON('http://api.zb.com/data/v1/kline?market=btc_usdt', function (data) {
+                                //
+                                //     console.log(data.data[672][0])
+                                // });
+
+                                // var x = (new Date()).getTime();
 
                                 series.addPoint([
-                                    x,
-                                    ohlc[num][1],
-                                    ohlc[num][2],
-                                    ohlc[num][3],
-                                    ohlc[num][4],
+                                     ohlc[672][0],
+                                    ohlc[672][1],
+                                    ohlc[672][2],
+                                    ohlc[672][3],
+                                    ohlc[672][4],
                                 ], true, true);
                                 series1.addPoint([
-                                    x,
-                                    volume[num][1]
+                                    volume[672][0],
+                                    volume[672][1]
                                 ], true, true);
-                                num++;
-                            }, 1000);
+                                console.log(ohlc[672][0])
+                            }, 5000);
                         }
                     }
                 },
                 rangeSelector: {
-                    selected: 1,
-                    inputDateFormat: '%Y-%m-%d'
+                    buttonTheme: {
+                        display: 'none' // 不显示按钮
+                    },
+                    selected: 0,
+                    // inputDateFormat: '%Y-%m-%d',
+                    inputEnabled: false, // 不显示日期输入框
+                    buttons: [{
+                        type: 'hour',
+                        count: 2,
+                        text: '2h'
+                    }]
                 },
+                // navigator:{
+                //     enabled: false
+                // },
+                // scrollbar : {
+                //     enabled : false
+                // },
                 title: {
                     text: '平安银行历史股价'
                 },
@@ -674,18 +697,20 @@
                         color: Highcharts.getOptions().colors[0]
                     },
                     data: ohlc,
-                    dataGrouping: {
-                        units: groupingUnits
-                    },
+                    // dataGrouping: {
+                    //     units: groupingUnits
+                    // },
                     id: 'sz'
-                }, {
+                },
+                    {
                     type: 'column',
                     data: volume,
                     yAxis: 1,
-                    dataGrouping: {
-                        units: groupingUnits
-                    }
-                }]
+                    // dataGrouping: {
+                    //     units: groupingUnits
+                    // }
+                }
+                ]
             });
         });
     });
