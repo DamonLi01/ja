@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>产品中心</title>
+    <link rel="stylesheet" href="./dist/lib/weui.min.css">
+    <link rel="stylesheet" href="./dist/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                进行中
+            </a>
+            <a class="weui-navbar__item" href="#tab2">
+                待跟进
+            </a>
+            <a class="weui-navbar__item" href="#tab3">
+                已完成
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>南宁电子公共商务服务平台</p>
+                            <div class="weui-row sub_title">
+                                <div class="weui-col-40">
+                                    <span>负责人：王思聪</span>
+                                </div>
+                                <div class="weui-col-60">
+                                    <span>服务名称：官方网站</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-cell__ft">
+                        </div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>南宁电子公共商务服务平台</p>
+                            <div class="weui-row sub_title">
+                                <div class="weui-col-40">
+                                    <span>负责人：王思聪</span>
+                                </div>
+                                <div class="weui-col-60">
+                                    <span>服务名称：官方网站</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-cell__ft">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <h1>页面二</h1>
+            </div>
+            <div id="tab3" class="weui-tab__bd-item">
+                <h1>页面三</h1>
+            </div>
+        </div>
+        <div class="weui-tabbar">
+            <a href="" class="weui-tabbar__item weui-bar__item--on">
+
+                <div class="weui-tabbar__icon">
+                    <img src="./img/gray/1.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">产品管理</p>
+            </a>
+            <a href="" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./img/gray/3.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">开发进度</p>
+            </a>
+            <a href="" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./img/gray/2.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">工单系统</p>
+            </a>
+            <a href="" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="./img/gray/4.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">联系客服</p>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="./dist/lib/jquery-2.1.4.js"></script>
+    <script src="./dist/js/jquery-weui.min.js"></script>
+    <script src="./dist/lib/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+</body>
+
+</html>

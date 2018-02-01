@@ -1,0 +1,9 @@
+html,body{
+    height: 100%;
+}
+.weui-cells{
+    font-size: 0.77rem;
+}
+.sub_title{
+    font-size: 0.6rem;
+}
