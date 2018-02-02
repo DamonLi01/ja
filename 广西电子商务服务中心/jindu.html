@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>产品管理</title>
+    <title>开发进度</title>
     <link rel="stylesheet" href="./dist/lib/weui.min.css">
     <link rel="stylesheet" href="./dist/css/jquery-weui.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,6 +14,17 @@
 
 <body ontouchstart>
     <div class="weui-tab">
+        <div class="weui-navbar my_navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                进行中
+            </a>
+            <a class="weui-navbar__item" href="#tab2">
+                待跟进
+            </a>
+            <a class="weui-navbar__item" href="#tab3">
+                已完成
+            </a>
+        </div>
         <div class="weui-tab__bd my_tab__bd">
             <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
                 <div class="weui-cells">
@@ -172,20 +183,40 @@
                         </div>
                     </a>
                 </div>
-            </div>
 
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <div class="weui-msg">
+                    <div class="weui-msg__icon-area">
+                        <img width="150" src="./img/word.png" alt="">
+                        <p class="weui-msg__desc">
+                            暂无数据
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="weui-tab__bd-item">
+                <div class="weui-msg">
+                    <div class="weui-msg__icon-area">
+                        <img width="150" src="./img/word.png" alt="">
+                        <p class="weui-msg__desc">
+                            暂无数据
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="weui-tabbar my_tabbar">
-            <a href="./chanpin.html" class="weui-tabbar__item weui-bar__item--on">
+            <a href="./chanpin.html" class="weui-tabbar__item">
 
                 <div class="weui-tabbar__icon">
-                    <img src="./img/blue/1.png" alt="">
+                    <img src="./img/gray/1.png" alt="">
                 </div>
                 <p class="weui-tabbar__label">产品管理</p>
             </a>
-            <a href="./jindu.html" class="weui-tabbar__item">
+            <a href="./jindu.html" class="weui-tabbar__item weui-bar__item--on">
                 <div class="weui-tabbar__icon">
-                    <img src="./img/gray/2.png" alt="">
+                    <img src="./img/blue/2.png" alt="">
                 </div>
                 <p class="weui-tabbar__label">开发进度</p>
             </a>

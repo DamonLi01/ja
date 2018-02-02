@@ -1,9 +1,101 @@
-html,body{
+html,
+body {
     height: 100%;
 }
-.weui-cells{
+
+.weui-cells {
     font-size: 0.77rem;
 }
-.sub_title{
+
+.sub_title {
     font-size: 0.6rem;
+}
+
+.my_navbar .weui-navbar__item.weui-bar__item--on {
+    color: #2196F3;
+}
+
+.my_navbar .weui-navbar__item {
+    font-weight: 600;
+}
+
+.my_tabbar .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+    color: #2196F3;
+}
+
+.my_tabbar .weui-tabbar__label {
+    font-weight: 600;
+}
+
+.my_tab__bd {
+    padding-bottom: 53px;
+}
+
+/* info */
+
+.my_panel .weui-media-box__desc {
+    text-overflow: initial;
+    display: inherit;
+    font-size: 0.588rem;
+}
+
+.weui-media-box__title {
+    font-size: 0.77rem;
+}
+
+.my_title {
+    background-color: #8857E3;
+    color: white;
+    padding-bottom: 1.13rem;
+    padding-top: 1.13rem;
+}
+
+.my_title .weui-btn_mini {
+    font-size: 0.588rem;
+}
+
+.my_cells {
+    margin-top: 0;
+}
+
+/* order */
+
+.my_order_info {
+    -webkit-box-align: initial;
+    -webkit-align-items: initial;
+    align-items: initial;
+}
+
+.my_order_info .weui-textarea {
+    font-weight: 400;
+    font-family: arial;
+}
+
+.demos-header {
+    padding: 1.539rem 0;
+}
+
+.demos-title {
+    text-align: center;
+    font-size: 1.539rem;
+    /* color: #3cc51f; */
+    font-weight: 400;
+    margin: 0 15%;
+}
+
+.my_subimt .weui-btn {
+    background-color: #5A78FF;
+    font-size: 0.815rem;
+}
+
+.weui-msg__title {
+    font-size: 0.905rem;
+}
+
+.weui-msg__desc {
+    font-size: 0.634rem;
+}
+
+.my_add_btn{
+    font-size: 0.588rem;
 }
