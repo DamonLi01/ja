@@ -1,0 +1,235 @@
+.fwpt {
+    background: #efefef;
+    border-bottom: 1px solid #bebebe;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.fwpt_list {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+.fwpt_list > a {
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.gx_header_content {
+    width: 1200px;
+    margin: 25px auto;
+    overflow: hidden;
+}
+
+.gx_header_content .nav {
+    float: left;
+    line-height: 55px;
+    font-size: 15px;
+}
+
+.gx_header_content .title_content {
+    float: left;
+    width: 425px;
+    line-height: 55px;
+    margin: 0 0 0 22px;
+}
+
+.gx_header_content .login {
+    float: left;
+    width: 180px;
+    line-height: 55px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.gx_header_content .login > a {
+    margin-left: 15px;
+}
+
+.gx_header_content .nav > ul > li {
+    float: left;
+    margin-right: 30px;
+}
+
+.gx_header_content .nav > ul > li > a.on {
+    padding: 5px 15px;
+    background: #1274b5;
+    border-radius: 25px;
+    color: white;
+}
+
+.title_content .title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+
+.title_content .logo {
+    float: left;
+    line-height: 0;
+}
+
+.gx_main {
+    background-color: #f3f3f3;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.gx_section1, .gx_section3 {
+    padding: 20px 0 25px;
+}
+
+.gx_section1 .gx_main-left {
+    width: 400px;
+    float: left;
+}
+
+.gx_section1 .gx_main-right {
+    float: right;
+    width: 220px;
+}
+
+.gx_section1 .gx_main-middle {
+    margin: 0 220px 0 400px;
+    padding: 0 20px;
+}
+
+.gx_section1 .gx_tab ul {
+    overflow: hidden;
+}
+
+.gx_section1 .gx_tab ul li {
+    float: left;
+}
+
+.gx_section1 .gx_main-middle .gx_tab {
+    border-bottom: 1px solid #bebebe;
+    background-color: #fbfbfb;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+.gx_section1 .gx_main-middle .gx_tab li > a {
+    display: block;
+    padding: 0 20px;
+}
+
+.gx_section1 .gx_main-middle .gx_tab li > a.on {
+    background-color: #1274b5;
+    color: white;
+}
+
+.gx_section1 .gx_main-middle .gx_tab_contant {
+    background-color: #ffffff;
+}
+
+.gx_section1 .gx_main-middle .gx_tab_contant .gx_tab_panle {
+    padding: 10px 20px;
+}
+
+.gx_section1 .gx_main-middle .gx_tab_contant .gx_tab_panle li {
+    line-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gx_section1 .gx_main-right .gx_title, .gx_section3 .gx_main-right .gx_title, .gx_section3 .gx_main-left .gx_title, .gx_section3 .gx_main-middle .gx_title {
+    border-bottom: 1px solid #bebebe;
+    background-color: #fbfbfb;
+    line-height: 45px;
+    padding: 0 10px;
+}
+
+.gx_section1 .gx_main-right .gx_title > span, .gx_section3 .gx_main-right .gx_title > span, .gx_section3 .gx_main-left .gx_title > span, .gx_section3 .gx_main-middle .gx_title > span {
+    border-left: 3px solid #1274b5;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.gx_section1 .gx_main-right .gx_gg_list {
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.gx_section1 .gx_main-right .gx_gg_list li {
+    line-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gx_section2 .gx_tab > ul > li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.gx_section2 .gx_tab > ul > li.on {
+    background-color: white;
+    margin-top: -5px;
+}
+
+.gx_section2 .gx_tab {
+    background-color: white;
+    line-height: 50px;
+}
+
+.gx_section2 .gx_tab_contant {
+    padding: 15px;
+    background-color: white;
+}
+
+.gx_section3 .gx_main-left {
+    width: 350px;
+    float: left;
+}
+
+.gx_section3 .gx_main-right {
+    float: right;
+    width: 480px;
+}
+
+.gx_section3 .gx_main-middle {
+    margin: 0 480px 0 350px;
+    padding: 0 20px;
+}
+
+.gx_section3 .gx_main-right .gx_gg_list, .gx_section3 .gx_main-left .gx_gg_list, .gx_section3 .gx_main-middle .gx_gg_list {
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.gx_section3 .gx_main-right .gx_gg_list li, .gx_section3 .gx_main-left .gx_gg_list li, .gx_section3 .gx_main-middle .gx_gg_list li {
+    line-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gx_section3 .gx_more {
+    float: right;
+}
+
+.gx_section3 .gx_more > span {
+    background-color: #6f84d6;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 25px;
+}
+
+.gx_yj_panle,.gx_yq_panle {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.gx_yj_content, .gx_yq_show,.gx_yq_link {
+    width: 100%;
+    min-width: 1200px;
+}
+
+.gx_yj_content .gx_yj_body{
+    padding: 0 50px;
+}

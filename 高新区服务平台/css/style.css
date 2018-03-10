@@ -1,0 +1,74 @@
+html, body {
+    font-family: '微软雅黑';
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, fieldset, img, iframe, abbr {
+    border: 0;
+}
+
+del, ins, u, s, a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+.pull_left {
+    float: left;
+}
+
+.pull_right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.lh0 {
+    line-height: 0;
+}
+
+.gx_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.gx_hidden {
+    display: none;
+}
+.gx_text-center{
+    text-align: center;
+}
+
+/* 背景色start */
+
+/* 背景色end */

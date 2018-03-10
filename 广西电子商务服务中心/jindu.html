@@ -183,7 +183,10 @@
                         </div>
                     </a>
                 </div>
-
+                <div class="weui-loadmore">
+                    <i class="weui-loading"></i>
+                    <span class="weui-loadmore__tips">正在加载</span>
+                </div>
             </div>
             <div id="tab2" class="weui-tab__bd-item">
                 <div class="weui-msg">
@@ -242,6 +245,36 @@
     <script>
         $(function () {
             FastClick.attach(document.body);
+        });
+
+
+
+        var loading = false; //状态标记
+        $('#tab1').infinite().on("infinite", function () {
+
+            console.log($(this))
+            if (loading) return;
+            loading = true;
+            setTimeout(function () {
+                $("#tab1").append(`<div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>南宁电子公共商务服务平台</p>
+                            <div class="weui-row sub_title">
+                                <div class="weui-col-40">
+                                    <span>负责人：王思聪</span>
+                                </div>
+                                <div class="weui-col-60">
+                                    <span>服务名称：官方网站</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weui-cell__ft">
+                        </div>
+                    </a>
+                </div>`);
+                loading = false;
+            }, 1500); //模拟延迟
         });
     </script>
 </body>
