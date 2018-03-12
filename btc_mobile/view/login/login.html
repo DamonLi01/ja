@@ -45,6 +45,7 @@
                                     </div>
                                     <div class="weui-cell__bd">
                                         <input class="weui-input" type="password" placeholder="请输入密码">
+                                        <input type="text" id='datetime-picker'/>
                                     </div>
                                 </div>
 
@@ -77,7 +78,14 @@
     <script src="../../jquery-weui/dist/js/swiper.min.js"></script>
     <script src="../../js/common.js"></script>
     <script src="../../js/my-swiper.js"></script>
+<script>
+    $("#datetime-picker").datetimePicker({
+        times: function () {},
+        onChange: function (picker, values, displayValues) {
 
+        },
+      });
+</script>
 </body>
 
 </html>
