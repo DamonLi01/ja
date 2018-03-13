@@ -104,19 +104,34 @@
                 <div class="gx_tab">
                     <ul>
                         <li>
-                            <a href="">产业信息</a>
+                            <a href="javascript:void(0);">
+                                <img src="./img/news/6.png" alt="">
+                                <p>产业信息</p> 
+                            </a>
                         </li>
                         <li>
-                            <a href="">外包动态</a>
+                            <a href="javascript:void(0);">
+                                <img src="./img/news/3.png" alt="">
+                                <p>外包动态</p> 
+                            </a>
                         </li>
                         <li>
-                            <a href="">外包动态</a>
+                            <a href="javascript:void(0);">
+                                <img src="./img/news/7.png" alt="">
+                                <p>产业信息</p> 
+                            </a>
                         </li>
                         <li>
-                            <a href="">园区展示</a>
+                            <a href="javascript:void(0);">
+                                <img src="./img/news/5.png" alt="">
+                                <p>园区展示</p> 
+                            </a>
                         </li>
                         <li>
-                            <a href="">下载中心</a>
+                            <a href="javascript:void(0);">
+                                <img src="./img/news/4.png" alt="">
+                                <p>下载中心</p> 
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -245,7 +260,11 @@
 
     <script>
         jQuery(function () {
-
+            jQuery('.gx_tab li').mousemove(function(){
+                jQuery(this).addClass('on').siblings().removeClass('on');
+            }).mouseout(function(){
+                jQuery(this).removeClass('on');
+            })
         });
     </script>
 </body>
