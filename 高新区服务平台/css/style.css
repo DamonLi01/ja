@@ -57,7 +57,9 @@ li {
 .lh0 {
     line-height: 0;
 }
-
+.gx_header_wrap{
+    overflow: hidden;
+}
 .gx_container {
     width: 1200px;
     margin: 0 auto;
@@ -66,15 +68,22 @@ li {
     background-color: #f3f3f3;
     width: 100%;
     min-width: 1200px;
+    box-shadow: inset 0px 14px 8px -15px #888888;
+    -moz-box-shadow: inset 0px 14px 8px -15px #888888;
+    -webkit-box-shadow: inset 0px 14px 8px -15px #888888;
 }
-
+.gx_shadow{
+    box-shadow: #666 1px 1px 10px;
+}
 .gx_hidden {
     display: none;
 }
 .gx_text-center{
     text-align: center;
 }
-
+.gx_text-right{
+    text-align: right;
+}
 .gx_text-red{
     color: red;
 }
@@ -100,7 +109,7 @@ li {
 
 .fwpt_list > a {
     margin-right: 15px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .gx_header_content {

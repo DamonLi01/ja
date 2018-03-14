@@ -1,3 +1,7 @@
+img{
+    line-height: 0;
+    font-size: 0;
+}
 .gx_right .gx_title {
     /* border-bottom: 1px solid #bebebe; */
     border-top: 3px solid #1274b5;
@@ -58,11 +62,12 @@
 }
 
 .gx_left .gx_banner {
-    padding: 10px 15px;
+    padding: 0 15px;
+    line-height: 0;
 }
 
 .gx_left .gx_new_list {
-    padding: 10px 15px;
+    padding: 0 15px 10px;
 }
 
 .gx_left .gx_new_list ul li>a {
@@ -73,7 +78,7 @@
 }
 
 .gx_left .gx_new_list ul li {
-    line-height: 35px;
+    line-height: 40px;
     border-bottom: 2px solid #e5e4e4;
 }
 
@@ -81,11 +86,14 @@
     border: 0;
 }
 
-.gx_adv1,
-.gx_adv2 {
-    margin-top: 15px;
+.gx_adv1{
+    margin-top: 10px;
+    line-height: 0;
 }
-
+.gx_adv2 {
+    margin-top: 5px;
+    line-height: 0;
+}
 .gx_tab ul li {
     float: left;
     text-align: center;
@@ -107,5 +115,5 @@
 }
 .gx_tab{
     overflow: hidden;
-    margin-top: 15px;
+    margin-top: 10px;
 }
