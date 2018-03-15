@@ -1,0 +1,218 @@
+html,
+body,
+.gx_login_box, .gx_reg_box {
+    height: 100%;
+}
+
+.gx_login_box, .gx_reg_box {
+    background-image: url(../img/login/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+.gx_logo {
+    margin: 35px;
+}
+
+.gx_logo > img {
+    width: 350px;
+}
+
+.gx_login_form, .gx_reg_form {
+    width: 440px;
+    margin: 5% auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.gx_login_form .gx_title, .gx_reg_form .gx_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.gx_login_form .gx_section, .gx_reg_form .gx_section {
+    position: relative;
+    width: 360px;
+    border: 1px solid #e3e3e3;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 0 15px;
+    line-height: 45px;
+    margin-top: 15px;
+}
+
+.gx_login_form .gx_section > input, .gx_reg_form .gx_section > input {
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    width: 280px;
+}
+
+.gx_login_form .gx_section > label, .gx_reg_form .gx_section > label {
+    font-size: 16px;
+
+    /* font-weight: bold; */
+    width: 65px;
+    display: inline-block;
+    text-align: right;
+}
+
+.gx_dsf {
+    text-align: center;
+    margin: 30px;
+}
+
+.gx_dsf > div {
+    font-size: 16px;
+
+    /* font-weight: bold; */
+}
+
+.gx_dsf ul {
+    margin: 20px auto 40px;
+    width: 170px;
+    overflow: hidden;
+}
+
+.gx_dsf ul li {
+    float: left;
+    line-height: 0;
+    width: 33%;
+}
+
+.gx_dsf ul li > a {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: auto;
+}
+
+.gx_dsf ul li img {
+    width: 24px;
+    vertical-align: middle;
+    margin: auto;
+    height: auto;
+}
+
+.gx_login_form .gx_section2, .gx_reg_form .gx_section2 {
+    width: 350px;
+    margin: 0 auto 40px;
+}
+
+.gx_login_form .gx_section2 > button, .gx_reg_form .gx_section2 > button {
+    width: 100%;
+    font-size: 18px;
+    border: 0;
+    border-radius: 25px;
+    background: #5984e1;
+    outline: 0;
+    line-height: 47px;
+    cursor: pointer;
+    color: white;
+}
+
+.gx_login_form .gx_section2 > button:active, .gx_reg_form .gx_section2 > button:active {
+    background: #6174dc;
+}
+
+.gx_login_form .gx_section3, .gx_reg_form .gx_section3 {
+    text-align: center;
+    line-height: 50px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #dadada;
+    font-size: 18px;
+}
+
+.gx_reg_form .gx_section > label {
+    width: 82px;
+}
+
+.gx_reg_form .gx_section > input {
+    width: 260px;
+}
+
+.gx_reg_form .gx_section_code {
+    position: relative;
+    width: 360px;
+    border: 1px solid #e3e3e3;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 0 15px;
+    line-height: 45px;
+    margin-top: 15px;
+
+    /* overflow: hidden; */
+}
+
+.gx_reg_form .gx_section_code > label {
+    font-size: 16px;
+    width: 82px;
+    display: inline-block;
+    text-align: right;
+}
+
+.gx_reg_form .gx_section_code > input {
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+
+    /* width: 280px; */
+}
+
+.gx_reg_form .gx_section_code > button {
+    position: absolute;
+    outline: 0;
+    border: 0;
+    line-height: 47px;
+    font-size: 14px;
+    background-color: #56cb03;
+    color: white;
+    width: 110px;
+    margin-top: -1px;
+    text-align: center;
+    right: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.gx_reg_form .gx_section2 {
+    margin: 40px auto 15px;
+}
+
+.gx_section_xy {
+    position: relative;
+    width: 360px;
+
+    /* border: 1px solid #e3e3e3; */
+    margin: 0 auto 40px;
+
+    /* border-radius: 50px; */
+    padding: 0 15px;
+}
+
+.gx_section_xy .gx_xy {
+    font-size: 14px;
+}
+
+.gx_section_xy .gx_xy > input {
+    vertical-align: -2px;
+}
+
+.gx_reg_form .gx_title {
+    overflow: hidden;
+    margin: 20px 0 35px;
+
+}
+
+.gx_reg_form .gx_title > a {
+    width: 50%;
+    float: left;
+    color: #959595;
+}
+
+.gx_reg_form .gx_title > a.on {
+    color: #000;
+}

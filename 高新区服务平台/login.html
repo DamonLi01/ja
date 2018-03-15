@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login_reg.css">
 </head>
 
 <body>
@@ -13,22 +13,27 @@
         <div class="gx_logo">
             <img src="./img/login/logo.png" alt="">
         </div>
-        <div class="gx_login_form">
+        <div class="gx_login_form gx_shadow">
             <div class="gx_title">
                 登录
             </div>
             <form action="">
                 <div class="gx_section">
                     <label for="">用户名：</label>
-                    <input type="text">
+                    <input type="text" placeholder="请输入用户名">
                 </div>
                 <div class="gx_section">
                     <label for="">密码：</label>
-                    <input type="text">
+                    <input type="text" placeholder="请输入密码">
                 </div>
                 <div class="gx_dsf">
                     <div>第三方登录</div>
                     <ul>
+                        <li>
+                            <a href="">
+                                <img src="./img/login/sina.png" alt="">
+                            </a>
+                        </li>
                         <li>
                             <a href="">
                                 <img src="./img/login/qq.png" alt="">
@@ -39,15 +44,19 @@
                                 <img src="./img/login/wechat.png" alt="">
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/login/sina.png" alt="">
-                            </a>
-                        </li>
+
                     </ul>
                 </div>
+                <div class="gx_section2">
+                    <button type="submit">登录</button>
+                </div>
+
             </form>
+            <div class="gx_section3">
+                    <a href="">还没有帐号，立即注册</a>
+            </div>
         </div>
+
     </div>
 </body>
 
