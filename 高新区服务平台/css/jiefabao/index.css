@@ -14,9 +14,14 @@
 .gx_jfb_slides {
     overflow: hidden;
 }
-.gx_subtitle .gx_lx{
+
+.gx_subtitle .gx_lx {
     color: #afafaf;
     font-weight: bold;
+}
+
+.gx_subtitle img{
+    vertical-align: -3px;
 }
 /*slide start*/
 
@@ -155,7 +160,10 @@
     line-height: 102px;
     font-size: 20px;
 }
-
+.gx_title{
+    color: #424040
+;
+}
 .gx_tj_title {
     font-size: 32px;
     text-align: center;
@@ -167,7 +175,7 @@
     /* text-align: center; */
     font-size: 16px;
     color: #333;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 .gx_qy_content {
@@ -176,12 +184,37 @@
     color: #333;
     margin-bottom: 30px;
 }
-
+.gx_qy_mask{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    width: 270px;
+    top: 0;
+    display: none;
+}
+.gx_qy_mask .gx_qy_name{
+    position: absolute;
+    bottom: 0;
+    width: 270px;
+    background-color: #ff4b4b;
+    color: white;
+}
+.gx_cgj{
+    color: #ff4b4b;
+    padding-top: 55px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.gx_zbz{
+    color: white;
+    font-size: 16px;
+}
 .gx_qy_ck {
     color: white;
     background-color: #ff4b4b;
     padding: 7px 25px;
     display: inline-block;
+    visibility: hidden;
 }
 
 .gx_qy_more {
@@ -190,60 +223,98 @@
     font-size: 14px;
 }
 
-/* swiper start */
-
-#gx_swiper_slides {
-    margin-top: 20px;
-    height: 381px;
-    position: relative;
+.picScroll-left .gx_qy_logo {
+    display: flex;
     overflow: hidden;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+    vertical-align: middle;
 }
 
-#gx_swiper_slides .swiper-slide {
+.picScroll-left .gx_qy_logo > img {
+    width: 100%;
+    height: auto !important;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.button-prev,
+.button-next {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 0;
+    margin-top: -35px;
+    width: 60px;
+    height: 60px;
+    background: url(../../lib/youdaoSlides/images/swiper-btn.png);
+    cursor: pointer;
+    display: none;
+}
+
+.button-next {
+    background-position: 0 -60px;
+    left: auto;
+    right: 0;
+}
+
+/*picScroll-left*/
+.picScroll-left ,.picScroll-left2 {
+    position: relative;
+}
+
+.picScroll-left .bd  ,.picScroll-left2 .bd2 {
+    overflow: hidden;
+    position: relative;
+    width: 98% !important;
+    margin: 0 auto;
+}
+
+.picScroll-left .bd  ul li ,.picScroll-left2 .bd2  ul li{
+    float: left;
     width: 230px;
     padding: 20px;
     position: relative;
     background-color: white;
     text-align: center;
     margin: 0 10px;
-}
-
-#gx_swiper_slides .swiper-slide .gx_qy_logo {
-    line-height: 0;
-    text-align: center;
-    height: 140px;
-    display: table-cell;
-}
-
-#gx_swiper_slides .swiper-slide .gx_qy_logo > img {
-    width: 220px;
-    margin: auto;
-}
-
-#gx_swiper_slides .swiper-button-prev,
-#gx_swiper_slides .swiper-button-next {
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    left: 10px;
-    margin-top: -60px;
-    width: 60px;
-    height: 60px;
-    background: url(../../lib/youdaoSlides/images/swiper-btn.png);
     cursor: pointer;
+}
+.picScroll-left .bd ul li:hover .gx_qy_ck{
+    visibility: initial;
+}
+.picScroll-left:hover .hd > a,.picScroll-left2:hover .hd2 > a {
+    display: inline-block;
+}
+.picScroll-left2 .gx_cgal{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+.picScroll-left2 .gx_cgal>a{
+    display: flex;
+    overflow: hidden;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+}
+.picScroll-left2 .gx_cgal>a>img{
+    width: 100%;
+    height: auto !important;
+    margin: auto;
+    vertical-align: middle;
+}
+ .picScroll-left2 .bd2 ul li{
+     padding: 0;
+     width: 270px;
+ }
 
-    /* display: none; */
+.picScroll-left2{
+    margin-bottom: 150px;
 }
 
-#gx_swiper_slides .swiper-button-next {
-    background-position: 0 -60px;
-    left: auto;
-    right: 10px;
-}
-
-/* #gx_swiper_slides:hover .swiper-button-prev,
-#gx_swiper_slides:hover .swiper-button-next {
+.picScroll-left2 .bd2 ul li .gx_cgal:hover .gx_qy_mask{
     display: block;
-} */
-
-/* swiper end */
+}

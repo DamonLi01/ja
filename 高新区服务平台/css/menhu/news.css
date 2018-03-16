@@ -1,7 +1,8 @@
-img{
+img {
     line-height: 0;
     font-size: 0;
 }
+
 .gx_right .gx_title {
     /* border-bottom: 1px solid #bebebe; */
     border-top: 3px solid #1274b5;
@@ -10,13 +11,13 @@ img{
     padding: 0 10px;
 }
 
-.gx_right .gx_title>span {
+.gx_right .gx_title > span {
     padding-left: 10px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.gx_right .gx_more>span {
+.gx_right .gx_more > span {
     background-color: #6f84d6;
     color: white;
     padding: 2px 10px;
@@ -31,6 +32,7 @@ img{
 .gx_right .gx_gg_list {
     padding: 10px 20px;
     background-color: #ffffff;
+    font-size: 16px;
 }
 
 .gx_right .gx_gg_list li {
@@ -68,9 +70,10 @@ img{
 
 .gx_left .gx_new_list {
     padding: 0 15px 10px;
+    font-size: 16px;
 }
 
-.gx_left .gx_new_list ul li>a {
+.gx_left .gx_new_list ul li > a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -86,14 +89,16 @@ img{
     border: 0;
 }
 
-.gx_adv1{
+.gx_adv1 {
     margin-top: 10px;
     line-height: 0;
 }
+
 .gx_adv2 {
     margin-top: 5px;
     line-height: 0;
 }
+
 .gx_tab ul li {
     float: left;
     text-align: center;
@@ -101,19 +106,26 @@ img{
     background-color: #6C7AD6;
     color: white;
 }
-.gx_tab ul li.on{
+
+.gx_tab ul li.on {
     background-color: #6D90FF;
 }
-.gx_tab ul li a{
+
+.gx_tab ul li a {
     color: inherit;
-    display: block;    padding: 13px 0;
+    display: block;
+    padding: 13px 0;
 }
+
 .gx_tab img {
     width: 40px;
     height: 40px;
-    line-height: 0;    margin-bottom: 5px;
+    line-height: 0;
+    margin-bottom: 5px;
 }
-.gx_tab{
+
+.gx_tab {
     overflow: hidden;
     margin-top: 10px;
+    font-size: 16px;
 }

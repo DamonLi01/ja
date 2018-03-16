@@ -110,7 +110,9 @@ li {
 .gx_fz_16 {
     font-size: 16px;
 }
-
+.gx_fwb{
+    font-weight: bold;
+}
 .gx_fz_14 {
     font-size: 14px;
 }
