@@ -48,8 +48,10 @@ img {
 }
 
 .gx_left {
-    margin-right: 495px;
+    /*margin-right: 495px;*/
     background: white;
+    float: left;
+    width: 705px;
 }
 
 .gx_main .gx_container {

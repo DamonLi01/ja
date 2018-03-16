@@ -10,7 +10,7 @@
     border-radius: 5px;
     padding: 25px 20px;
     float: left;
-    width: 28.88%;
+    width: 346.6px;
     overflow: hidden;
 }
 
@@ -21,7 +21,8 @@
 }
 
 .gx_cw_content {
-    margin-left: 60px;
+    display: inline-block;
+    width: 300px;
     color: #969696;
 }
 

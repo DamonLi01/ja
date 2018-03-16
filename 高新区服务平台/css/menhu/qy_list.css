@@ -8,8 +8,10 @@
 }
 
 .gx_left {
-    margin-right: 300px;
-    padding-right: 15px;
+    /*margin-right: 300px;*/
+    /*padding-right: 15px;*/
+    float: left;
+    width: 885px;
 }
 
 .gx_left .gx_tab {
