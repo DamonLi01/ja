@@ -14,12 +14,16 @@
 .gx_jfb_slides {
     overflow: hidden;
 }
-
+.gx_subtitle .gx_lx{
+    color: #afafaf;
+    font-weight: bold;
+}
 /*slide start*/
 
 .slides_container {
     display: block;
-     /*width: 400px;*/
+
+    /*width: 400px;*/
     height: 400px;
     width: 100%;
     overflow: hidden;
@@ -37,7 +41,6 @@
 
 #slides .slide_item img {
     width: 100%;
-
     height: 400px;
 }
 
@@ -83,11 +86,12 @@
     padding: 0 35px;
     font-size: 18px;
     color: white;
-    margin-top: 20px;
+
+    /* margin-top: 20px; */
     line-height: 65px;
 }
 
-.gx_jfb_header>div {
+.gx_jfb_header > div {
     display: inline-block;
 }
 
@@ -98,26 +102,148 @@
 
 .gx_jfb_panle {
     overflow: hidden;
+    padding: 20px 0;
 }
-.gx_jfb_body{
+
+.gx_jfb_body {
     overflow: hidden;
     border: 1px solid #e1e1e1;
 }
-.gx_br{
+
+.gx_br {
     border-right: 1px solid #e1e1e1;
 }
-.gx_jfb_body .gx_jfb_content>div {
+
+.gx_jfb_body .gx_jfb_content > div {
     float: left;
     width: 50%;
     font-size: 18px;
 }
 
-.gx_jfb_body .gx_jfb_content .gx_list li{
+.gx_jfb_body .gx_jfb_content .gx_list li {
     padding: 5px 30px;
     line-height: 30px;
+    font-size: 18px;
 }
 
-.gx_jfb_body .gx_jfb_content .gx_list li:hover{
+.gx_jfb_body .gx_jfb_content .gx_list li:hover {
     background-color: #f2f2f2;
     cursor: pointer;
 }
+
+.gx_jfb_footer {
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+    border-top: 0;
+}
+
+.gx_jfb_footer .gx_zxdt {
+    line-height: 102px;
+    float: left;
+    font-size: 22px;
+    padding: 0 30px;
+    color: #ff4b4b;
+}
+
+.gx_jfb_footer .gx_zxdt_list {
+    width: 700px;
+    overflow: hidden;
+}
+
+.gx_jfb_footer .gx_zxdt_list li {
+    overflow: hidden;
+    line-height: 102px;
+    font-size: 20px;
+}
+
+.gx_tj_title {
+    font-size: 32px;
+    text-align: center;
+    padding: 25px 0;
+    color: #333;
+}
+
+.gx_qy_name {
+    /* text-align: center; */
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.gx_qy_content {
+    /* text-align: center; */
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gx_qy_ck {
+    color: white;
+    background-color: #ff4b4b;
+    padding: 7px 25px;
+    display: inline-block;
+}
+
+.gx_qy_more {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* swiper start */
+
+#gx_swiper_slides {
+    margin-top: 20px;
+    height: 381px;
+    position: relative;
+    overflow: hidden;
+}
+
+#gx_swiper_slides .swiper-slide {
+    width: 230px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#gx_swiper_slides .swiper-slide .gx_qy_logo {
+    line-height: 0;
+    text-align: center;
+    height: 140px;
+    display: table-cell;
+}
+
+#gx_swiper_slides .swiper-slide .gx_qy_logo > img {
+    width: 220px;
+    margin: auto;
+}
+
+#gx_swiper_slides .swiper-button-prev,
+#gx_swiper_slides .swiper-button-next {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 10px;
+    margin-top: -60px;
+    width: 60px;
+    height: 60px;
+    background: url(../../lib/youdaoSlides/images/swiper-btn.png);
+    cursor: pointer;
+
+    /* display: none; */
+}
+
+#gx_swiper_slides .swiper-button-next {
+    background-position: 0 -60px;
+    left: auto;
+    right: 10px;
+}
+
+/* #gx_swiper_slides:hover .swiper-button-prev,
+#gx_swiper_slides:hover .swiper-button-next {
+    display: block;
+} */
+
+/* swiper end */

@@ -32,8 +32,9 @@
 }
 
 .gx_panle {
-    margin: 20px 0 40px;
+    margin: 20px auto 40px;
     background-color: white;
+    width: 1180px;
 
 }
 

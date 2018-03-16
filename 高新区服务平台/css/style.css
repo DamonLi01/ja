@@ -64,6 +64,12 @@ li {
 .gx_container {
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.gx_container_full {
+    width: 100%;
+    min-width: 1200px;
 }
 
 .gx_main {
@@ -101,6 +107,16 @@ li {
     font-size: 17px;
 }
 
+.gx_fz_16 {
+    font-size: 16px;
+}
+
+.gx_fz_14 {
+    font-size: 14px;
+}
+.gx_fz_12 {
+    font-size: 12px;
+}
 .fwpt {
     background: #efefef;
     border-bottom: 1px solid #bebebe;
@@ -234,9 +250,49 @@ li {
     border: 0;
 }
 
+.gx_col_60 {
+    width: 60%;
+    float: left;
+}
+
+.gx_col_50 {
+    width: 50%;
+    float: left;
+}
+
+.gx_col_40 {
+    width: 40%;
+    float: left;
+}
+
+.gx_col_33 {
+    width: 33.33%;
+    float: left;
+}
+
+.gx_col_30 {
+    width: 30%;
+    float: left;
+}
+
+.gx_col_20 {
+    width: 20%;
+    float: left;
+}
+
+.gx_mrl20 {
+    margin: 0 20px;
+}
+
+
+
 /* 背景色start */
 .gx_bg_white {
-    background-color: white !important;
+    background-color: white;
+}
+
+.gx_bg_f5f5f5 {
+    background-color: #f5f5f5;
 }
 
 /* 背景色end */

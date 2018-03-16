@@ -1,0 +1,90 @@
+.gx_cw_tx {
+    float: right;
+    color: #557efc;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.gx_cw_item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 20px;
+    float: left;
+    width: 28.88%;
+    overflow: hidden;
+}
+
+.gx_cw_num {
+    font-size: 20px;
+    margin-top: 5px;
+    color: black;
+}
+
+.gx_cw_content {
+    margin-left: 60px;
+    color: #969696;
+}
+
+.gx_cw_section {
+    padding: 20px 0;
+}
+
+.gx_cw_table {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+.gx_cw_table caption{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #969696;
+    font-size: 16px;
+}
+.gx_cw_mx{
+    float: right;
+    color: #557efd;
+}
+.gx_cw_mx>a{
+    color: inherit;
+    float: left;
+    font-weight: bold;
+
+}
+.gx_cw_mx>a:first-child:after{
+    content: '';
+    border-right: 1px solid #e9e1e1;
+    margin: 0 10px;
+}
+.gx_cw_table thead, .gx_cw_table tbody {
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.gx_cw_table th, .gx_cw_table tbody td {
+    width: 25%;
+}
+
+.gx_cw_table thead {
+    color: white;
+    background-color: black;
+}
+
+.gx_cw_table tfoot td > a {
+    background-color: #557efd;
+    padding: 5px 25px;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.gx_cw_table tfoot {
+    text-align: center;
+    /* line-height: 50px; */
+}
+
+.gx_cw_table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
