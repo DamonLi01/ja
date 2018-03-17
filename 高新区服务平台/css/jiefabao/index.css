@@ -292,7 +292,7 @@
     position: relative;
     margin-bottom: 10px;
 }
-.picScroll-left2 .gx_cgal>a{
+.picScroll-left2 .gx_cgal .img_box{
     display: flex;
     overflow: hidden;
     height: 200px;
@@ -300,7 +300,7 @@
     line-height: 200px;
     vertical-align: middle;
 }
-.picScroll-left2 .gx_cgal>a>img{
+.picScroll-left2 .gx_cgal .img_box>img{
     width: 100%;
     height: auto !important;
     margin: auto;

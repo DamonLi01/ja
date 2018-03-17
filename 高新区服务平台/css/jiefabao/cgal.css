@@ -1,5 +1,5 @@
 .gx_container {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .gx_right {
@@ -8,8 +8,10 @@
 }
 
 .gx_left {
-    margin-right: 300px;
-    padding-right: 15px;
+    /* margin-right: 300px;
+    padding-right: 15px; */
+    float: left;
+    width: 885px;
 }
 
 .gx_left .gx_tab {
@@ -17,37 +19,42 @@
     padding: 20px;
 }
 
-.gx_left .gx_tab .gx_list1, .gx_left .gx_tab .gx_list2 {
+.gx_left .gx_tab .gx_list, .gx_left .gx_tab .gx_list2 {
     overflow: hidden;
 }
 
-.gx_left .gx_tab .gx_list1 ul, .gx_left .gx_tab .gx_list2 ul {
+.gx_left .gx_tab .gx_list ul, .gx_left .gx_tab .gx_list2 ul {
     overflow: hidden;
 }
 
-.gx_left .gx_tab .gx_list1 > span, .gx_left .gx_tab .gx_list2 > span {
+.gx_left .gx_tab .gx_list > span, .gx_left .gx_tab .gx_list2 > span {
     line-height: 35px;
     float: left;
     font-size: 17px;
     color: #707070;
+    /* width: 85px;
+    text-align: right; */
 }
 
-.gx_left .gx_tab .gx_list1 li, .gx_left .gx_tab .gx_list2 li {
+.gx_left .gx_tab .gx_list li, .gx_left .gx_tab .gx_list2 li {
     float: left;
     line-height: 35px;
 }
 
-.gx_left .gx_tab .gx_list1 li a, .gx_left .gx_tab .gx_list2 li a {
+.gx_left .gx_tab .gx_list li a, .gx_left .gx_tab .gx_list2 li a {
     padding: 2px 10px;
     margin: 0 10px;
-    font-weight: bold;
-    font-size: 15px;
+    /* font-weight: bold; */
+    font-size: 16px;
+    color: #333;
 }
 
-.gx_left .gx_tab .gx_list1 li.on a, .gx_left .gx_tab .gx_list2 li.on a {
-    background-color: #1274b5;
+.gx_left .gx_tab .gx_list li.on a, .gx_left .gx_tab .gx_list2 li.on a {
+    background-color: #333333;
     color: white;
+    border-radius: 5px;
 }
+
 
 .gx_left .gx_al_list {
     margin: 20px 0;
@@ -100,7 +107,7 @@
 .gx_left .gx_al_btn > a {
     float: left;
     padding: 3px 12px;
-    background: #ff4b4b;
+    background: red;
     color: white;
     margin-right: 10px;
 }
@@ -147,43 +154,4 @@
     top: 0;
     right: 20px;
 }
-
-.gx_right .gx_al_phb {
-    background-color: white;
-}
-
-.gx_right .gx_al_phb .gx_phb_title {
-    text-align: center;
-    font-size: 16px;
-    padding: 10px;
-}
-
-.gx_right .gx_al_phb ul li {
-    overflow: hidden;
-    font-size: 0;
-    padding: 10px;
-    position: relative;
-}
-
-.gx_right .gx_al_phb ul li .gx_qy_logo, .gx_right .gx_al_phb ul li .gx_phb_num {
-    float: left;
-}
-
-.gx_right .gx_al_phb ul li .gx_qy_logo > img {
-    width: 60px;
-    height: 60px;
-}
-
-.gx_right .gx_al_phb ul li .gx_phb_num {
-    font-size: 30px;
-    font-family: cursive;
-    color: #333;
-    line-height: 60px;
-    padding-right: 10px;
-}
-
-.gx_right .gx_al_phb ul li .gx_phb_content {
-    margin-left: 105px;
-}
-
 

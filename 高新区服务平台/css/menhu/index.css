@@ -177,7 +177,7 @@
 
 .gx_section2 .gx_tab > ul > li.on {
     background-color: white;
-    margin-top: -5px;
+    /* margin-top: -5px; */
 }
 
 .gx_section2 .gx_tab {
