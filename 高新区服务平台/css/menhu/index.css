@@ -64,62 +64,6 @@
     margin-left: 42px \9;
 }
 
-.gx_search {
-    width: 575px;
-    margin: 25px auto;
-    overflow: hidden;
-}
-
-.gx_search-hd {
-    height: 34px;
-    background-color: #1274b5;
-    padding: 3px;
-    position: relative;
-}
-
-.gx_search-bg {
-    width: 495px;
-    height: 34px;
-    background-color: #fff;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    z-index: 1;
-}
-
-.gx_search-hd .gx_search-input {
-    width: 495px;
-    height: 22px;
-    line-height: 22px;
-    padding: 6px 0;
-    background: none;
-    text-indent: 10px;
-    border: 0;
-    outline: none;
-    position: relative;
-    left: -37px;
-    top: 0;
-    font-size: 16px;
-    z-index: 5;
-}
-
-.gx_search-hd .gx_btn-search {
-    width: 70px;
-    height: 34px;
-    line-height: 34px;
-    position: absolute;
-    right: 3px;
-    top: 3px;
-    border: 0;
-    z-index: 6;
-    cursor: pointer;
-    font-size: 14px;
-    color: #fff;
-    font-weight: 700;
-    background: none;
-    outline: none;
-}
-
 .gx_section1 .gx_main-middle .gx_tab_contant {
     background-color: #ffffff;
 }

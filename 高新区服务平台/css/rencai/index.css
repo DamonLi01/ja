@@ -1,0 +1,103 @@
+
+
+
+.gx_banner{
+    background-image: url("../../img/rencai/banner.jpg");
+    background-repeat: no-repeat;
+    height: 145px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gx_search{
+    margin: 35px auto 5px auto;
+}
+.gx_search ul{
+    overflow: hidden;
+}
+.gx_search ul li{
+    float: left;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.gx_search ul li a{
+    /*color: #333;*/
+    font-weight: initial;
+    margin-right: 15px;
+}
+
+
+.gx_section1 .gx_left{
+    width: 750px;
+    float: left;
+    border-top: 5px solid #1274b5;
+}
+.gx_section1 .gx_right{
+    width: 435px;
+    float: right;
+    border-top: 5px solid #1274b5;
+}
+
+.gx_more{
+    float: right;
+}
+.gx_more > span {
+    background-color: #ff0057;
+    color: white;
+    padding: 3px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: initial;
+}
+.gx_section2{
+    margin: 15px 0;
+}
+.gx_section2 ul{
+    margin-right: -15px;
+}
+.gx_section2 ul li{
+    float: left;
+    line-height: 0;
+    width: 390px;
+    margin-right: 15px;
+}
+.gx_section2 ul li img{
+    width: 100%;
+}
+
+.gx_section3 .gx_left{
+    float: left;
+    width: 592.5px;
+    border-top: 5px solid #1274b5;
+}
+.gx_section3 .gx_right{
+    float: right;
+    width: 592.5px;
+    border-top: 5px solid #1274b5;
+}
+.gx_section3{
+    margin-bottom: 80px;
+}
+.gx_section3 .gx_rw_px{
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.gx_section3  .px_title{
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gx_section3  .gx_rw_px ul li{
+    float: left;
+    line-height: 0;
+    margin: 14.75px 9px;
+    width: 120px;
+    height: 120px;
+}
+.gx_section3  .gx_rw_px ul li img{
+    width: 100%;
+}

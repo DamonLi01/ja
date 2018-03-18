@@ -1,0 +1,37 @@
+
+.gx_container {
+    padding: 20px 0;
+}
+
+.gx_left {
+    width: 750px;
+    float: left;
+    border-top: 5px solid #1274b5;
+}
+
+.gx_right {
+    width: 275px;
+    float: right;
+}
+
+.gx_rw_fb {
+    display: block;
+    line-height: 60px;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gx_rw_cz a:first-child {
+    border-right: 1px solid #f3f3f3;
+}
+
+.gx_rw_cz a {
+    float: left;
+    width: 49.82%;
+    text-align: center;
+    line-height: 60px;
+    margin: 10px 0;
+    background-color: white;
+    font-size: 14px;
+}
