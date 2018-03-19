@@ -1,0 +1,71 @@
+.gx_main .gx_section1 {
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.gx_main {
+    padding: 20px 0;
+}
+
+.gx_main .gx_section1 .img_box {
+    float: left;
+}
+
+.gx_main .gx_section1 .gx_right {
+    margin-left: 405px;
+}
+
+.gx_main .gx_section1 .gx_right .gx_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.gx_main .gx_section1 .gx_right .gx_ll_num {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.gx_main .gx_section1 .gx_right .gx_money {
+    color: #ff4d18;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.gx_main .gx_section1 .gx_right .gx_bm_btn {
+    display: inline-block;
+    color: white;
+    background-color: #6964d9;
+    font-weight: bold;
+    padding: 5px 14px;
+    font-size: 17px;
+}
+
+.gx_main .gx_section2 {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.gx_main .gx_section2 .gx_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gx_main .gx_section2 .gx_bq {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.gx_main .gx_section2 .gx_ckgs {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.gx_main .gx_section2 .gx_ckgs img {
+    margin: 10px auto 80px auto;
+    display: block;
+}
