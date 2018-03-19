@@ -321,9 +321,7 @@
       color: #fff;
       font-weight: bold;
   }
-  html {
-    overflow-y: scroll;
-  }
+
   /*tips提示*/
   .alert-ui-tips {
     z-index: 5;
@@ -403,39 +401,6 @@
     color: #999;
     text-align: center;
   }
-  /* 空白页 start */
-  .wrap-empty {
-    padding: 80px 0;
-    text-align: center;
-  }
-  .wrap-empty i.box-empty {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    width: 105px;
-    height: 86px;
-    background: url(//concat.lietou-static.com/fe-c-pc/v5/images/common/icons/icon-100.a945a33e.png) no-repeat;
-  }
-  .wrap-empty h3 {
-    font-size: 16px;
-  }
-  .wrap-empty p {
-    font-size: 14px;
-    font-family: 'microsoft yahei';
-    margin-top: 15px;
-  }
-  .wrap-empty p.empty-tip {
-    font-size: 12px;
-  }
-  .wrap-empty i.box-code {
-    display: inline-block;
-    *zoom: 1;
-    *display: inline;
-    width: 106px;
-    height: 106px;
-    background: url(//concat.lietou-static.com/fe-c-pc/v5/images/common/app-code-download.3e4deaed.png) no-repeat;
-  }
-  /* 空白页 end */
   /* 个人主页职位列表*/
   .job-box dl {
     padding: 23px 0;
@@ -521,96 +486,17 @@
     padding-right: 60px !important;
     background: url(//concat.lietou-static.com/fe-c-pc/v5/images/common/qxjlogo.ebeb56ac.png) 105px center no-repeat;
   }
-  article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-  }
-  canvas {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-  }
+
   [hidden] {
     display: none;
   }
-  html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-  body {
-    margin: 0;
-  }
-  a:focus {
-    outline: thin dotted;
-  }
-  a:active, a:hover {
-    outline: 0;
-  }
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-  abbr[title] {
-    border-bottom: 1px dotted;
-  }
-  b, strong {
-    font-weight: bold;
-  }
-  dfn {
-    font-style: italic;
-  }
+
   hr {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     height: 0;
   }
-  mark {
-    background: #ff0;
-    color: #000;
-  }
-  code, kbd, pre, samp {
-    font-family: monospace, serif;
-    font-size: 1em;
-  }
-  pre {
-    white-space: pre-wrap;
-  }
-  q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
-  }
-  small {
-    font-size: 80%;
-  }
-  sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  sup {
-    top: -0.5em;
-  }
-  sub {
-    bottom: -0.25em;
-  }
-  img {
-    border: 0;
-  }
-  svg:not(:root) {
-    overflow: hidden;
-  }
-  figure {
-    margin: 0;
-  }
-  fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-  }
-  legend {
-    border: 0;
-    padding: 0;
-  }
+
   button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
@@ -657,11 +543,10 @@
   /* ========================================= basic ===================================== */
   body {
     margin: 0;
-    font-family: Tahoma, "\5B8B\4F53", Arial, Helvetica, Arial, sans-serif;
     font-size: 12px;
     line-height: 20px;
-    color: #333333;
-    background-color: #fff;
+    /*color: #333333;*/
+    /*background-color: #fff;*/
   }
   .clearfix {
     *zoom: 1;
@@ -674,143 +559,9 @@
   .clearfix:after {
     clear: both;
   }
-  p {
-    margin: 0;
-  }
-  small {
-    font-size: 85%;
-  }
-  strong {
-    font-weight: bold;
-  }
-  em, i {
+em, i {
     font-style: normal;
-  }
-  cite {
-    font-style: normal;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    margin: 10px 0;
-    font-family: inherit;
-    font-weight: bold;
-    line-height: 20px;
-    color: inherit;
-    text-rendering: optimizelegibility;
-  }
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-weight: normal;
-    line-height: 1;
-    color: #999999;
-  }
-  h1, h2, h3 {
-    line-height: 40px;
-  }
-  h1 {
-    font-size: 38.5px;
-  }
-  h2 {
-    font-size: 31.5px;
-  }
-  h3 {
-    font-size: 24.5px;
-  }
-  h4 {
-    font-size: 17.5px;
-  }
-  h5 {
-    font-size: 14px;
-  }
-  h6 {
-    font-size: 11.9px;
-  }
-  h1 small {
-    font-size: 24.5px;
-  }
-  h2 small {
-    font-size: 17.5px;
-  }
-  h3 small {
-    font-size: 14px;
-  }
-  h4 small {
-    font-size: 14px;
-  }
-  abbr {
-    cursor: help;
-    border-bottom: 1px dotted #999999;
-  }
-  ul, ol {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  ul.inline li, ol.inline li {
-    display: inline-block;
-    *display: inline;
-    padding-right: 5px;
-    padding-left: 5px;
-    *zoom: 1;
-  }
-  dl {
-    margin: 0;
-  }
-  dd {
-    margin-left: 0;
-  }
-  dl.horizontal {
-    *zoom: 1;
-  }
-  dl.horizontal:before, dl.horizontal:after {
-    display: table;
-    line-height: 0;
-    content: "";
-  }
-  dl.horizontal:after {
-    clear: both;
-  }
-  dl.horizontal dt {
-    float: left;
-    width: 160px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-  }
-  dl.horizontal dd {
-    margin-left: 180px;
-  }
-  code, pre {
-    padding: 0 3px 2px;
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    font-size: 12px;
-    color: #333333;
-    border-radius: 3px;
-  }
-  code {
-    padding: 2px 4px;
-    color: #d14;
-    white-space: nowrap;
-    background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;
-  }
-  pre {
-    display: block;
-    word-break: break-all;
-    word-wrap: break-word;
-    white-space: pre;
-    white-space: pre-wrap;
-  }
-  pre code {
-    padding: 0;
-    color: inherit;
-    white-space: pre;
-    white-space: pre-wrap;
-    background-color: transparent;
-    border: 0;
-  }
-  pre.scrollable {
-    max-height: 340px;
-    overflow-y: scroll;
-  }
+}
   hr {
     margin: 5px 0;
     border: 0;
@@ -833,14 +584,7 @@
   .hidden {
     visibility: hidden;
   }
-  a {
-    color: #00528c;
-    text-decoration: none;
-  }
-  a:hover, a:focus {
-    color: #1d81c7;
-    text-decoration: underline;
-  }
+
   .muted {
     color: #999999;
   }
@@ -5483,9 +5227,9 @@
     padding: 0px;
   }
 
-  body {
-    background-color: #f0f0f0;
-  }
+  /*body {*/
+    /*background-color: #f0f0f0;*/
+  /*}*/
   .vdialog .vd-header {
     z-index: 2 !important;
   }
@@ -5516,13 +5260,7 @@
     bottom: auto !important;
     top: auto !important;
   }
-  a {
-    color: #0077b3;
-    text-decoration: none !important;
-  }
-  a:hover, a:focus {
-    color: #FF9933;
-  }
+
   #resume .row {
     margin-left: -10px;
   }
