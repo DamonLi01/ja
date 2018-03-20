@@ -6850,7 +6850,9 @@ em, i {
   #nodetpl_g_5 {
     position: relative;
   }
-
+  #nodetpl_g_5 .w95{
+    width:95px;
+  }
    #nodetpl_g_5 .resume-complete {
     padding-left: 35px;
   }
