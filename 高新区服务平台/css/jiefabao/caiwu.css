@@ -44,6 +44,8 @@
 .gx_cw_mx{
     float: right;
     color: #557efd;
+    font-size: 15px;
+    font-weight: bold;
 }
 .gx_cw_mx>a{
     color: inherit;

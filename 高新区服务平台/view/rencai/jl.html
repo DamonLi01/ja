@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>我的简历</title>
-    <link rel="stylesheet" href="../../css/style.css"/>
-    <link rel="stylesheet" href="../../lib/jl_files/css/jl.css"/>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/rencai/jl.css" />
+    <link rel="stylesheet" href="../../lib/select2/dist/css/select2.min.css">
     <style>
         .gx_main {
             padding-top: 40px;
@@ -14,820 +15,851 @@
 </head>
 
 <body>
-<div class="gx_header">
-    <div class="fwpt">
-        <div class="fwpt_list">
-            <a href="">外包项目服务平台</a>
-            <a href="">外包人才服务平台</a>
-            <a href="">投融资服务平台</a>
-        </div>
-    </div>
-    <div class="gx_header_wrap">
-        <div class="gx_header_content">
-            <div class="title_content">
-                <div class="logo">
-                    <img src="../../img/menhu/index/logo.jpg" width="55" height="55" alt="logo"/>
-                </div>
-                <div class="title">
-                    南宁高新区服务外包公共服务平台
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a class="on" href=""> 首页</a>
-                    </li>
-                    <li>
-                        <a href="">职位库</a>
-                    </li>
-                    <li>
-                        <a href=""> 简历库</a>
-                    </li>
-                    <li>
-                        <a href=""> 猎头服务</a>
-                    </li>
-                    <li>
-                        <a href=""> 人才服务</a>
-                    </li>
-                    <li>
-                        <a href=""> 培训服务</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="login">
-                <a href="">注册</a>
-                <a href="">登录</a>
+    <div class="gx_header">
+        <div class="fwpt">
+            <div class="fwpt_list">
+                <a href="">外包项目服务平台</a>
+                <a href="">外包人才服务平台</a>
+                <a href="">投融资服务平台</a>
             </div>
         </div>
+        <div class="gx_header_wrap">
+            <div class="gx_header_content">
+                <div class="title_content">
+                    <div class="logo">
+                        <img src="../../img/menhu/index/logo.jpg" width="55" height="55" alt="logo" />
+                    </div>
+                    <div class="title">
+                        南宁高新区服务外包公共服务平台
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a class="on" href=""> 首页</a>
+                        </li>
+                        <li>
+                            <a href="">职位库</a>
+                        </li>
+                        <li>
+                            <a href=""> 简历库</a>
+                        </li>
+                        <li>
+                            <a href=""> 猎头服务</a>
+                        </li>
+                        <li>
+                            <a href=""> 人才服务</a>
+                        </li>
+                        <li>
+                            <a href=""> 培训服务</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="">注册</a>
+                    <a href="">登录</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="gx_main" id="resume">
-    <div class="wrap">
-        <div class="row">
-            <div class="span span23">
-                <div class="resume-bar clearfix">
-                    <div class="resume-name">
-                        <em title="">中文简历_201...</em>
-                        <a href="javascript:;" class="icons16 icons16-redit float-left"></a>
-                    </div>
-                    <div class="resume-rename hide">
-                        <input type="text" class="text input-medium"/>
-                        <input type="button" class="btn btn-primary btn-mini" value="保存"/>
-                        <a href="javascript:;">取消</a>
-                    </div>
-                    <div class="float-left">
-                        <a href="" target="_blank">预览</a>
-                        <i class="dot">|</i>
-                        <a href="">下载</a>
-                        <i class="dot">|</i>
-                        <a href="javascript:;">刷新</a>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div id="nodetpl_g">
-                        <div class="card-main clearfix" data-id="gr123">
-                            <div class="avatar-main">
-                                <p class="avatar-img">
-                                    <img class="middleFace" src="" alt=""/>
-                                </p>
+    <div class="gx_main" id="resume">
+        <div class="wrap">
+            <div class="row">
+                <div class="span span23">
+                    <div class="resume-bar clearfix">
+                        <div class="links">
+                            <div class="resume-switching">
+                                <select name="" class="select2">
+                                    <option>中文简历_201...</option>
+                                    <option>中文简历_201...</option>
+                                    <option>中文简历_201...</option>
+                                    <option>中文简历_201...</option>
+                                    <option>中文简历_201...</option>
+                                </select>
                             </div>
-                            <div class="info-content">
-                                <p class="user-name"> 黎东明
-                                    <i onclick="showEidt('gr123')" class="icons16 icons16-redit"></i>
-                                </p>
-                                <p class="f14">前端开发&nbsp;-&nbsp;广西XX软件有限公司</p>
-                                <p class="muted">
-                                    <b>广西</b>&nbsp;|&nbsp;
-                                    <b>计算机软件</b>&nbsp;|&nbsp;
-                                    <b>WEB前端开发工程师</b>&nbsp;|&nbsp;
-                                    <b>工作 1 年以上</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-edit-main clearfix hide" data-selector="gr123">
-                            <div id="faceBox" class="card-edit-avatar">
-                                <p class="edit-avatar-img">
-                                    <img class="middleFace" src="" alt=""/>
-                                </p>
-                                <p class="text-center">
-                                    <a class="face-uploader" href="javascript:;">修改</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a id="a" data-selector="face-delete" href="javascript:;">删除</a>
-                                </p>
-                            </div>
-                            <div class="card-edit-content resume-edit">
-                                <form action="">
-                                    <table>
-                                        <tbody>
-                                        <tr>
-                                            <th class="th-name">姓名</th>
-                                            <td colspan="3" class="clearfix">
-                                                <input type="text" class="text mr10 float-left"/>
-                                                <p class="inline-content f12 float-left"> 显示：
-                                                    <label>
-                                                        <input type="radio" class="radio" checked="checked"
-                                                               name="secret_name"/>姓名 </label>&nbsp;
-                                                    <label>
-                                                        <input type="radio" class="radio" name="secret_name"/>先生/女士
-                                                    </label>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>性别</th>
-                                            <td colspan="3">
-                                                <label>
-                                                    <input type="radio" class="radio" checked="checked" name="sex"
-                                                           value="男"/>男 </label>&nbsp;
-                                                <label>
-                                                    <input type="radio" class="radio" name="sex" value="女"/>女
-                                                </label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>公司名称</th>
-                                            <td colspan="3">
-                                                <input type="text" class="text span13"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>当前行业职能</th>
-                                            <td colspan="3" class="setjobw">
-                                                <input type="text" class="text span13"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <p class="w88">开始工作年份</p>
-                                            </th>
-                                            <td>
-                                                <input type="text" name="" value="" class="text"/>
-                                            </td>
-                                            <th class="short">
-                                                <p class="w68">职位名称</p>
-                                            </th>
-                                            <td>
-                                                <input type="text" class="text" name="" value="" placeholder=""/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <p class="">当前城市</p>
-                                            </th>
-                                            <td colspan="3">
-                                                <input type="text" name="" class="text span13"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <td colspan="3" class="revalid"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>&nbsp;</th>
-                                            <td colspan="3" class="btns">
-                                                <input type="submit" class="btn btn-primary" name=""
-                                                       onclick="save('gr123')" value="保 存"/>
-                                                <a href="javascript:;" onclick="cancel('gr123')">取消</a>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume">
-                    <div class="resume-title">
-                        <i class="icons32 icons32-clipboard"></i> 基本资料
 
+                        </div>
+                        <div class="resume-name" data-id="jl_name123123">
+                            <em title="">中文简历_201...</em>
+                            <a href="javascript:;" onclick="showEidt('jl_name123123')" class="icons16 icons16-redit float-left"></a>
+                        </div>
+                        <div class="resume-rename hide" data-selector="jl_name123123">
+                            <input type="text" class="text input-medium" />
+                            <input type="button" class="btn btn-primary btn-mini" onclick="save('jl_name123123')" value="保存" />
+                            <a href="javascript:;" onclick="cancel('jl_name123123')">取消</a>
+                        </div>
+                        <div class="gx_down">
+                            <a href="" target="_blank">预览</a>
+                            <i class="dot">|</i>
+                            <a href="">下载</a>
+                            <i class="dot">|</i>
+                            <a href="javascript:;">刷新</a>
+                        </div>
                     </div>
-                    <div class="resume-user-info">
-                        <div id="nodetpl_g_2">
-                            <div class="resume-complete">
-                                <table class="resume-table" data-id="jb654">
-                                    <tbody>
-                                    <tr>
-                                        <th>出生年份：</th>
-                                        <td> 1994年</td>
-                                        <th>婚姻状况：</th>
-                                        <td> 未婚</td>
-                                    </tr>
-                                    <tr>
-                                        <th>手机：</th>
-                                        <td> 182****9642</td>
-                                        <th>邮箱：</th>
-                                        <td> 10517****3@qq.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th>国籍：</th>
-                                        <td> 中国</td>
-                                        <th>户口：</th>
-                                        <td> 梧州</td>
-                                    </tr>
-                                    <tr>
-                                        <th>状态：</th>
-                                        <td> 离职，正在找工作</td>
-                                        <th></th>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="resume-edit hide clearfix" data-selector="jb654">
-                                    <form action="">
-                                        <table class="resume-table edit-table">
-                                            <tbody>
-                                            <tr>
-                                                <th>出生年份</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text"/>
-                                                </td>
-                                                <th>婚姻状况</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>手机</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text"/>
-                                                </td>
-                                                <th>邮箱</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>国籍</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text "/>
-                                                </td>
-                                                <th>户口</th>
-                                                <td class="form-content">
-                                                    <input type="text" class="text "/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>状态</th>
-                                                <td colspan="2">
-                                                    <input class="text" type="text" name="" value=""/>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="text-center btns">
-                                            <input type="submit" class="btn btn-primary" name="" onclick="save('jb654')"
-                                                   value="保 存"/>
-                                            <a href="javascript:;" onclick="cancel('jb654')">取消</a>
-                                        </div>
-                                    </form>
+                    <div class="card-info">
+                        <div id="nodetpl_g">
+                            <div class="card-main clearfix hide" data-id="gr123">
+                                <div class="avatar-main">
+                                    <p class="avatar-img">
+                                        <img class="middleFace" src="" alt="" />
+                                    </p>
                                 </div>
-                                <div class="edit-btns">
-                                    <i onclick="showEidt('jb654')" data-eidt="jb654" class="icons16 icons16-redit"></i>
+                                <div class="info-content">
+                                    <p class="user-name"> 黎某某
+                                        <i onclick="showEidt('gr123')" class="icons16 icons16-redit"></i>
+                                    </p>
+                                    <p class="f14">前端开发&nbsp;-&nbsp;广西XX软件有限公司</p>
+                                    <p class="muted">
+                                        <b>广西</b>&nbsp;|&nbsp;
+                                        <b>计算机软件</b>&nbsp;|&nbsp;
+                                        <b>WEB前端开发工程师</b>&nbsp;|&nbsp;
+                                        <b>工作 1 年以上</b>
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title" id="credit-job-want">
-                        <i class="icons32 icons32-portfolio"></i> 职业意向
-
-                    </div>
-                    <div class="resume-job-want">
-                        <div id="nodetpl_g_3">
-                            <div class="resume-complete " data-id="jw94654">
-                                <table>
-                                    <tbody>
-                                    <tr>
-                                        <th>期望行业：</th>
-                                        <td> 计算机软件</td>
-                                    </tr>
-                                    <tr>
-                                        <th>期望职能：</th>
-                                        <td>WEB前端开发工程师</td>
-                                    </tr>
-                                    <tr>
-                                        <th>期望地点：</th>
-                                        <td>广西</td>
-                                    </tr>
-                                    <tr>
-                                        <th>期望年薪：</th>
-                                        <td> 面议</td>
-                                    </tr>
-                                    <tr>
-                                        <th>目前年薪：</th>
-                                        <td> 保密</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="edit-btns">
-                                    <a href="javascript:;" onclick="showEidt('jw94654')"
-                                       class="icons16 icons16-redit"></a>
+                            <div class="card-edit-main clearfix " data-selector="gr123">
+                                <div id="faceBox" class="card-edit-avatar">
+                                    <p class="edit-avatar-img">
+                                        <img class="middleFace" src="" alt="" />
+                                    </p>
+                                    <p class="text-center">
+                                        <a class="face-uploader" href="javascript:;">修改</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a id="a" data-selector="face-delete" href="javascript:;">删除</a>
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="resume-edit hide" data-selector="jw94654">
-                                <form action="">
-                                    <fieldset class="form-content">
-                                        <table>
-                                            <tbody>
-                                            <tr>
-                                                <th>
-                                                    <p class="job-title">期望行业</p>
-                                                </th>
-                                                <td colspan="2">
-                                                    <input type="text" class="text">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <p class="job-title">期望职能</p>
-                                                </th>
-                                                <td colspan="2">
-                                                    <input type="text" class="text">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <p class="job-title">期望地点</p>
-                                                </th>
-                                                <td colspan="2">
-                                                    <input type="text" class="text">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <p class="job-title">期望年薪</p>
-                                                </th>
-                                                <td>
-                                                    <p class="w330">
-                                                        <input type="text" class="text salary">
-                                                        <span>元/月</span>
-                                                        <span>×</span>
-                                                        <input type="text" class="text month">
-                                                        <span>个月</span>
-                                                        <span>=</span>
-                                                        <span data-selector="currentResult">4.80</span>
-                                                        <span>万</span>
-                                                    </p>
-                                                </td>
-                                                <td class="text-left">
-                                                    <label class="w85">
-                                                        <input type="checkbox" checked="checked"> 显示为面议
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                    <p class="job-title">目前年薪</p>
-                                                </th>
-                                                <td>
-                                                    <p class="w330">
-                                                        <input type="text" class="text salary">
-                                                        <span>元/月</span>
-                                                        <span>×</span>
-                                                        <input type="text" class="text month">
-                                                        <span>个月</span>
-                                                        <span>=</span>
-                                                        <span data-selector="currentResult">4.20</span>
-                                                        <span>万</span>
-                                                    </p>
-                                                </td>
-                                                <td class="text-left">
-                                                    <label class="w85">
-                                                        <input type="checkbox" checked="checked"> 显示为保密
-                                                    </label>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </fieldset>
-                                    <fieldset class="text-center btns">
-                                        <input type="submit" class="btn btn-primary" name="" onclick="save('jw94654')"
-                                               value="保 存">
-                                        <a href="javascript:;" onclick="cancel('jw94654')">取消</a>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title" id="credit-work-experience">
-                        <i class="icons32 icons32-calendar"></i> 工作经历
-
-                    </div>
-                    <div class="resume-work-exp">
-                        <div id="nodetpl_g_4">
-
-                            <div class="resume-no hide">
-                                工作经历最能体现你的能力，且完善后才可投递简历哦！
-                            </div>
-                            <div class="resume-complete">
-                                <div class="difwork">
-                                    <h1 class="company-name" title="广西XX软件有限公司">
-                                            <span class="company-job-title">
-                                                <span class="job-name">前端开发</span>
-                                                <span>广西XX软件有限公司</span>
-                                            </span>
-                                        <time class="experience-time"> （2017.07 － 至今）</time>
-                                        <span class="yanzheng"></span>
-                                        <div class="btns">
-                                            <i class="icons16 icons16-redit" data-id="53173210"></i>
-                                            <i class="icons16 icons16-delete" data-id="53173210"></i>
-                                        </div>
-                                    </h1>
-                                    <div class="company-box">
-                                        <div class="workinfo">
-                                            工作地点：广西 | 下属人数：0
-                                        </div>
-                                        <div class="jobinfo clearfix">
-                                            <label>职责业绩：</label>
-                                            <ul>
-                                                <li>进行网站开发进行网站开发进行网站开发进行网站开发进行网站开发进行网站开发</li>
-                                            </ul>
-                                        </div>
-                                        <div class="company-info">
-                                            <ul>
-                                                <li>
-                                                    <label>公司行业：</label>
-                                                    <span>计算机软件</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resume-add">
-                                <em>+</em> 添加工作经历
-                            </div>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title">
-                        <i class="icons32 icons32-book"></i> 教育经历
-                    </div>
-                    <div class="resume-edu-exp">
-                        <div id="nodetpl_g_5">
-
-                            <div class="resume-no muted hide">
-                                教育经历最能体现你的学习和专业能力
-                            </div>
-                            <div class="resume-complete">
-
-                            </div>
-                            <div class="resume-add">
-                                <em>+</em> 添加教育经历
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr/>
-
-                    <div class="resume-title">
-                        <i class="icons32 icons32-e"></i> 语言能力
-                    </div>
-                    <div class="resume-language-ability">
-                        <div id="nodetpl_g_6">
-
-                            <div class="resume-complete">
-                                <table data-id="language">
-                                    <tbody>
-                                    <tr>
-                                        <th width="60">语言能力 :</th>
-                                        <td>
-                                            <div class="btn-action">
-                                                普通话
-                                                <i data-eidt="language" onclick="showEidt('language')"
-                                                   class="icons16 icons16-redit" data-id=""></i>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="resume-edit hide" data-selector="language">
+                                <div class="card-edit-content resume-edit">
                                     <form action="">
                                         <table>
                                             <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="language-category">
-                                                        <p>
+                                                <tr>
+                                                    <th class="th-name">姓名</th>
+                                                    <td colspan="3" class="clearfix">
+                                                        <input type="text" class="text mr10 float-left" />
+                                                        <p class="inline-content f12 float-left"> 显示：
                                                             <label>
-                                                                <input type="checkbox" name="">英语
-                                                            </label>
+                                                                <input type="radio" class="radio" checked="checked" name="secret_name" />姓名 </label>&nbsp;
                                                             <label>
-                                                                <input type="checkbox" name="">法语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">日语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">韩语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">德语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">俄语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">西班牙语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">葡萄牙语
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">阿拉伯语
-                                                            </label>
-                                                            <label>
-                                                                <input checked="" type="checkbox" name="">普通话
-                                                            </label>
-                                                            <label>
-                                                                <input type="checkbox" name="">粤语
+                                                                <input type="radio" class="radio" name="secret_name" />先生/女士
                                                             </label>
                                                         </p>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>性别</th>
+                                                    <td colspan="3">
+                                                        <label>
+                                                            <input type="radio" class="radio" checked="checked" name="sex" value="男" />男 </label>&nbsp;
+                                                        <label>
+                                                            <input type="radio" class="radio" name="sex" value="女" />女
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>公司名称</th>
+                                                    <td colspan="3">
+                                                        <input type="text" class="text span13" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>当前行业职能</th>
+                                                    <td colspan="3" class="setjobw">
+                                                        <input type="text" class="text span13" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p class="w88">开始工作年份</p>
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" name="" value="" class="text" />
+                                                    </td>
+                                                    <th class="short">
+                                                        <p class="w68">职位名称</p>
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" class="text" name="" value="" placeholder="" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p class="">当前城市</p>
+                                                    </th>
+                                                    <td colspan="3">
+                                                        <input type="text" name="" class="text span13" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <td colspan="3" class="revalid"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <td colspan="3" class="btns">
+                                                        <input type="submit" class="btn btn-primary" name="" onclick="save('gr123')" value="保 存" />
+                                                        <a href="javascript:;" onclick="cancel('gr123')">取消</a>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="resume-title">
+                            <i class="icons32 icons32-clipboard"></i> 基本资料
+
+                        </div>
+                        <div class="resume-user-info">
+                            <div id="nodetpl_g_2">
+                                <div class="resume-no">
+                                    工作经历最能体现你的能力，且完善后才可投递简历哦！
+                                </div>
+                                <div class="resume-complete">
+                                    <table class="resume-table hide" data-id="jb654">
+                                        <tbody>
+                                            <tr>
+                                                <th>出生年份：</th>
+                                                <td> 1994年</td>
+                                                <th>婚姻状况：</th>
+                                                <td> 未婚</td>
+                                            </tr>
+                                            <tr>
+                                                <th>手机：</th>
+                                                <td> 182****9642</td>
+                                                <th>邮箱：</th>
+                                                <td> 10517****3@qq.com</td>
+                                            </tr>
+                                            <tr>
+                                                <th>国籍：</th>
+                                                <td> 中国</td>
+                                                <th>户口：</th>
+                                                <td> 梧州</td>
+                                            </tr>
+                                            <tr>
+                                                <th>状态：</th>
+                                                <td> 离职，正在找工作</td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="resume-edit hide clearfix" data-selector="jb654">
+                                        <form action="">
+                                            <table class="resume-table edit-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>出生年份</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text" />
+                                                        </td>
+                                                        <th>婚姻状况</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>手机</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text" />
+                                                        </td>
+                                                        <th>邮箱</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>国籍</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text " />
+                                                        </td>
+                                                        <th>户口</th>
+                                                        <td class="form-content">
+                                                            <input type="text" class="text " />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>状态</th>
+                                                        <td colspan="2">
+                                                            <input class="text" type="text" name="" value="" />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="text-center btns">
+                                                <input type="submit" class="btn btn-primary" name="" onclick="save('jb654')" value="保 存" />
+                                                <a href="javascript:;" onclick="cancel('jb654')">取消</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="edit-btns hide" data-eidt="jb654">
+                                        <i onclick="showEidt('jb654')" class=" icons16 icons16-redit "></i>
+                                    </div>
+                                </div>
+                                <div class="resume-add" onclick="showEidt('jb654')">
+                                    <em>+</em> 添加基本资料
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="resume-title" id="credit-job-want">
+                            <i class="icons32 icons32-portfolio"></i> 职业意向
+
+                        </div>
+                        <div class="resume-job-want">
+                            <div id="nodetpl_g_3">
+                                <div class="resume-no">
+                                    工作经历最能体现你的能力，且完善后才可投递简历哦！
+                                </div>
+                                <div class="resume-complete hide" data-id="jw94654">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>期望行业：</th>
+                                                <td> 计算机软件</td>
+                                            </tr>
+                                            <tr>
+                                                <th>期望职能：</th>
+                                                <td>WEB前端开发工程师</td>
+                                            </tr>
+                                            <tr>
+                                                <th>期望地点：</th>
+                                                <td>广西</td>
+                                            </tr>
+                                            <tr>
+                                                <th>期望年薪：</th>
+                                                <td> 面议</td>
+                                            </tr>
+                                            <tr>
+                                                <th>目前年薪：</th>
+                                                <td> 保密</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="edit-btns">
+                                        <a href="javascript:;" onclick="showEidt('jw94654')" class="icons16 icons16-redit"></a>
+                                    </div>
+                                </div>
+                                <div class="resume-edit hide" data-selector="jw94654">
+                                    <form action="">
+                                        <fieldset class="form-content">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            <p class="job-title">期望行业</p>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <input type="text" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <p class="job-title">期望职能</p>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <input type="text" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <p class="job-title">期望地点</p>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <input type="text" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <p class="job-title">期望年薪</p>
+                                                        </th>
+                                                        <td>
+                                                            <p class="w330">
+                                                                <input type="text" class="text salary">
+                                                                <span>元/月</span>
+                                                                <span>×</span>
+                                                                <input type="text" class="text month">
+                                                                <span>个月</span>
+                                                                <span>=</span>
+                                                                <span data-selector="currentResult">4.80</span>
+                                                                <span>万</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <label class="w85">
+                                                                <input type="checkbox" checked="checked"> 显示为面议
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <p class="job-title">目前年薪</p>
+                                                        </th>
+                                                        <td>
+                                                            <p class="w330">
+                                                                <input type="text" class="text salary">
+                                                                <span>元/月</span>
+                                                                <span>×</span>
+                                                                <input type="text" class="text month">
+                                                                <span>个月</span>
+                                                                <span>=</span>
+                                                                <span data-selector="currentResult">4.20</span>
+                                                                <span>万</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <label class="w85">
+                                                                <input type="checkbox" checked="checked"> 显示为保密
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </fieldset>
                                         <fieldset class="text-center btns">
-                                            <input type="submit" onclick="save('language')" class="btn btn-primary"
-                                                   value="保 存">
-                                            <a href="javascript:;" onclick="cancel('language')">取消</a>
+                                            <input type="submit" class="btn btn-primary" name="" onclick="save('jw94654')" value="保 存">
+                                            <a href="javascript:;" onclick="cancel('jw94654')">取消</a>
                                         </fieldset>
                                     </form>
                                 </div>
+                                <div class="resume-add" onclick="showEidt('jw94654')">
+                                    <em>+</em> 添加基本资料
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="resume-title" id="credit-work-experience">
+                            <i class="icons32 icons32-calendar"></i> 工作经历
+
+                        </div>
+                        <div class="resume-work-exp">
+                            <div id="nodetpl_g_4">
+
+                                <div class="resume-no">
+                                    工作经历最能体现你的能力，且完善后才可投递简历哦！
+                                </div>
+                                <div class="resume-complete">
+
+                                </div>
+                                <div class="resume-add">
+                                    <em>+</em> 添加工作经历
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="resume-title">
+                            <i class="icons32 icons32-book"></i> 教育经历
+                        </div>
+                        <div class="resume-edu-exp">
+                            <div id="nodetpl_g_5">
+
+                                <div class="resume-no muted">
+                                    教育经历最能体现你的学习和专业能力
+                                </div>
+                                <div class="resume-complete">
+
+                                </div>
+                                <div class="resume-add">
+                                    <em>+</em> 添加教育经历
+                                </div>
                             </div>
 
                         </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title" id="credit-item">
-                        <i class="icons32 icons32-folder"></i> 项目经验
-                    </div>
-                    <div class="resume-project-exp">
-                        <div id="nodetpl_g_7">
-                            <div id="">
-                                <div class="resume-no hide">
+                        <hr/>
+
+                        <div class="resume-title">
+                            <i class="icons32 icons32-e"></i> 语言能力
+                        </div>
+                        <div class="resume-language-ability">
+                            <div id="nodetpl_g_6">
+                                <div class="resume-no">
+                                    <p>会多种语言能提升竞争力</p>
+                                </div>
+                                <div class="resume-complete">
+                                    <table data-id="language" class="hide">
+                                        <tbody>
+                                            <tr>
+                                                <th width="60">语言能力 :</th>
+                                                <td>
+                                                    <div class="btn-action">
+                                                        普通话
+                                                        <i data-eidt="language" onclick="showEidt('language')" class="icons16 icons16-redit" data-id=""></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="resume-edit hide" data-selector="language">
+                                        <form action="">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="language-category">
+                                                                <p>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">英语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">法语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">日语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">韩语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">德语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">俄语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">西班牙语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">葡萄牙语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">阿拉伯语
+                                                                    </label>
+                                                                    <label>
+                                                                        <input checked="" type="checkbox" name="">普通话
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="checkbox" name="">粤语
+                                                                    </label>
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <fieldset class="text-center btns">
+                                                <input type="submit" onclick="save('language')" class="btn btn-primary" value="保 存">
+                                                <a href="javascript:;" onclick="cancel('language')">取消</a>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="resume-add" onclick="showEidt('language')">
+                                    <em>+</em> 添加语言能力
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="resume-title" id="credit-item">
+                            <i class="icons32 icons32-folder"></i> 项目经验
+                        </div>
+                        <div class="resume-project-exp">
+                            <div id="nodetpl_g_7">
+
+                                <div class="resume-no">
                                     <p>项目经验是用人单位衡量人才能力的重要指标哦！</p>
                                     <p>来说说令你难忘的项目经历吧！</p>
                                 </div>
-                                <div class="resume-complete ">
-                                    <dl>
-                                        <dt class="clearfix">
-                                            <div class="btns">
-                                                <i class="icons16 icons16-redit"></i>
-                                                <i class="icons16 icons16-delete"></i>
-                                            </div>
-                                            <strong title="">集团集团集团</strong>（2017/08–2017/10）
-                                        </dt>
-                                        <dd>
-                                            <table>
-                                                <tbody>
-                                                <tr>
-                                                    <th>项目职务：</th>
-                                                    <td>前端</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>所在公司：</th>
-                                                    <td>广西XX软件有限公司</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>项目描述：</th>
-                                                    <td>
-                                                        主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </dd>
-                                    </dl>
+                                <div class="resume-complete">
+
                                 </div>
                                 <div class="resume-add">
                                     <em>+</em> 添加项目经验
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title" id="credit-self">
-                        <i class="icons32 icons32-comments"></i> 自我评价
-                    </div>
-                    <div class="resume-self-assess">
-                        <div id="nodetpl_g_8">
-                            <div class="resume-complete" data-id="zwpj">
-
-                            </div>
-
-                            <a href="javascript:;" onclick="showEidt('zwpj')" data-eidt="zwpj" style="display: none" class="icons16 icons16-redit"></a>
-                            <div class="resume-add" data-selector="add-self-assess">
-                                <em>+</em> 添加自我评价
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr/>
-                    <div class="resume-title" id="credit-attach">
-                        <i class="icons32 icons32-note"></i> 附加信息
-                    </div>
-                    <div class="resume-attach-info">
-                        <div id="nodetpl_g_9">
-                            <div class="resume-complete" data-id="fjxx"></div>
-                            <a href="javascript:;" onclick="showEidt('fjxx')" data-eidt="fjxx"
-                               class="icons16 icons16-redit" style="display: none"></a>
-                            <div class="resume-add">
-                                <em>+</em> 添加附加信息
-                            </div>
 
                         </div>
-                    </div>
-                    <hr/>
-                    <div class="resume-title">
-                        <em class="icons32 icons32-skill"></em>擅长技能
-                    </div>
-                    <div class="resume-skill-tag">
-                        <div id="nodetpl_g_10">
-                            <div id="">
-                                <div class="resume-no hide">
-                                    <p>更准确的技能标签，让HR/猎头找到你？</p>
+                        <hr/>
+                        <div class="resume-title" id="credit-self">
+                            <i class="icons32 icons32-comments"></i> 自我评价
+                        </div>
+                        <div class="resume-self-assess">
+                            <div id="nodetpl_g_8">
+                                <div class="resume-no ">
+                                    <p>建议您对自己做一个简短评价，简明扼要的描述您的职业优势，让猎头顾问和企业HR快速了解您！填写文字限1000字以内</p>
                                 </div>
-                                <div class="resume-complete clearfix">
-                                    <p class="skill-tag">javascript</p>
-                                    <p class="skill-tag">SQL Server</p>
-                                    <p class="skill-tag">CSS</p>
-                                    <p class="skill-tag">mysql</p>
-                                    <p class="skill-tag">PHP</p>
+                                <div class="resume-complete hide" data-id="zwpj">
+                                    <div class="text-content">22123123123</div>
                                 </div>
-                                <a href="javascript:;" class="icons16 icons16-redit"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="span span10 side">
-                <div class="private">
-                    <div class="side-title">
-                        简历隐私
-                    </div>
-                    <div class="content">
-                        <ul>
-                            <li class="clearfix">
-                                <p class="float-left">
-                                    <i class="icons24 icons24-view"></i> 简历可见度：</p>
-                                <div class="resume-visible-set">
-                                    <a href="javascript:;" class="resume-visible">
-                                        <span>开放简历</span>
-                                        <i></i>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a data-value="0" href="javascript:;" title="猎头顾问和企业HR都能看到">开放简历</a>
-                                        </li>
-                                        <li>
-                                            <a data-value="3" href="javascript:;"
-                                               title="暂时无跳槽需求，猎头顾问和企业HR都不能看到">隐藏简历</a>
-                                        </li>
-                                        <li>
-                                            <a data-value="1" href="javascript:;" title="仅猎头顾问能看到">仅猎头可见</a>
-                                        </li>
-                                        <li>
-                                            <a data-value="2" href="javascript:;" title="仅企业HR能看到">仅企业可见</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="dotted">
-                                <p>
-                                    <i class="icons24 icons24-lock"></i> 屏蔽的企业： </p>
-                                <div class="company">
-                                    <form>
-                                        <p>
-                                            <label>
-                                                <input type="radio" name="secret_e_shield" value="0"/>
-                                                让所有企业都能搜到我</label>
-                                        </p>
-                                        <p>
-                                            <label>
-                                                <input type="radio" name="secret_e_shield" value="1" checked="checked"/>
-                                                我不想让某些企业搜索到我 </label>
-                                        </p>
-
-                                        <p></p>
-                                        <div class="">
-                                            <ul class="compay-show-list">
-                                                <li class="clearfix">
-                                                    <div>
-                                                        <p title="">广西XX软件有限公司</p>
-                                                        <i class="icons16 icons16-delete float-right"></i>
-                                                        <i class="icons16 icons16-redit float-right"></i>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <a class="company-add-btn " href="javascript:;">
-                                                <i>+</i>添加屏蔽企业</a>
+                                <div class="resume-edit hide" data-selector="zwpj">
+                                    <form action="">
+                                        <div class="form-content">
+                                            <textarea></textarea>
                                         </div>
+                                        <fieldset class="text-center btns">
+                                            <input type="button" class="btn btn-primary" name="" value="保 存" onclick="save('zwpj')">
+                                            <a href="javascript:;" onclick="cancel('zwpj')">取消</a>
+                                        </fieldset>
                                     </form>
                                 </div>
-                            </li>
-                        </ul>
+                                <a href="javascript:;" onclick="showEidt('zwpj')" data-eidt="zwpj" style="display: none" class="icons16 icons16-redit"></a>
+                                <div class="resume-add" onclick="showEidt('zwpj')">
+                                    <em>+</em> 添加自我评价
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr/>
+                        <div class="resume-title">
+                            <i class="icons32 icons32-note"></i> 附加信息
+                        </div>
+                        <div class="resume-attach-info">
+                            <div id="nodetpl_g_9">
+                                <div class="resume-no ">
+                                    <p>如：获奖项、技能资格证书、专利等，填写文字1000字以内</p>
+                                </div>
+                                <div class="resume-complete hide" data-id="fjxx">
+                                    <div class="text-content">22123123123</div>
+                                </div>
+
+                                <div class="resume-edit hide" data-selector="fjxx">
+                                    <form action="">
+                                        <div class="form-content">
+                                            <textarea name=""></textarea>
+                                        </div>
+                                        <fieldset class="text-center btns">
+                                            <input type="button" class="btn btn-primary" name="" onclick="save('fjxx')" value="保 存">
+                                            <a href="javascript:;" onclick="cancel('fjxx')">取消</a>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <a href="javascript:;" onclick="showEidt('fjxx')" data-eidt="fjxx" class="icons16 icons16-redit" style="display: none"></a>
+                                <div class="resume-add" onclick="showEidt('fjxx')">
+                                    <em>+</em> 添加附加信息
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="resume-title">
+                            <em class="icons32 icons32-skill"></em>擅长技能
+                        </div>
+                        <div class="resume-skill-tag">
+                            <div id="nodetpl_g_10">
+                                <div class="resume-no ">
+                                    <p>更准确的技能标签，让HR/猎头找到你？</p>
+                                </div>
+                                <div class="resume-complete clearfix hide" data-id="addtab">
+                                    <div class="text-content">22123123123</div>
+                                </div>
+                                <div class="resume-edit hide" data-selector="addtab">
+
+                                    <form action="">
+                                        <div class="form-content">
+                                            <textarea name=""></textarea>
+                                        </div>
+                                        <fieldset class="text-center btns">
+                                            <input type="button" class="btn btn-primary" name="" onclick="save('addtab')" value="保 存">
+                                            <a href="javascript:;" onclick="cancel('addtab')">取消</a>
+                                        </fieldset>
+                                    </form>
+
+                                </div>
+
+                                <div class="resume-add" onclick="showEidt('addtab')" data-nick="add-skill-tags">
+                                    <em>+</em> 添加技能标签
+                                </div>
+
+                                <a href="javascript:;" style="display:none;" onclick="showEidt('addtab')" data-eidt="addtab" class=" icons16 icons16-redit"></a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="span span10 side">
+                    <div class="private">
+                        <div class="side-title">
+                            简历隐私
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li class="clearfix">
+                                    <p class="float-left">
+                                        <i class="icons24 icons24-view"></i> 简历可见度：</p>
+                                    <div class="resume-visible-set">
+                                        <select name="" class="select2">
+                                            <option>开放简历</option>
+                                            <option>开放简历</option>
+                                            <option>开放简历</option>
+                                            <option>开放简历</option>
+                                            <option>开放简历</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="dotted">
+                                    <p>
+                                        <i class="icons24 icons24-lock"></i> 屏蔽的企业： </p>
+                                    <div class="company">
+                                        <form>
+                                            <p>
+                                                <label>
+                                                    <input type="radio" name="secret_e_shield" value="0" /> 让所有企业都能搜到我
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                    <input type="radio" name="secret_e_shield" value="1" checked="checked" /> 我不想让某些企业搜索到我 </label>
+                                            </p>
+
+                                            <p></p>
+                                            <div class="">
+                                                <ul class="compay-show-list">
+                                                    <li class="clearfix">
+                                                        <div data-id="pbgs123">
+                                                            <p title="">广西XX软件有限公司</p>
+                                                            <i class="icons16 icons16-delete float-right"></i>
+                                                            <i onclick="showEidt('pbgs123')" data-eidt="pbgs123" class="icons16 icons16-redit float-right"></i>
+                                                        </div>
+                                                        <div data-selector="pbgs123" class="hide">
+                                                            <input value="" type="text" class="input-small text float-left">
+                                                            <a href="javascript:;" onclick="cancel('pbgs123')" class="float-right cancel">取消</a>
+                                                            <a href="javascript:;" onclick="save('pbgs123')" class="btn btn-primary float-right">保存</a>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                                <a class="company-add-btn" href="javascript:;">
+                                                    <i>+</i>添加屏蔽企业</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="gx_footer">
-    <div class="gx_yq_link">
-        <div class="gx_container">
-            <h3>友情链接</h3>
-            <div class="gx_fz_17">
-                <a href="">广西金岸网络科技有限公司</a>
-                <a href="">广西金岸网络科技有限公司</a>
-                <a href="">广西金岸网络科技有限公司</a>
-                <a href="">广西金岸网络科技有限公司</a>
-                <a href="">广西金岸网络科技有限公司</a>
+    <div class="gx_footer">
+        <div class="gx_yq_link">
+            <div class="gx_container">
+                <h3>友情链接</h3>
+                <div class="gx_fz_17">
+                    <a href="">广西金岸网络科技有限公司</a>
+                    <a href="">广西金岸网络科技有限公司</a>
+                    <a href="">广西金岸网络科技有限公司</a>
+                    <a href="">广西金岸网络科技有限公司</a>
+                    <a href="">广西金岸网络科技有限公司</a>
+                </div>
+            </div>
+        </div>
+        <div class="gx_section1">
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+            <a href="">网站首页</a>
+        </div>
+        <div class="gx_section2">
+            <div>
+                XXXXX版权所有 Copyright&copy;XXX.com All Rgith Reserved
+            </div>
+            <div>
+                客户服务、商务合作请致电：XXXXXXX 未经授权禁止转载、摘编、复制或建立镜像。如有违反，追究法律责任
+            </div>
+            <div>
+                广西金岸网络科技有限公司 技术支持 备案号：桂ICP备XXXXXX号 桂公网安备 XXXXXXXXX号
             </div>
         </div>
     </div>
-    <div class="gx_section1">
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-        <a href="">网站首页</a>
-    </div>
-    <div class="gx_section2">
-        <div>
-            XXXXX版权所有 Copyright&copy;XXX.com All Rgith Reserved
-        </div>
-        <div>
-            客户服务、商务合作请致电：XXXXXXX 未经授权禁止转载、摘编、复制或建立镜像。如有违反，追究法律责任
-        </div>
-        <div>
-            广西金岸网络科技有限公司 技术支持 备案号：桂ICP备XXXXXX号 桂公网安备 XXXXXXXXX号
-        </div>
-    </div>
-</div>
-<script src="../../lib/youdaoSlides/js/jquery-1.10.1.min.js"></script>
-<script>
-    $(function () {
+    <script src="../../lib/youdaoSlides/js/jquery-1.10.1.min.js"></script>
+    <script src="../../lib/select2/dist/js/select2.full.min.js"></script>
+    <script>
+        $(function () {
+            jQuery('.select2').select2({
+                minimumResultsForSearch: Infinity
+            });
+        })
+    </script>
+    <script>
+        $(function () {
 
-        $('#nodetpl_g_5 .resume-add').click(function () {
-            var id = new Date().getTime();
-            var str = '<div class="resume-edit" data-selector="' + id + '"><form action=""><fieldset class="clearfix"><label><span class="label">学校名称</span> <input type="text" class="text span15"></label></fieldset><fieldset class="clearfix"><label><span class="label">专业名称</span> <input type="text" class="text span15"></label></fieldset><fieldset class="clearfix"><span class="label">就读时间</span><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><input type="text" class="text w95"></div><div class="float-left dot">—</div><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><input type="text" class="text w95"></div></fieldset><fieldset class="clearfix"><span class="label">学历</span><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><label><input type="checkbox" class="checkbox">是否统招</label></div></fieldset><fieldset class="text-center btns"><input type="button" class="btn btn-primary" value="保 存" onclick="save(' + id + ',\'create\',\'education\')"> <a href="javascript:;"onclick="cancel(' + id + ',\'create\')">取消</a></fieldset></form></div>';
-            $('#nodetpl_g_5 .resume-complete').append(str);
+            $('#nodetpl_g_4 .resume-add').click(function () {
+                var id = new Date().getTime();
+                var str = '<div class="resume-edit resume-add-fieldset" data-selector="' + id +
+                    '"><h3 class="resume-tpl-title">添加工作经历</h3><form action=""><fieldset class="clearfix"><label class="left">公司名称</label><div class="left indent"><input type="text" class="text span15"></div></fieldset><fieldset class="clearfix"><label class="left">公司行业</label><div class="left indent"><input type="text" class="text span15"></div></fieldset><fieldset class="clearfix"><label class="left">职位名称</label><div class="left indent"><input type="text" class="text span15"></div></fieldset><fieldset class="clearfix"><div class="left"><label class="left">工作地点</label><div class="left indent"><input type="text" class="text span6"></div></div><div class="right"><label class="left">下属人数</label><div class="left indent"><input type="text" class="text span6"></div></div></fieldset><fieldset class="clearfix"><label class="left">任职时间</label><div class="left indent"><input type="text" class="text w105"></div><div class="left"><input type="text" class="text w105"></div><p class="time-line">—</p><div class="left"><input type="text" class="text w105"></div><div class="left"><input type="text" class="text w105"></div></fieldset><fieldset class="clearfix"><label class="left">职责业绩</label><div class="left indent"><textarea class="textarea"></textarea></div></fieldset><div class="optl-box optl-box-active"><a href="javascript:;" class="optl-btn">选填信息</a><div class="optl-content"><fieldset class="clearfix"><div class="left"><label class="left">公司性质</label><div class="left indent"><input type="text" class="text span6"></div></div><div class="right"><label class="left">公司规模</label><div class="left indent"><input type="text" class="text span6"></div></div></fieldset><fieldset class="clearfix"><label class="left">公司简介</label><div class="left indent"><textarea class="textarea"></textarea></div></fieldset><fieldset class="clearfix"><div class="left"><label class="left">所在部门</label><div class="left indent"><input type="text" class="text span6"></div></div><div class="right"><label class="left">汇报对象</label><div class="left indent"><input type="text" class="text span6"></div></div></fieldset><fieldset class="clearfix"><label class="left">月薪</label><div class="left indent"><input type="text" class="text span3"> <span class="smallsize">元/月</span>×&nbsp;&nbsp; <input type="text" class="text span2">&nbsp;&nbsp;个月</div></fieldset></div></div><fieldset class="text-center btns"><input type="button" class="btn btn-primary" name="" value="保 存" onclick="save(' +
+                    id + ',\'create\',\'work\')"> <a href="javascript:;" onclick="cancel(' + id +
+                    ')">取消</a></fieldset></form></div>';
+                $('#nodetpl_g_4 .resume-complete').append(str);
+            });
+
+
+
+
+            $('#nodetpl_g_5 .resume-add').click(function () {
+                var id = new Date().getTime();
+                var str = '<div class="resume-edit" data-selector="' + id +
+                    '"><form action=""><fieldset class="clearfix"><label><span class="label">学校名称</span> <input type="text" class="text span15"></label></fieldset><fieldset class="clearfix"><label><span class="label">专业名称</span> <input type="text" class="text span15"></label></fieldset><fieldset class="clearfix"><span class="label">就读时间</span><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><input type="text" class="text w95"></div><div class="float-left dot">—</div><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><input type="text" class="text w95"></div></fieldset><fieldset class="clearfix"><span class="label">学历</span><div class="float-left"><input type="text" class="text w95"></div><div class="float-left indent"><label><input type="checkbox" class="checkbox">是否统招</label></div></fieldset><fieldset class="text-center btns"><input type="button" class="btn btn-primary" value="保 存" onclick="save(' +
+                    id + ',\'create\',\'education\')"> <a href="javascript:;"onclick="cancel(' + id +
+                    ')">取消</a></fieldset></form></div>';
+                $('#nodetpl_g_5 .resume-complete').append(str);
+            });
+
+            $('#nodetpl_g_7 .resume-add').click(function () {
+                var id = new Date().getTime();
+                var str = '<div class="resume-edit resume-add-fieldset" data-selector="' + id +
+                    '"><form action=""><fieldset class="form-content"><table><tbody><tr><th>项目名称</th><td colspan="3"><input type="text" class="text"></td></tr><tr><th>公司名称</th><td width="200"><input type="text" class="text text-small"></td><th>项目职务</th><td width="237"><input type="text" class="text text-small"></td></tr><tr><th>项目时间</th><td colspan="3"><div class="float-left"><input type="text" class="text w93"></div><div class="float-left indent"><input type="text" class="text w93"></div><div class="float-left dot">—</div><div class="float-left"><input type="text" class="text w93"></div><div class="float-left indent"><input type="text" class="text w93"></div></td></tr><tr><th>项目描述</th><td colspan="3"><textarea class="textarea span15" rows="6"></textarea></td></tr><tr><th>项目职责</th><td colspan="3"><textarea class="textarea span15" rows="6"></textarea></td></tr><tr><th>项目业绩</th><td colspan="3"><textarea class="textarea span15" rows="6"></textarea></td></tr></tbody></table></fieldset><fieldset class="text-center btns"><input type="button" class="btn btn-primary" name="" value="保 存" onclick="save(' +
+                    id + ',\'create\',\'project\')"> <a href="javascript:;" onclick="cancel(' + id +
+                    ')">取消</a></fieldset></form></div>';
+                $('#nodetpl_g_7 .resume-complete').append(str);
+                console.log(str)
+            });
+
+
+
+            $('.company-add-btn').click(function () {
+                var str = '<li class="clearfix"><div data-selector="" class="hide" style="display:block"><input value="" type="text" class="input-small text float-left"> <a href="javascript:;" onclick="cancel()" class="float-right cancel">取消</a> <a href="javascript:;" onclick="save()" class="btn btn-primary float-right">保存</a></div></li>';
+                $('.compay-show-list').append(str);
+            })
+
         });
 
-        $('#nodetpl_g_8 .resume-add').click(function () {
-            var str = '<div class="resume-edit" data-selector="zwpj"><form action=""><div class="form-content"><textarea></textarea></div><fieldset class="text-center btns"><input type="button" class="btn btn-primary" name="" value="保 存" onclick="save(\'zwpj\',\'create\',\'pj\')"> <a href="javascript:;"onclick="cancel(\'zwpj\',\'create\')">取消</a></fieldset></form></div>';
-            $('#nodetpl_g_8 .resume-complete').after(str);
-        })
-
-        $('#nodetpl_g_9 .resume-add').click(function () {
-            var str = '<div class="resume-edit" data-selector="fjxx"><form action=""><div class="form-content"><textarea name=""></textarea></div><fieldset class="text-center btns"><input type="button" class="btn btn-primary" name="" onclick="save(\'fjxx\',\'create\',\'msg\')" value="保 存"> <a href="javascript:;" onclick="cancel(\'fjxx\',\'create\')">取消</a></fieldset></form></div>';
-            $('#nodetpl_g_9 .resume-complete').after(str);
-        })
-
-
-    });
-
-    function showEidt(id) {
-        $('[data-id=' + id + ']').hide();
-        $('[data-selector=' + id + ']').show();
-        $('[data-eidt=' + id + ']').hide();
-    }
-
-    function save(id, type, module) {
-        console.log(id,type,module)
-        if (type == 'create' && module == 'education') {
-            var str = '<dl class="" data-id="' + id + '"><dt class="school clearfix"><div class="btns"><i onclick="showEidt(' + id + ')" class="icons16 icons16-redit"></i> <i class="icons16 icons16-delete"></i></div><strong>广西某某职业学院</strong>（2014/09–2017/07）</dt><dd class="detail clearfix"><span class="w1">专业名称：计算机应用技术</span> <span>学历：大专</span> <span>是否统招：否</span></dd></dl>';
-            $('[data-selector=' + id + ']').before(str);
-            $('[data-selector=' + id + ']').hide();
-            $('[data-id=' + id + ']').show();
-        } else if (type == 'create' && module == 'pj') {
-            var str = '<div  class="text-content">22123123123</div>';
-            $('[data-id=' + id + ']').append(str);
-            $('[data-selector=' + id + ']').hide();
-            $('[data-id=' + id + ']').show();
-        } else if (type == 'create' && module == 'msg') {
-            var str = '<div  class="text-content">12222222222222</div>';
-            $('[data-id=' + id + ']').append(str);
-            $('[data-selector=' + id + ']').hide();
-            $('[data-id=' + id + ']').show();
-        } else {
-            $('[data-selector=' + id + ']').hide();
-            $('[data-id=' + id + ']').show();
+        function showEidt(id) {
+            $('[data-id=' + id + ']').hide();
+            $('[data-selector=' + id + ']').show();
+            $('[data-eidt=' + id + ']').hide();
         }
-        $('[data-eidt=' + id + ']').show();
-    }
 
-    function cancel(id, type) {
-        $('[data-selector=' + id + ']').hide();
-        $('[data-id=' + id + ']').show();
-        $('[data-eidt=' + id + ']').show();
-    }
-</script>
+        function save(id, type, m) {
+            if (type == 'create' && m == 'education') {
+                var str = '<dl class="" data-id="' + id +
+                    '"><dt class="school clearfix"><div class="btns"><i onclick="showEidt(' + id +
+                    ')" class="icons16 icons16-redit"></i> <i class="icons16 icons16-delete"></i></div><strong>广西某某职业学院</strong>（2014/09–2017/07）</dt><dd class="detail clearfix"><span class="w1">专业名称：计算机应用技术</span> <span>学历：大专</span> <span>是否统招：否</span></dd></dl>';
+                $('[data-selector=' + id + ']').before(str);
+                $('[data-selector=' + id + ']').hide();
+                $('[data-id=' + id + ']').show();
+            } else if (type == 'create' && m == 'work') {
+                var str = '<div class="difwork" data-id="' + id +
+                    '"><h1 class="company-name" title="广西XX软件有限公司"><span class="company-job-title"><span class="job-name">前端开发</span> <span>广西XX软件有限公司</span></span> <time class="experience-time">（2017.07 － 至今）</time> <span class="yanzheng"></span><div class="btns"><i class="icons16 icons16-redit"onclick="showEidt(' +
+                    id +
+                    ')"></i> <i class="icons16 icons16-delete"></i></div></h1><div class="company-box"><div class="workinfo">工作地点：黔东南 | 所在部门：123 | 汇报对象：123 | 下属人数：0 | 月薪：123元/月*12个月</div><div class="jobinfo clearfix"><label>职责业绩：</label><ul><li>进行网站开发进行网站开发进行网站开发进行网站开发进行网站开发进行网站开发</li></ul></div><div class="company-info"><ul><li><label>公司行业：</label><span>基金/证券/期货/投资</span></li><li><label>公司性质：</label><span>外商独资·外企办事处</span></li><li><label>公司规模：</label><span>100-499人</span></li><li class="company-intro clearfix"><label>公司简介：</label><div>123</div></li></ul></div></div></div>';
+                $('[data-selector=' + id + ']').before(str);
+                $('[data-selector=' + id + ']').hide();
+                $('[data-id=' + id + ']').show();
+            } else if (type == 'create' && m == 'project') {
+                var str = '<dl data-id="' + id + '"><dt class="clearfix"><div class="btns"><i onclick="showEidt(' + id +
+                    ')" class="icons16 icons16-redit"></i> <i class="icons16 icons16-delete"></i></div><strong title="">集团集团集团</strong>（2017/08–2017/10）</dt><dd><table><tbody><tr><th>项目职务：</th><td>前端</td></tr><tr><th>所在公司：</th><td>广西XX软件有限公司</td></tr><tr><th>项目描述：</th><td>主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责主要负责</td></tr></tbody></table></dd></dl>';
+                $('[data-selector=' + id + ']').before(str);
+                $('[data-selector=' + id + ']').hide();
+                $('[data-id=' + id + ']').show();
+            } else {
+                $('[data-selector=' + id + ']').hide();
+                $('[data-id=' + id + ']').show();
+            }
+            $('[data-eidt=' + id + ']').show();
+        }
+
+        function cancel(id, type) {
+            $('[data-selector=' + id + ']').hide();
+            $('[data-id=' + id + ']').show();
+            $('[data-eidt=' + id + ']').show();
+        }
+    </script>
 </body>
 
 </html>

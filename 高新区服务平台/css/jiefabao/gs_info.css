@@ -1,25 +1,23 @@
-.gx_container {
-    padding: 40px 0;
-}
 
-.gx_section1 .gx_left {
+
+.gx_main .gx_section1 .gx_left {
     background-color: white;
     float: left;
     width: 685px;
 }
 
-.gx_section1 .gx_right {
+.gx_main .gx_section1 .gx_right {
     background-color: white;
     width: 500px;
     float: right;
 }
 
-.gx_section1 .gx_left .gx_gs_info, .gx_section1 .gx_xy {
+.gx_main .gx_section1 .gx_left .gx_gs_info, .gx_main .gx_section1 .gx_xy {
     padding: 20px;
     height: 280px;
 }
 
-.gx_section1 .gx_left .gx_gs_title, .gx_section1 .gx_right .gx_gs_title {
+.gx_main .gx_section1 .gx_left .gx_gs_title, .gx_main .gx_section1 .gx_right .gx_gs_title {
     font-size: 20px;
     padding-bottom: 15px;
     line-height: 34px;
@@ -32,12 +30,12 @@
     margin: 0;
 }
 
-.gx_section1 .gx_gs_logo {
+.gx_main .gx_section1 .gx_gs_logo {
     width: 110px;
     float: left;
 }
 
-.gx_section1 .gx_gs_logo .img_box {
+.gx_main .gx_section1 .gx_gs_logo .img_box {
     display: flex;
     overflow: hidden;
     height: 110px;
@@ -47,14 +45,14 @@
     margin-bottom: 15px;
 }
 
-.gx_section1 .gx_gs_logo .img_box > img {
+.gx_main .gx_section1 .gx_gs_logo .img_box > img {
     width: 100%;
     height: auto !important;
     margin: auto;
     vertical-align: middle;
 }
 
-.gx_section1 .gx_gs_logo .gy, .gx_section1 .gx_gs_logo .gt {
+.gx_main .gx_section1 .gx_gs_logo .gy, .gx_main .gx_section1 .gx_gs_logo .gt {
     display: block;
     font-size: 15px;
     text-align: center;
@@ -65,44 +63,44 @@
     line-height: 30px;
 }
 
-.gx_section1 .gx_gs_logo .gt {
+.gx_main .gx_section1 .gx_gs_logo .gt {
     background-color: #0088ff;
 }
 
-.gx_section1 .gx_gs_xx {
+.gx_main .gx_section1 .gx_gs_xx {
     font-size: 16px;
     margin-left: 130px;
     line-height: 25px;
 }
 
-.gx_section1 .gs_jj, .gx_section1 .gs_dq {
+.gx_main .gx_section1 .gs_jj, .gx_main .gx_section1 .gs_dq {
     margin-bottom: 10px;
 }
 
-.gx_section1 .gx_right .gx_cjl {
+.gx_main .gx_section1 .gx_right .gx_cjl {
     overflow: hidden;
     margin-bottom: 15px;
 }
 
-.gx_section1 .gx_right .gx_cjl li {
+.gx_main .gx_section1 .gx_right .gx_cjl li {
     float: left;
     width: 25%;
     text-align: center;
 }
 
-.gx_section1 .gx_right .gx_cjl li .gx_cjl_num {
+.gx_main .gx_section1 .gx_right .gx_cjl li .gx_cjl_num {
     color: red;
 
     /* font-weight: bold; */
     font-size: 21px;
 }
 
-.gx_section1 .gx_right .gx_cjl li .gx_cjl_title {
+.gx_main .gx_section1 .gx_right .gx_cjl li .gx_cjl_title {
     font-size: 15px;
     color: #333333;
 }
 
-.gx_section1 .gx_right .gx_bz_left {
+.gx_main .gx_section1 .gx_right .gx_bz_left {
     width: 120px;
     float: left;
     text-align: center;
@@ -110,15 +108,15 @@
     font-weight: bold;
 }
 
-.gx_section1 .gx_right .gx_bz_left > div {
+.gx_main .gx_section1 .gx_right .gx_bz_left > div {
     margin-left: -2px;
 }
 
-.gx_section1 .gx_right .gx_bz {
+.gx_main .gx_section1 .gx_right .gx_bz {
     padding-left: 20px;
 }
 
-.gx_section1 .gx_right .gx_bz_right {
+.gx_main .gx_section1 .gx_right .gx_bz_right {
     margin-left: 130px;
     font-size: 14px;
     color: #333;
@@ -127,43 +125,150 @@
 }
 
 .gz_rz {
-    border: 1px solid #d0e6c4;
     display: inline-block;
     padding: 0 25px 0 6px;
     margin-right: 12px;
-    background-color: #eef9db;
     margin-bottom: 10px;
 }
 
-.gx_section1 {
+.gz_rz_success {
+    background-color: #eef9db;
+    border: 1px solid #d0e6c4;
+    background-image: url("../../img/jiefabao/gs_info/success.png");
+    background-repeat: no-repeat;
+    background-position: 68px 7px;
+}
+
+.gz_rz_warning {
+    background-color: #f9efdb;
+    border: 1px solid #e6cbc4;
+    background-image: url("../../img/jiefabao/gs_info/warning.png");
+    background-repeat: no-repeat;
+    background-position: 68px 7px;
+}
+
+.gx_main .gx_section1 {
     overflow: hidden;
 }
 
-.gx_section2 {
+.gx_main .gx_section2 {
     margin: 20px 0;
 }
 
-.gx_section2 .gx_right {
+.gx_main .gx_section2 .gx_right {
     width: 300px;
     float: right;
 }
 
-.gx_section2 .gx_left {
+.gx_main .gx_section2 .gx_left {
     float: left;
     width: 885px;
 }
 
-.gx_section2 .gx_jjpj_title {
+.gx_main .gx_section2 .gx_jjpj_title {
     padding: 10px 20px;
     background-color: white;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
     color: #333;
 }
 
-.gx_section2  .gx_jjpj_more {
+.gx_main .gx_section2 .gx_jjpj_more, .gx_main .gx_section2 .gx_gzpf_more {
+    float: right;
+    color: #333;
+}
+
+.gx_main .gx_section2 .gx_jjpj_list {
+    margin-right: -20px;
+    overflow: hidden;
+}
+
+.gx_main .gx_section2 .gx_jjpj_list li {
+    float: left;
+    margin: 20px 20px 20px 0;
+    width: 206px;
+}
+
+.gx_main .gx_section2 .gx_jjpj_list li .img_box img {
+    width: 100%;
+}
+
+.gx_main .gx_section2 .gx_jjpj_content {
+    font-size: 14px;
+    padding: 10px;
+    background-color: white;
+}
+
+.gx_jjpj_content .gx_money {
+    color: #ff5656;
+    font-weight: bold;
+}
+
+.gx_jjpj_content .gx_vul {
     float: right;
 }
 
-.gx_section2 .gx_jjpj_list li {
-    float: left;
+.gx_jjpj_content .gx_lx {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.gx_main .gx_section2 .gx_gzpf {
+    background: white;
+    padding: 10px 20px;
+}
+
+.gx_main .gx_section2 .gx_gzpf_title {
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+}
+
+.gx_main .gx_section2 .gx_gzpf caption {
+    padding: 25px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.gx_main .gx_section2 .gx_gzpf .gzpf_pf_box {
+    display: inline-block;
+    text-align: left;
+    vertical-align: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.gzpf_pf_box .gx_star {
+    font-size: 20px;
+    color: #ffcc01;
+    margin-right: 5px;
+}
+
+.gx_main .gx_section2 .gx_gzpf tbody tr td {
+    font-size: 16px;
+    color: #333;
+    padding: 24px 0;
+    line-height: 23px;
+    border-bottom: 1px solid #ededed;
+}
+
+.gx_main .gx_section2 .gx_gzpf .gzpf_money {
+    color: #ff5656;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.gx_main .gx_section2 .gx_gzpf .gzpf_time {
+    font-weight: bold;
+}
+
+.gx_fb_btn {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 14px;
 }

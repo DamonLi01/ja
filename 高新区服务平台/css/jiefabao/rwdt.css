@@ -1,6 +1,4 @@
-.gx_container {
-    padding: 40px 0;
-}
+
 
 .gx_right {
     width: 300px;
@@ -104,3 +102,11 @@
     margin-left: 10px;
 }
 
+.gx_fb_btn {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 14px;
+}

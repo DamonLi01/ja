@@ -57,30 +57,27 @@
 
 
 .gx_left .gx_al_list {
-    margin: 20px 0;
+    margin: 20px -10px;
     overflow: hidden;
 }
 
 .gx_left .gx_al_list li {
     float: left;
-    width: 50%;
+    width: 432.5px;
+    margin: 0 10px 20px;
 }
 
 .gx_left .gx_al_list li > div {
     overflow: hidden;
     background-color: white;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 30px 20px;
     position: relative;
 }
 
-.gx_left .gx_al_list li:nth-child(odd) > div {
-    margin-right: 10px;
-}
 
-.gx_left .gx_al_list li:nth-child(even) > div {
-    margin-left: 10px;
-}
+
+
 
 .gx_left .gx_al_list img {
     width: 140px;
