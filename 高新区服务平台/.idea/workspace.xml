@@ -14,23 +14,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="xmxq.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/jiefabao/xmxq.html">
+      <file leaf-file-name="fabu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/jiefabao/fabu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="106" column="35" lean-forward="false" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+            <state relative-caret-position="382">
+              <caret line="196" column="54" lean-forward="false" selection-start-line="196" selection-start-column="54" selection-end-line="196" selection-end-column="54" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xmxq.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jiefabao/xmxq.css">
+      <file leaf-file-name="fabu.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/jiefabao/fabu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="521">
+              <caret line="226" column="16" lean-forward="false" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -40,9 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nodetpl_g</find>
-      <find>nodetpl_g_edit</find>
-      <find>edit-btns</find>
       <find>国籍</find>
       <find>手机</find>
       <find>resume-table</find>
@@ -70,6 +74,9 @@
       <find>.gx_panle</find>
       <find>.gx_panle_footer</find>
       <find>2</find>
+      <find>INPUT[type=radio]</find>
+      <find>.gx_sj_input, .gx_sj_select</find>
+      <find>input[type=radio]</find>
     </findStrings>
     <replaceStrings>
       <replace>../img/menhu/index/</replace>
@@ -125,11 +132,12 @@
         <option value="$PROJECT_DIR$/view/jiefabao/caiwu.html" />
         <option value="$PROJECT_DIR$/css/jiefabao/caiwu.css" />
         <option value="$PROJECT_DIR$/css/jiefabao/cgal.css" />
-        <option value="$PROJECT_DIR$/css/jiefabao/fabu.css" />
         <option value="$PROJECT_DIR$/view/jiefabao/anli.html" />
         <option value="$PROJECT_DIR$/css/jiefabao/anli.css" />
         <option value="$PROJECT_DIR$/css/jiefabao/xmxq.css" />
         <option value="$PROJECT_DIR$/view/jiefabao/xmxq.html" />
+        <option value="$PROJECT_DIR$/view/jiefabao/fabu.html" />
+        <option value="$PROJECT_DIR$/css/jiefabao/fabu.css" />
       </list>
     </option>
   </component>
@@ -140,8 +148,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="796" />
-    <option name="y" value="83" />
+    <option name="x" value="778" />
+    <option name="y" value="36" />
     <option name="width" value="1126" />
     <option name="height" value="1000" />
   </component>
@@ -160,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -176,18 +185,12 @@
             <path>
               <item name="高新区服务平台" type="b2602c69:ProjectViewProjectNode" />
               <item name="高新区服务平台" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="高新区服务平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="高新区服务平台" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,14 +256,15 @@
       <workItem from="1521467398864" duration="13381000" />
       <workItem from="1521548068856" duration="13259000" />
       <workItem from="1521643078229" duration="5929000" />
+      <workItem from="1521730469307" duration="8990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76032000" />
+    <option name="totallyTimeSpent" value="85022000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="796" y="83" width="1126" height="1000" extended-state="0" />
+    <frame x="778" y="36" width="1126" height="1000" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2720588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -343,13 +347,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/youdaoSlides/swiper.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/youdaoSlides/swiper.txt" />
     <entry file="file://$PROJECT_DIR$/view/menhu/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -512,55 +510,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jl_files/page.resume.e1a32fee.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52758">
-          <caret line="0" column="296496" lean-forward="false" selection-start-line="0" selection-start-column="296486" selection-end-line="0" selection-end-column="296496" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jl_files/css/jl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="488" column="0" lean-forward="true" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jl_files/page.resume.daaeb78f.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jl_files/page.resume.e1a32fee.js" />
+    <entry file="file://$PROJECT_DIR$/lib/jl_files/css/jl.css" />
+    <entry file="file://$PROJECT_DIR$/lib/jl_files/page.resume.daaeb78f.css" />
     <entry file="file://$PROJECT_DIR$/view/rencai/jl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3016">
           <caret line="860" column="9" lean-forward="false" selection-start-line="860" selection-start-column="9" selection-end-line="860" selection-end-column="9" />
-          <folding>
-            <element signature="e#4644#4650#0" expanded="false" />
-            <element signature="e#4651#4657#0" expanded="false" />
-            <element signature="e#4775#4781#0" expanded="false" />
-            <element signature="e#4782#4788#0" expanded="false" />
-            <element signature="e#4841#4847#0" expanded="false" />
-            <element signature="e#4848#4854#0" expanded="false" />
-            <element signature="e#4912#4918#0" expanded="false" />
-            <element signature="e#4919#4925#0" expanded="false" />
-            <element signature="e#5599#5605#0" expanded="false" />
-            <element signature="e#5605#5611#0" expanded="false" />
-            <element signature="e#5611#5617#0" expanded="false" />
-            <element signature="e#5617#5623#0" expanded="false" />
-            <element signature="e#6682#6688#0" expanded="false" />
-            <element signature="e#7519#7525#0" expanded="false" />
-            <element signature="e#10574#10580#1" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#44585#44591#0" expanded="false" />
-            <marker date="1521647764584" expanded="true" signature="47678:47684" ph=" " />
-            <marker date="1521647764584" expanded="true" signature="47684:47690" ph=" " />
-            <marker date="1521647764584" expanded="true" signature="47729:47735" ph=" " />
-            <marker date="1521647764584" expanded="true" signature="47735:47741" ph=" " />
-            <marker date="1521647764584" expanded="true" signature="51299:51312" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,7 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8945">
           <caret line="334" column="29" lean-forward="true" selection-start-line="334" selection-start-column="29" selection-end-line="334" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,23 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/jiefabao/fabu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jiefabao/fabu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="74" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,9 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="273" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,17 +609,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="889" lean-forward="false" selection-start-line="0" selection-start-column="888" selection-end-line="0" selection-end-column="889" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/jiefabao/xmxq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="27">
           <caret line="106" column="35" lean-forward="false" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/jiefabao/fabu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="196" column="54" lean-forward="false" selection-start-line="196" selection-start-column="54" selection-end-line="196" selection-end-column="54" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jiefabao/fabu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="226" column="16" lean-forward="false" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

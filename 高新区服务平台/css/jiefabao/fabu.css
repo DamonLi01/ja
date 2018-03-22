@@ -2,6 +2,10 @@ body {
     background-color: #f5f5f5;
 }
 
+label {
+    cursor: pointer;
+}
+
 .gx_right {
     width: 300px;
     float: right;
@@ -96,8 +100,9 @@ body {
     border: 1px solid #c9c9c9;
 }
 
-.gx_sj_input,.gx_sj_select {
+.gx_sj_input, .gx_sj_select {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .gx_sj_input > input {
@@ -123,21 +128,111 @@ body {
     width: 100%;
 }
 
+.select2 {
+    height: 38px \9;
+    line-height: 38px \9;
+    padding-bottom: 8px \9;
+}
+
 .select2-container--default .select2-selection--single {
-    font-size: 14px  !important;
-    height: 38px !important; 
-    border: 1px solid #c9c9c9 !important; 
+    font-size: 14px !important;
+    height: 38px !important;
+    border: 1px solid #c9c9c9 !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     line-height: 38px !important;
     text-align: center;
 }
-.select2-container--default .select2-results>.select2-results__options{
+
+.select2-container--default .select2-results > .select2-results__options {
     text-align: center;
     font-size: 14px;
 
 }
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 38px !important;
+}
+
+/**
+  * 单选框自定义样式
+  **/
+input[type=radio] {
+    /*去除浏览器默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*自定义样式*/
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bebebe;
+    border: 0 \9;
+    outline: none;
+    cursor: pointer;
+    /*设置为圆形，看起来是个单选框*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+/**
+* 单选框 选中之后的样式
+**/
+input[type=radio]:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #00bfff;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    /*增加一些动画*/
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+
+input[type=radio]:checked:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.gx_fb_checkbox {
+    display: inline-block;
+    border: 1px solid #646464;
+    padding: 5px 15px 5px 20px;
+    background-image: url("../../img/jiefabao/fabu/checkbox0.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    overflow: hidden;
+}
+
+.gx_fb_checkbox input {
+    position: absolute;
+    left: -99999px;
+}
+
+.gx_fb_checked {
+    display: inline-block;
+    border: 1px solid;
+    color: #0088ff;
+    padding: 5px 15px 5px 20px;
+    background-image: url("../../img/jiefabao/fabu/checkbox1.png");
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
 }
