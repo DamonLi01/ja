@@ -110,3 +110,12 @@
     margin: 15px 0;
     font-size: 14px;
 }
+
+
+.gx_adv{
+    line-height: 0;
+    margin-top: 10px;
+}
+.gx_adv img{
+    width: 100%;
+}

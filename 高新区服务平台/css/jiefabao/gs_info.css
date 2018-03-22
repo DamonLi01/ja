@@ -200,7 +200,7 @@
 }
 
 .gx_jjpj_content .gx_money {
-    color: #ff5656;
+    color: red;
     font-weight: bold;
 }
 
@@ -255,7 +255,7 @@
 }
 
 .gx_main .gx_section2 .gx_gzpf .gzpf_money {
-    color: #ff5656;
+    color: red;
     font-weight: bold;
     font-size: 18px;
 }

@@ -2,7 +2,9 @@ img {
     line-height: 0;
     font-size: 0;
 }
-
+body{
+    background-color: #f3f3f3;
+}
 .gx_right .gx_title {
     /* border-bottom: 1px solid #bebebe; */
     border-top: 3px solid #1274b5;

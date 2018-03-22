@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
 
     <title>门户首页</title>
-    <link rel="stylesheet" href="../../lib/youdaoSlides/css/idangerous.swiper.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/menhu/index.css">
 </head>
@@ -669,7 +668,6 @@
 </div>
 <script src="../../lib/jquery-1.10.1.min.js"></script>
 <script src="../../lib/slides.jquery.js"></script>
-<script src="../../lib/youdaoSlides/js/idangerous.swiper.min.js"></script>
 <script src="../../lib/jquery.SuperSlide.2.1.1.js"></script>
 <script>
     jQuery(function () {
@@ -701,22 +699,6 @@
         })
         //gx_section2 gx_tab end
 
-        //gx_yq_slides start
-        var ydSwiper = new Swiper('#gx_yq_slides', {
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            loop: true, //可选选项，开启循环,
-            autoplay: 5000,
-        })
-        jQuery('.swiper-button-prev').on('click', function (e) {
-            e.preventDefault()
-            ydSwiper.swipePrev()
-        })
-        jQuery('.swiper-button-next').on('click', function (e) {
-            e.preventDefault()
-            ydSwiper.swipeNext()
-        })
-        //gx_yq_slides end
 
 
         jQuery(".picScroll-left").slide({

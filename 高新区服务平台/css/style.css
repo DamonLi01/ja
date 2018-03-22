@@ -368,47 +368,6 @@ li {
 
 /* 接发包排行榜 end */
 
-.gx_form {
-    font-size: 20px;
-}
-
-.gx_form .gx_input > input[type=text], .gx_form .gx_select select {
-    border: 0;
-    outline: 0;
-    width: inherit;
-    font-size: inherit;
-    height: inherit;
-}
-
-.gx_form .gx_input {
-    font-size: 16px;
-    width: 400px;
-    border-radius: 5px;
-    height: 40px;
-    border: 1px solid #e1e1e1;
-    padding: 0 20px;
-}
-
-.gx_form .gx_select {
-    font-size: 16px;
-    width: 400px;
-    border-radius: 5px;
-    height: 40px;
-    border: 1px solid #e1e1e1;
-    padding: 0 20px;
-}
-
-.gx_form {
-    margin: 20px 0;
-}
-
-.gx_form .gx_label {
-    margin-bottom: 10px;
-}
-
-.gx_form_radio .gx_form_title {
-    font-size: 20px;
-}
 
 .gx_order_list li {
     float: left;
@@ -605,3 +564,6 @@ li {
 }
 
 
+.gx_w300{
+    width: 300px !important;
+}

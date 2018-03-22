@@ -7,6 +7,7 @@
     <title>发布项目</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/jiefabao/fabu.css">
+    <link rel="stylesheet" href="../../lib/select2/dist/css/select2.min.css">
 </head>
 <style>
 </style>
@@ -68,15 +69,15 @@
                             <input class="gx_hidden" type="button">
                         </label>
                     </div>
-                    <div class="gx_form">
-                        <div class="gx_label">
-                            <label for="">标题和内容</label>
-                        </div>
-                        <div class="gx_input">
-                            <input type="text" placeholder="请用一句话概括你要做什么">
-                        </div>
 
+                    <div class="gx_fb_title">
+                        标题和内容
                     </div>
+                    <div class="gx_input">
+                        <input type="text" placeholder="请用一句话概括你要做什么">
+                    </div>
+
+
                     <div class="gx_bjq">
                         编辑器
                     </div>
@@ -88,141 +89,191 @@
 
                         <span>可添加5个图片/文件，每个大小不超过2MB</span>
                     </div>
-                    <div class="gx_form">
-                        <div class="gx_label">
-                            <label for="">联系方式</label>
-                        </div>
-                        <div class="gx_input">
-                            <input type="text" placeholder="">
-                        </div>
+
+                    <div class="gx_fb_title">
+                        联系方式
                     </div>
+                    <div class="gx_input">
+                        <input type="text" class="gx_w300" placeholder="">
+                    </div>
+
                     <div class="gx_form_radio">
-                        <div class="gx_form_title">
+                        <div class="gx_fb_title">
                             交易模式
                         </div>
                         <div class="gx_input_radio">
                             <label>
-                                <input type="radio" name="moshi" id=""> 竞标模式
+                                <input type="radio" name="moshi" id=""> 投标模式
                             </label>
                             <div>先选中标的用户，TA开始工作，平台托管金额，安全保证。</div>
-                            <div class="gx_form">
-                                <div>赏金</div>
-                                <div class="gx_input">
-                                    <input type="text" placeholder="直接填写赏金数目">
-                                </div>
-                                <br>
-                                <div class="gx_select">
-                                    <select name="" id="">
-                                        <option value="">1</option>
-                                        <option value="">1</option>
-                                        <option value="">1</option>
-                                        <option value="">1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
 
+                            <div class="gx_shangjin">赏金
+                                <div class="gx_input">
+
+                                    <input type="radio" name="shangjin2" id="">
+                                    <div class="gx_sj_input">
+                                        <label class="gx_cny">￥</label>
+                                        <input type="text" placeholder="直接填写赏金数目">
+                                    </div>
+
+                                </div>
+                                <div class="gx_select">
+                                    <input type="radio" name="shangjin2" id="">
+                                    <div class="gx_sj_select">
+                                        <select style="width:200px;" name="" class="select2">
+                                            <option>选择价格之间</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
                         <div class="gx_input_radio">
                             <label>
                                 <input type="radio" name="moshi" id=""> 赏金模式
                             </label>
+                            <div>用户先工作，再选中标作品。托管金额后吸引更多用户。</div>
+                            <div>适合简单设计、写作策划类任务，也适合取名祝福、发帖推广、下载注册等计件任务。</div>
+
+                            <div class="gx_shangjin">赏金
+                                <div class="gx_input">
+
+                                    <input type="radio" name="shangjin2" id="">
+                                    <div class="gx_sj_input">
+                                        <label class="gx_cny">￥</label>
+                                        <input type="text" placeholder="直接填写赏金数目">
+                                    </div>
+
+                                </div>
+                                <div class="gx_select">
+                                    <input type="radio" name="shangjin2" id="">
+                                    <div class="gx_sj_select">
+                                        <select style="width:200px;" name="" class="select2">
+                                            <option>选择价格之间</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                            <option>10000~20000</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div>用户先工作，再选中标作品。托管金额后吸引更多用户。</div>
-                        <div>适合简单设计、写作策划类任务，也适合取名祝福、发帖推广、下载注册等计件任务。</div>
+
+                        <div class="gx_fb_title">
+                            截止时间
+                        </div>
+                        <div class="gx_select">
+                            <select style="width:150px;" name="" class="select2">
+                                <option>2018-01-10</option>
+                                <option>2018-01-10</option>
+                                <option>2018-01-10</option>
+                                <option>2018-01-10</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="gx_add_yw">
+                    <div>
+                        编辑器
                     </div>
                 </div>
             </div>
-            <div class="gx_right">
-                <div class="gx_al_phb">
-                    <div class="gx_phb_title">中标排行榜 TOP5</div>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <div class="gx_phb_num">1</div>
-                                <div class="gx_qy_logo">
-                                    <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
-                                </div>
-                                <div class="gx_phb_content">
-                                    <div class="gx_fz_14">天猫</div>
-                                    <div class="gx_fz_12">中标：106次</div>
-                                    <div class="gx_phb_address">广西壮族自治区-南宁市</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="gx_phb_num">2</div>
-                                <div class="gx_qy_logo">
-                                    <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
-                                </div>
-                                <div class="gx_phb_content">
-                                    <div class="gx_fz_14">天猫</div>
-                                    <div class="gx_fz_12">中标：106次</div>
-                                    <div class="gx_phb_address">广西壮族自治区-南宁市</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="gx_phb_num">3</div>
-                                <div class="gx_qy_logo">
-                                    <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
-                                </div>
-                                <div class="gx_phb_content">
-                                    <div class="gx_fz_14">天猫</div>
-                                    <div class="gx_fz_12">中标：106次</div>
-                                    <div class="gx_phb_address">广西壮族自治区-南宁市</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="gx_phb_num">4</div>
-                                <div class="gx_qy_logo">
-                                    <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
-                                </div>
-                                <div class="gx_phb_content">
-                                    <div class="gx_fz_14">天猫</div>
-                                    <div class="gx_fz_12">中标：106次</div>
-                                    <div class="gx_phb_address">广西壮族自治区-南宁市</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="gx_phb_num">5</div>
-                                <div class="gx_qy_logo">
-                                    <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
-                                </div>
-                                <div class="gx_phb_content">
-                                    <div class="gx_fz_14">天猫</div>
-                                    <div class="gx_fz_12">中标：106次</div>
-                                    <div class="gx_phb_address">广西壮族自治区-南宁市</div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
         </div>
+        <div class="gx_right">
+            <div class="gx_al_phb">
+                <div class="gx_phb_title">中标排行榜 TOP5</div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="gx_phb_num">1</div>
+                            <div class="gx_qy_logo">
+                                <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
+                            </div>
+                            <div class="gx_phb_content">
+                                <div class="gx_fz_14">天猫</div>
+                                <div class="gx_fz_12">中标：106次</div>
+                                <div class="gx_phb_address">广西壮族自治区-南宁市</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="gx_phb_num">2</div>
+                            <div class="gx_qy_logo">
+                                <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
+                            </div>
+                            <div class="gx_phb_content">
+                                <div class="gx_fz_14">天猫</div>
+                                <div class="gx_fz_12">中标：106次</div>
+                                <div class="gx_phb_address">广西壮族自治区-南宁市</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="gx_phb_num">3</div>
+                            <div class="gx_qy_logo">
+                                <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
+                            </div>
+                            <div class="gx_phb_content">
+                                <div class="gx_fz_14">天猫</div>
+                                <div class="gx_fz_12">中标：106次</div>
+                                <div class="gx_phb_address">广西壮族自治区-南宁市</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="gx_phb_num">4</div>
+                            <div class="gx_qy_logo">
+                                <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
+                            </div>
+                            <div class="gx_phb_content">
+                                <div class="gx_fz_14">天猫</div>
+                                <div class="gx_fz_12">中标：106次</div>
+                                <div class="gx_phb_address">广西壮族自治区-南宁市</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="gx_phb_num">5</div>
+                            <div class="gx_qy_logo">
+                                <img src="../../img/jiefabao/chenggonganli/2.jpg" alt="">
+                            </div>
+                            <div class="gx_phb_content">
+                                <div class="gx_fz_14">天猫</div>
+                                <div class="gx_fz_12">中标：106次</div>
+                                <div class="gx_phb_address">广西壮族自治区-南宁市</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gx_adv">
+                <img src="../../img/jiefabao/adv1.jpg" alt="">
+            </div>
+            <div class="gx_adv">
+                <img src="../../img/jiefabao/adv2.jpg" alt="">
+            </div>
+        </div>
+
 
     </div>
-    <div class="gx_footer">
-        <div class="gx_yq_link">
-            <div class="gx_container">
-                <h3>友情链接</h3>
-                <div class="gx_fz_17">
-                    <a href="">广西金岸网络科技有限公司</a>
-                    <a href="">广西金岸网络科技有限公司</a>
-                    <a href="">广西金岸网络科技有限公司</a>
-                    <a href="">广西金岸网络科技有限公司</a>
-                    <a href="">广西金岸网络科技有限公司</a>
 
-                </div>
-            </div>
-        </div>
+
+    <div class="gx_footer">
+
         <div class="gx_section1">
             <a href="">网站首页</a>
             <a href="">网站首页</a>
@@ -240,8 +291,14 @@
         </div>
     </div>
     <script src="../../lib/jquery-1.10.1.min.js"></script>
-
+    <script src="../../lib/select2/dist/js/select2.full.min.js"></script>
     <script>
+        jQuery(function () {
+
+            jQuery('.select2').select2({
+                minimumResultsForSearch: Infinity
+            });
+        });
     </script>
 </body>
 
