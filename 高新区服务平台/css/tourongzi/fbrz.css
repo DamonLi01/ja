@@ -1,0 +1,73 @@
+.gx_panle {
+    background-color: white;
+}
+
+.gx_main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gx_panle_header {
+    border-bottom: 1px solid #e5e5e5;
+    background-image: url(../../img/rencai/lingdai.png);
+    background-repeat: no-repeat;
+    background-position: 24px 18px;
+    padding-left: 42px;
+}
+
+.gx_panle_header .gx_title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.gx_panle_body {
+    padding: 30px 60px;
+}
+
+.gx_panle_body  .gx_section1>label {
+    display: block;
+    font-size: 15px;
+    margin: 20px 0 10px;
+}
+
+.gx_panle_body input {
+    width: 390px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.gx_panle_body .gx_w165 {
+    width: 165px;
+}
+
+.gx_panle_body select {
+    width: 180px;
+}
+
+.gx_panle_body .gx_section2{
+    margin-top: 50px;
+}
+.gx_panle_footer{
+    padding: 0 60px 30px;
+}
+.gx_panle_footer button{
+    font-size: 16px;
+    color: white;
+    background-color: #ff6767;
+    border: 0;
+    outline: 0;
+    padding: 5px 10px;
+    margin-right: 20px;
+    width: 90px;
+    /* font-weight: bold; */
+}
+.gx_panle_footer .gx_yl_btn{
+    background-color: #74db7b;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0 !important;
+    height: 32px !important;
+}
+
