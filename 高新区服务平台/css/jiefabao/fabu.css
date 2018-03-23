@@ -109,6 +109,7 @@ label {
 }
 .gx_sj_select .gx_select_tips{
     vertical-align: -2px;
+    font-size:14px;
 }
 .gx_sj_input>input {
     padding-left: 50px !important;
