@@ -39,22 +39,23 @@ label {
     margin-bottom: 20px;
 }
 
-.gx_fb_fl > span {
+.gx_fb_fl>span {
     margin-right: 10px;
 }
 
-.gx_fb_fl > label, .gx_fb_upload > label {
+.gx_fb_fl>label,
+.gx_fb_upload>label {
     background-color: #0088ff;
     color: white;
     display: inline-block;
     padding: 2px 10px;
-
     /* margin-left: 10px; */
     border-radius: 5px;
     cursor: pointer;
 }
 
-.gx_fb_fl > label:active, .gx_fb_upload > label:active {
+.gx_fb_fl>label:active,
+.gx_fb_upload>label:active {
     background-color: #0777d8;
 }
 
@@ -81,13 +82,14 @@ label {
     color: #ff4b4b;
     margin: 10px 0;
 }
-
+.gx_jb_tips,.gx_sj_tips{
+    margin-left: 25px;
+}
 .gx_cny {
     position: absolute;
     color: #666;
     border-right: 1px solid #e1e1e1;
     margin-top: 8px;
-
     /* margin-left: 18px; */
     padding: 0px 5px;
 }
@@ -100,12 +102,15 @@ label {
     border: 1px solid #c9c9c9;
 }
 
-.gx_sj_input, .gx_sj_select {
+.gx_sj_input,
+.gx_sj_select {
     display: inline-block;
     margin-left: 10px;
 }
-
-.gx_sj_input > input {
+.gx_sj_select .gx_select_tips{
+    vertical-align: -2px;
+}
+.gx_sj_input>input {
     padding-left: 50px !important;
     font-size: 14px !important;
     width: 140px !important;
@@ -116,7 +121,49 @@ label {
 }
 
 .gx_shangjin {
-    margin-left: 35px;
+    margin: 15px 0 15px 40px;
+}
+.gx_form_radio .gx_input_radio label{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.gx_add_yw ,.gx_yq ,.gx_js{
+    padding: 25px 40px;
+    background-color: white;
+    margin-top: 20px;
+    color: #333;
+}
+.gx_fb_title>span{
+    font-size: 14px;
+}
+.gx_fb_cn>span{
+    /* vertical-align: 9px; */
+    margin-left: 20px;
+    font-size: 16px;
+}
+.gx_fb_cn{
+    margin: 10px 0;
+}
+.gx_yq .gx_fb_title{
+margin-bottom: 30px;
+}
+
+.gx_tg_money{
+    font-size: 16px;
+    color: #ff4b4b;
+    margin: 10px 0;
+}
+
+.gx_yf_money{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.gx_js .gx_fb_btn{
+    font-size: 16px;
+    color: white;
+    background-color: #0088ff;
+    border: 0;
+    padding: 7px 48px;
 }
 
 .gx_adv {
@@ -145,10 +192,9 @@ label {
     text-align: center;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
+.select2-container--default .select2-results>.select2-results__options {
     text-align: center;
     font-size: 14px;
-
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -158,6 +204,7 @@ label {
 /**
   * 单选框自定义样式
   **/
+
 input[type=radio] {
     /*去除浏览器默认样式*/
     -webkit-appearance: none;
@@ -166,7 +213,7 @@ input[type=radio] {
     /*自定义样式*/
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     width: 20px;
     height: 20px;
     border: 1px solid #bebebe;
@@ -182,6 +229,7 @@ input[type=radio] {
 /**
 * 单选框 选中之后的样式
 **/
+
 input[type=radio]:after {
     content: '';
     position: absolute;
@@ -212,6 +260,15 @@ input[type=radio]:checked:after {
     transform: scale(1);
 }
 
+.gx_jy_moshi:after {
+    background-color: initial !important;
+    background-image: url('../../img/jiefabao/fabu/checked.png') !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    left: -8px !important;
+}
+
 .gx_fb_checkbox {
     display: inline-block;
     border: 1px solid #646464;
@@ -219,7 +276,7 @@ input[type=radio]:checked:after {
     background-image: url("../../img/jiefabao/fabu/checkbox0.png");
     background-repeat: no-repeat;
     background-position: -1px -1px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .gx_fb_checkbox input {
