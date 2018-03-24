@@ -239,24 +239,32 @@
     vertical-align: middle;
 }
 
-.button-prev,
-.button-next {
+.button-prev {
     position: absolute;
     z-index: 999;
     top: 50%;
     left: 0;
     margin-top: -35px;
-    width: 60px;
-    height: 60px;
-    background: url(../../lib/youdaoSlides/images/swiper-btn.png);
+    width: 48px;
+    height: 48px;
+    background: url('../../img/prev.png') no-repeat;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 
 .button-next {
-    background-position: 0 -60px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    margin-top: -35px;
+    width: 48px;
+    height: 48px;
+    background: url('../../img/next.png') no-repeat;
+    cursor: pointer;
+    /* display: none; */
     left: auto;
     right: 0;
+    
 }
 
 /*picScroll-left*/
@@ -267,14 +275,14 @@
 .picScroll-left .bd  ,.picScroll-left2 .bd2 {
     overflow: hidden;
     position: relative;
-    width: 98% !important;
+    width: 90% !important;
     margin: 0 auto;
 }
 
 .picScroll-left .bd  ul li ,.picScroll-left2 .bd2  ul li{
     float: left;
     width: 230px;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     background-color: white;
     text-align: center;

@@ -1,3 +1,7 @@
+body {
+    background-color: #f3f3f3;
+}
+
 .gx_panle {
     background-color: white;
 }
@@ -9,10 +13,10 @@
 
 .gx_panle_header {
     border-bottom: 1px solid #e5e5e5;
-    background-image: url(../../img/rencai/lingdai.png);
+    background-image: url('../../img/tourongzi/fbrz/fb.png');
     background-repeat: no-repeat;
-    background-position: 24px 18px;
-    padding-left: 42px;
+    background-position: 24px 20px;
+    padding-left: 60px;
 }
 
 .gx_panle_header .gx_title {
@@ -20,15 +24,39 @@
     font-weight: bold;
     padding: 20px;
 }
+.gx_panle_header .gx_title>p{
+    font-weight: initial;
+    font-size: 15px;
+    margin-top: 2px;
 
+}
 .gx_panle_body {
-    padding: 30px 60px;
+    padding: 30px 80px;
 }
 
-.gx_panle_body  .gx_section1>label {
+.gx_panle_body .gx_section1 > label {
     display: block;
     font-size: 15px;
     margin: 20px 0 10px;
+}
+
+.gx_panle_body .gx_section1 .upload > input {
+    position: absolute;
+    left: -99999px;
+}
+
+.gx_panle_body .gx_section1 .upload {
+    background-color: #587bf8;
+    color: white;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.gx_panle_body .gx_section1 .upload:active {
+    background-color: #3659d8;
 }
 
 .gx_panle_body input {
@@ -45,13 +73,15 @@
     width: 180px;
 }
 
-.gx_panle_body .gx_section2{
+.gx_panle_body .gx_section2 {
     margin-top: 50px;
 }
-.gx_panle_footer{
-    padding: 0 60px 30px;
+
+.gx_panle_footer {
+    padding: 10px 80px 30px;
 }
-.gx_panle_footer button{
+
+.gx_panle_footer button {
     font-size: 16px;
     color: white;
     background-color: #ff6767;
@@ -60,9 +90,12 @@
     padding: 5px 10px;
     margin-right: 20px;
     width: 90px;
+    cursor: pointer;
+
     /* font-weight: bold; */
 }
-.gx_panle_footer .gx_yl_btn{
+
+.gx_panle_footer .gx_yl_btn {
     background-color: #74db7b;
 }
 
@@ -70,4 +103,3 @@
     border-radius: 0 !important;
     height: 32px !important;
 }
-

@@ -1,0 +1,104 @@
+.gx_main {
+    background-color: white;
+    overflow: hidden;
+}
+
+.gx_title {
+    background-color: white;
+    line-height: 80px;
+    padding: 0 30px;
+    border-bottom: 2px solid #e5e4e4;
+}
+
+.gx_title > span {
+    border-left: 5px solid #6965d8;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gx_mbx {
+    float: right;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+.gx_mbx li {
+    float: left;
+}
+
+.gx_mbx li > a {
+    color: inherit;
+}
+
+.gx_panle {
+    margin: 20px auto 40px;
+    background-color: white;
+    width: 1180px;
+
+}
+
+.gx_panle .gx_panle_body .gx_panle_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gx_panle .gx_panle_body .gx_panle_subtitle {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.gx_panle_body .gx_content {
+    text-align: center;
+    font-size: 17px;
+}
+
+.gx_panle_body {
+    padding: 20px 30px;
+}
+
+.gx_panle_body .gx_content > img {
+    padding: 25px 0;
+    width: 700px;
+}
+
+.gx_panle_body .gx_content > p {
+    text-indent: 34px;
+    text-align: left;
+    line-height: 26px;
+}
+
+.gx_panle_footer {
+    border-top: 1px solid #e5e4e4;
+
+    text-align: right;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+/* .gx_share {
+    padding: 0 18px 0 42px;
+    line-height: 32px;
+    font-size: 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    text-align: center;
+    color: #666;
+    background-image: url(../../img/menhu/news_info/details-share.svg);
+    background-size: 16px auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 12px 9px;
+    margin: 15px 0;
+} */
+
+/*.gx_panle_footer .jiathis_style_24x24 {*/
+/*float: right;*/
+/*margin: 20px 0;*/
+/*}*/
+
+/*.gx_panle_footer  .jiathis_style_24x24 .jiathis_txt{*/
+/*font-size: 16px !important;*/
+/*}*/
