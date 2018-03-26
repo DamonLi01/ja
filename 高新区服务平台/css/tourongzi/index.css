@@ -164,11 +164,38 @@
     background-color: white;
     padding: 40px 0;
 }
-
+.gx_main .gx_section3 ul{
+    overflow: hidden;
+}
 .gx_main .gx_section3 ul li{
     float: left;
+    width: 33.33%;    margin-bottom: 40px;
+}
+.gx_main .gx_section3 ul li a{
+    display: flex;
+    overflow: hidden;
+    height: 70px;
+    text-align: center;
+    width: 56%;
+    line-height: 70px;
+    vertical-align: middle;
+    margin: auto;
+}
+.gx_main .gx_section3 ul li img{
+    width: 100%;
+    height: auto !important;
+    margin: auto;
+    vertical-align: middle;
 }
 
-.gx_main .gx_section3 ul li img{
+.gx_list_more{
+    display: block;
     width: 200px;
+    margin: 15px auto;
+    background-color: #6966d8;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
 }
