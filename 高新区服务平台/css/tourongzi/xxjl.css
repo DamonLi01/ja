@@ -43,7 +43,7 @@ body {
 
 .gx_left .gx_list {
     background-color: white;
-    padding-bottom: 20px;
+    padding-bottom: 47px;
 }
 
 .gx_left .gx_list .img_box {
@@ -90,6 +90,8 @@ body {
 
 .gx_left .gx_list .gx_content {
     font-size: 15px;
+    overflow: hidden;
+    height: 60px;
 }
 
 .gx_left .gx_list .gx_read {
@@ -110,6 +112,7 @@ body {
     border-bottom: 1px solid #f4f4f4;
     line-height: 31px;
     text-align: left;
+    color: #000000;
 }
 .gx_right .gx_al_phb ul li{
     overflow: hidden;
@@ -128,7 +131,7 @@ body {
     margin: 0 auto;
 }
 .gx_right .gx_al_phb ul li .gx_phb_num {
-    line-height: 80px;
+    line-height: 80px;color: #000000;
 }
 
 .gx_right .gx_al_phb ul li .gx_phb_r {
@@ -146,6 +149,8 @@ body {
 .gx_right .gx_al_phb ul li .gx_phb_r  .gx_content{
     font-size: 14px;
     line-height: 20px;
+    overflow: hidden;
+    height: 40px;
 }
 .gx_right .gx_al_phb ul li .gx_phb_r .gx_time{
     font-size: 14px;
