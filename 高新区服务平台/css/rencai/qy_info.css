@@ -1,0 +1,80 @@
+body{
+    background-color: #f3f3f3;
+}
+.gx_container {
+    padding: 20px 0;
+}
+
+.gx_panle_header {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.gx_panle_header .gx_content {
+    overflow: hidden;
+}
+
+.gx_panle_header .gx_content > img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.gx_panle_header .gx_content > div {
+    margin-left: 130px;
+}
+
+.gx_panle_header .gx_panle_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gx_panle_header .gx_panle_subtitle {
+    margin: 10px 0;
+}
+
+.gx_panle_header .px_panle_lx {
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+}
+
+.gx_panle_header .px_panle_lx li {
+    float: left;
+    margin-right: 15px;
+}
+
+.gx_panle_header .px_panle_lx li > img {
+    float: left;
+    width: 21px;
+    height: 21px;
+}
+
+.gx_panle_header .px_panle_lx li > span {
+    margin-left: 5px;
+}
+
+.gx_panle_body {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.gx_panle_body .gx_panle_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.gx_panle_body .gx_content{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gx_panle_body .gx_content>p{
+    text-indent: 34px;
+    text-align: left;
+    line-height: 26px;
+}
+.gx_panle_body .gx_content>img{
+    margin: 15px 0;
+}
