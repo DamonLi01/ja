@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>伴手礼</title>
     <style>
         * {
@@ -11,19 +13,150 @@
             padding: 0;
         }
 
+        ul {
+            list-style: none;
+        }
+
         .gx_warp {
-            background-image: url(../img/bsl.jpg);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            padding-bottom: 178%;
+            background: url(../img/bsl.jpg) no-repeat 0 0 /100% 100%;
+            padding-bottom: 127%;
+            padding-top: 51%;
+        }
+
+        .gx_container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gx_banner {
+            line-height: 0;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .gx_list {
+            background: #2483c7; /* 一些不支持背景渐变的浏览器 */
+            background: -webkit-linear-gradient(left, #2483c7, #3b4097); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #2483c7, #3b4097); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #2483c7, #3b4097); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #2483c7, #3b4097); /* 标准的语法（必须放在最后） */
+            padding: 20px 0;
+        }
+
+        .gx_img {
+            /*height: 250px;*/
+            /*line-height: 250px;*/
+            /*display: flex;*/
+
+        }
+
+        .gx_img img {
+            width: 100%;
+        }
+
+        .gx_list ul {
+            overflow: hidden;
+            background-color: #eeeeee;
+            padding: 0 10px;
+            border-radius: 15px;
+        }
+
+        .gx_list li {
+            float: left;
+            width: 20%;
+        }
+        .gx_list li>div{
+            padding: 3px;
+            margin: 10px;
+            background: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="gx_warp">
-
+<div class="gx_warp">
+    <div class="gx_banner">
+        <img src="../img/banner.png" width="100%" alt="">
     </div>
+    <div class="gx_container">
+        <div class="gx_list">
+            <ul>
+                <li>
+                    <div>
+                        <div class="gx_img">
+                            <img src="../img/1_03.jpg" alt="">
+                        </div>
+                        <div class="gx_title">
+                            商品名称商品名称商品 名称商品名称商品名称
+                        </div>
+                        <div class="gx_buy">
+                            ￥
+                            <span>88.8</span>
+                            <a href="">点击抢购</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="gx_img">
+                            <img src="../img/1_03.jpg" alt="">
+                        </div>
+                        <div class="gx_title">
+                            商品名称商品名称商品 名称商品名称商品名称
+                        </div>
+                        <div class="gx_buy">
+                            ￥
+                            <span>88.8</span>
+                            <a href="">点击抢购</a>
+                        </div>
+                    </div>
+                </li>                <li>
+                <div>
+                    <div class="gx_img">
+                        <img src="../img/1_03.jpg" alt="">
+                    </div>
+                    <div class="gx_title">
+                        商品名称商品名称商品 名称商品名称商品名称
+                    </div>
+                    <div class="gx_buy">
+                        ￥
+                        <span>88.8</span>
+                        <a href="">点击抢购</a>
+                    </div>
+                </div>
+            </li>                <li>
+                <div>
+                    <div class="gx_img">
+                        <img src="../img/1_03.jpg" alt="">
+                    </div>
+                    <div class="gx_title">
+                        商品名称商品名称商品 名称商品名称商品名称
+                    </div>
+                    <div class="gx_buy">
+                        ￥
+                        <span>88.8</span>
+                        <a href="">点击抢购</a>
+                    </div>
+                </div>
+            </li>                <li>
+                <div>
+                    <div class="gx_img">
+                        <img src="../img/1_03.jpg" alt="">
+                    </div>
+                    <div class="gx_title">
+                        商品名称商品名称商品 名称商品名称商品名称
+                    </div>
+                    <div class="gx_buy">
+                        ￥
+                        <span>88.8</span>
+                        <a href="">点击抢购</a>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
