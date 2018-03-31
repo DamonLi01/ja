@@ -31,15 +31,15 @@ a {
 }
 
 .gx_list {
-    padding: 10px;
+    padding: 40px 10px;
     background: url(../img/bg3.png) no-repeat 0 0/101% 100%;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .gx_img {
-    height: 206px;
-    line-height: 206px;
+    height: 190px;
+    line-height: 190px;
     display: flex;
     display: table-cell \9;
     vertical-align: middle;
@@ -57,7 +57,7 @@ a {
 .gx_title {
     font-size: 17px;
     font-weight: bold;
-    padding: 0 5px;
+    padding: 5px 10px;
     word-break: break-all;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -91,7 +91,6 @@ a {
 }
 
 .gx_qg_btn:after {
-    border: 0;
     content: "";
     width: 0;
     height: 0;
@@ -110,28 +109,88 @@ a {
 }
 
 .gx_list li {
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
     float: left;
-    width: 19.662%;
-    margin: 10px 0;
-}
-
-.gx_list li:nth-child(5n+1) {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding-left: 10px;
-}
-
-.gx_list li:nth-last-child(5n+1) {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-right: 10px;
+    width: 20%;
+    margin: 5px 0;
 }
 
 .gx_list li>div {
-    padding: 3px;
-    margin: 10px;
+    margin: 3px;
     background: white;
+}
+
+.gx_ms {
+    background-color: #ea0200;
+    font-size: initial;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.gx_ms .gx_left {
+    background-color: white;
+    padding: 3px;
+    width: 63%;
+    float: left;
+}
+
+.gx_ms .gx_ms_jg {
+    font-weight: bold;
+}
+
+.gx_ms .gx_ms_jg>span {
+    font-size: 18px;
+    color: #ea0200;
+    display: inline-block;
+    width: 50%;
+}
+
+.gx_ms .gx_ms_jg s {
+    color: #737373;
+    font-size: 15px;
+}
+
+.gx_ms_cs {
+    overflow: hidden;
+}
+
+.gx_ms .ms_cs_bl {
+    font-size: 12px;
+    color: #ea0200;
+    width: 40%;
+    display: inline-block;
+}
+
+.gx_ms .ms_cs_jd {
+    background-color: #b5b5b5;
+    border-radius: 5px;
+    display: inline-block;
+    height: 7px;
+    width: 56%;
+    position: relative;
+}
+
+.gx_ms .ms_cs_jd>span {
+    display: inline-block;
+    background-color: #ea0200;
+    height: 7px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.gx_right {
+    float: right;
+    width: 34%;
+    line-height: 51px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.gx_right a {
+    display: block;
+    color: inherit;
 }
 
 /*适配移动端*/
@@ -206,25 +265,14 @@ a {
             width: 77%;
             margin: 0 auto;
         }
-        .gx_list li:nth-child(5n+1) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            padding-left: 0;
-        }
-        .gx_list li:nth-last-child(5n+1) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            padding-right: 0;
-        }
         .gx_list li {
-            background-color: #eeeeee;
             float: left;
             width: 50%;
             margin: 0.09765625rem 0;
         }
         .gx_img {
-            height: 3.203125rem;
-            line-height: 3.203125rem;
+            height: 2.603125rem;
+            line-height: 2.603125rem;
         }
         .gx_list li>div {
             padding: 0.029296875rem;
@@ -234,8 +282,8 @@ a {
         .gx_buy {
             padding: 0.048828125rem;
             font-size: 0.15625rem;
-            display: flex;
-            justify-content: space-between;
+            /* display: flex;
+        justify-content: space-between; */
         }
         .gx_title {
             font-size: 0.166015625rem;
@@ -244,30 +292,86 @@ a {
             min-height: 0.4296875rem;
         }
         .gx_buy>span {
-            
-            font-size: 0.2953125rem;
+            font-size: 0.1953125rem;
         }
-        .gx_buy .gx_qg , .gx_buy .gx_jq{
+        .gx_qg_btn {
+            padding: 0 0.17578125rem 0 0.05859375rem;
+            border-radius: 0.048828125rem;
+            line-height: 0.263671875rem;
+            font-size: 0.13671875rem;
+        }
+        .gx_qg_btn:after {
+            border-top: 0.048828125rem solid transparent;
+            border-left: 0.09765625rem solid white;
+            border-bottom: 0.048828125rem solid transparent;
+            margin: 0.079890625rem 0 0.087890625rem 0.029296875rem;
+        }
+        .gx_ms {
+            padding: 0.01953125rem;
+            display: flex;
+        }
+        .gx_ms .gx_left {
+            padding: 0.01953125rem;
+            flex: 2;
+        }
+        .gx_ms .gx_ms_jg {
+            display: flex;
+        }
+        .gx_ms .gx_ms_jg>span {
+            font-size: 0.17578125rem;
+            flex: 1;
+        }
+        .gx_ms .gx_ms_jg s {
+            font-size: 0.146484375rem;
+            flex: 1;
+        }
+        .gx_right {
+            flex: 1.1;
+            font-size: 0.15625rem;
+            line-height: initial;
             display: flex;
             justify-content: center;
             flex-flow: column;
         }
-        .gx_qg_btn {
-            padding: 0 0.17578125rem ;
-            border-radius: 0.048828125rem;
-            line-height: 0.463671875rem;
-            font-size: 0.13671875rem;
+        .gx_ms_cs {
+            display: flex;
         }
-        .gx_qg_btn:after {
-           border: 0;
-           margin: 0;
+        .gx_ms .ms_cs_bl {
+            flex: 1;
+            font-size: 0.1171875rem;
+        }
+        .gx_ms .ms_cs_jd {
+            flex: 1.8;
+            bottom: -5px;
         }
     }
     @media screen and (max-width: 720px) {}
-    @media screen and (max-width: 640px) {}
-    @media screen and (max-width: 540px) {}
-    @media screen and (max-width: 480px) {}
-    @media screen and (max-width: 414px) {}
-    @media screen and (max-width: 375px) {}
-    @media screen and (max-width: 320px) {}
+    @media screen and (max-width: 640px) {
+        .gx_ms .ms_cs_jd {
+            flex: 1.5;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        .gx_ms .ms_cs_jd {
+            flex: 1.2;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .gx_ms .ms_cs_jd {
+            flex: 0.8;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        .gx_ms .ms_cs_jd {
+            flex: 0.5;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .gx_ms .ms_cs_jd {
+            flex: 0.4;
+        }
+    }
+    @media screen and (max-width: 320px) {
+      
+    }
 }

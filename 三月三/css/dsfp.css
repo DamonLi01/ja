@@ -38,8 +38,8 @@ a {
 }
 
 .gx_img {
-    height: 206px;
-    line-height: 206px;
+    height: 170px;
+    line-height: 170px;
     display: flex;
     display: table-cell \9;
     vertical-align: middle;
@@ -91,7 +91,6 @@ a {
 }
 
 .gx_qg_btn:after {
-    border: 0;
     content: "";
     width: 0;
     height: 0;
@@ -132,6 +131,38 @@ a {
     padding: 3px;
     margin: 10px;
     background: white;
+}
+
+.cyfp {
+    background: #22913a;
+    overflow: hidden;
+    padding: 1% 3%;
+}
+
+.cyfp div {
+    float: left;
+    width: 41%;
+    font-size: 15px;
+    font-weight: bold;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 40px;
+    color: white;
+    padding-left: 4%;
+}
+
+.cyfp a {
+    float: right;
+    border-radius: 5px;
+    background: white;
+    color: #22913a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1% 2%;
+    margin-top: 3%;
 }
 
 /*适配移动端*/
@@ -223,51 +254,57 @@ a {
             margin: 0.09765625rem 0;
         }
         .gx_img {
-            height: 3.203125rem;
-            line-height: 3.203125rem;
+            height: 2.613125rem;
+            line-height: 2.613125rem;
         }
         .gx_list li>div {
             padding: 0.029296875rem;
             margin: 0.09765625rem;
             background: white;
         }
-        .gx_buy {
-            padding: 0.048828125rem;
-            font-size: 0.15625rem;
+        .cyfp {
+            padding: 0.019990234375rem 0.0602734375rem;
             display: flex;
             justify-content: space-between;
         }
-        .gx_title {
-            font-size: 0.166015625rem;
-            padding: 0 0.048828125rem;
+        .cyfp div {
+            font-size: 0.146484375rem;
             height: auto;
-            min-height: 0.4296875rem;
+            min-height: 0.390625rem;
+            padding-left: 0.07552734375rem;
         }
-        .gx_buy>span {
-            
-            font-size: 0.2953125rem;
-        }
-        .gx_buy .gx_qg , .gx_buy .gx_jq{
+        .cyfp span {
             display: flex;
             justify-content: center;
             flex-flow: column;
         }
-        .gx_qg_btn {
-            padding: 0 0.17578125rem ;
+        .cyfp a {
             border-radius: 0.048828125rem;
-            line-height: 0.463671875rem;
-            font-size: 0.13671875rem;
-        }
-        .gx_qg_btn:after {
-           border: 0;
-           margin: 0;
+            font-size: 0.17578125rem;
+            padding: 0.01876953125rem 0.037685546875rem;
+            margin-top: 0;
         }
     }
     @media screen and (max-width: 720px) {}
     @media screen and (max-width: 640px) {}
     @media screen and (max-width: 540px) {}
     @media screen and (max-width: 480px) {}
-    @media screen and (max-width: 414px) {}
-    @media screen and (max-width: 375px) {}
-    @media screen and (max-width: 320px) {}
+    @media screen and (max-width: 414px) {
+        /* .gx_img {
+            height: 2.583125rem;
+            line-height: 2.583125rem;
+        } */
+    }
+    @media screen and (max-width: 375px) {
+        /* .gx_img {
+            height: 2.593125rem;
+            line-height: 2.593125rem;
+        } */
+    }
+    @media screen and (max-width: 320px) {
+        /* .gx_img {
+            height: 2.5293125rem;
+            line-height: 2.5293125rem;
+        } */
+    }
 }
