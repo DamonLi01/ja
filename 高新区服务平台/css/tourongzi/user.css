@@ -68,7 +68,7 @@ body {
     float: right;
     font-size: 17px;
     color: #7089d6;
-    background: url(../../img/jiefabao/plus.png) no-repeat 0 7px;
+    background: url(../../img/rencai/plus.png) no-repeat 0 7px;
     padding-left: 20px;
 }
 
@@ -178,13 +178,19 @@ body {
     font-size: 20px;
 }
 
-.gx_xm_money span {
+.gx_xm_money .gx_rz_type {
     float: right;
     font-size: 15px;
     color: #212121;
-    font-weight: initial;
+    width: 76px;
+    font-weight: normal;
+    text-align: center;
 }
-
+.gx_xm_money .gx_rzje{
+    font-size: 15px;
+    color: #878787;
+    font-weight: normal;
+}
 .gx_msg_tab {
     margin-bottom: 15px;
 }
@@ -221,7 +227,7 @@ body {
     color: #212121;
 }
 
-.gx_user_form input {
+.gx_user_form input{
     width: 300px;
     padding: 6px;
     border-radius: 5px;
@@ -254,6 +260,7 @@ body {
     font-weight: bold;
     font-size: 15px;
     margin-left: 106px;
+    cursor: pointer;
 }
 
 .gx_dsf_item {
@@ -292,4 +299,89 @@ body {
 
 .gx_dsf_section {
     margin-top: 40px;
+}
+
+.gx_zw_table, .gx_px_table, .gx_js_table, .gx_qz_table {
+    margin-top: 25px;
+}
+
+.gx_zw_table thead, .gx_px_table thead, .gx_js_table thead, .gx_qz_table thead {
+    color: white;
+    background-color: #282d30;
+}
+
+.gx_zw_table thead, .gx_zw_table tbody, .gx_px_table thead, .gx_px_table tbody, .gx_js_table thead, .gx_js_table tbody, .gx_qz_table thead, .gx_qz_table tbody {
+    line-height: 45px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.gx_zw_table tbody td, .gx_zw_table thead th, .gx_px_table tbody td, .gx_px_table thead th, .gx_js_table tbody td, .gx_js_table thead th, .gx_qz_table tbody td, .gx_qz_table thead th {
+    padding-left: 25px;
+}
+
+.gx_zw_table tbody tr:nth-child(even), .gx_px_table tbody tr:nth-child(even), .gx_js_table tbody tr:nth-child(even), .gx_qz_table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.gx_zw_table .gx_page, .gx_px_table .gx_page, .gx_js_table .gx_page, .gx_qz_table .gx_page {
+    margin-top: 25px;
+}
+
+.gx_zw_table .gx_page_num, .gx_px_table .gx_page_num, .gx_js_table .gx_page_num, .gx_qz_table .gx_page_num {
+    color: #0096ff;
+}
+
+.zh_eidt {
+    background-color: #3b66e2;
+    padding: 0 15px;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    float: right;
+}
+
+.gx_zh_show {
+    color: #212121;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.gx_zh_show hr {
+    border: 1px solid #f0f0f0;
+    margin: 50px 0;
+}
+
+.qz_tab {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.qz_tab a {
+    color: #666;
+    margin-left: 10px;
+}
+
+.qz_tab a.on {
+    color: #212121;
+}
+
+
+
+div.gx_page{
+    text-align: right;
+}
+.gx_fbxm  .gx_tips{
+   margin-top: 10px;
+}
+.gx_fbxm .gx_fb_btn{
+    background-color: #3b66e2;
+    color: white;
+    padding: 2px 10px;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
 }
