@@ -16,11 +16,15 @@
 
 .gx_pt ul li {
     float: left;
-    width: 20%;
+    width: 16.667%;
     text-align: center;
 }
 .gx_pt ul li div{
     position: relative;
+}
+.gx_pt ul li img{
+    width: 80px;
+    height: 80px;
 }
 .gx_pt ul li p{
     font-size: 18px;
@@ -48,4 +52,12 @@
     margin: 50px 0;
     font-size: 15px;
     font-weight: bold;
+}
+
+.wp {
+    width: auto;
+}
+
+.fwpt_list {
+    width: 1200px;
 }
