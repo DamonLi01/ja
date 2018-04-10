@@ -1,0 +1,86 @@
+.xmsys_header {
+    background-color: #2a3848;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+.xmsys_menu {
+    height: 100%;
+    margin-bottom: -64px;
+    float: left;
+    overflow: auto;
+    background-color: #2a3848;
+    text-align: center;
+
+}
+.xmsys_content{
+    height: 100%; 
+    overflow: auto;
+    margin-left: -210px;
+    margin-bottom: -64px;
+}
+.xmsys_menu .list {
+    width: 210px;
+    /* border-bottom: solid 1px #316a91; */
+}
+
+.xmsys_menu .list ul li {
+    background-color: #2a3848;
+
+    border-bottom: 0;
+}
+
+.xmsys_menu .list ul li a {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+}
+
+.xmsys_menu .list ul li.inactive a:after {
+    content: "";
+    position: absolute;
+    border-right: 7px solid #7089d6;
+    height: 100%;
+    left: 0;
+}
+
+
+.xmsys_menu .list ul li a img{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 24px;
+    height: 24px;
+}
+.xmsys_menu .list ul li ul {
+    display: none;
+}
+
+.xmsys_menu .list ul li ul li {
+    border-left: 0;
+    border-right: 0;
+    background-color: #212f3c;
+
+}
+.xmsys_menu .list ul li ul li a{
+    color: #75787b;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+}
+.xmsys_menu .list ul li ul li a.active{
+    color: #fff;
+}

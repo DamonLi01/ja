@@ -1,0 +1,51 @@
+.gx_main {
+    background-color: white;
+}
+
+.gx_title {
+    color: #707070;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    margin: 140px 0;
+}
+
+.gx_pt {
+    overflow: hidden;
+}
+
+.gx_pt ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.gx_pt ul li div{
+    position: relative;
+}
+.gx_pt ul li p{
+    font-size: 18px;
+    margin-top: 25px;
+}
+.gx_pt ul li+li div:after{
+    content: "";
+    border-right: 1px dotted;
+    position: absolute;
+    height: 80%;
+    top: 8%;
+    left: 0;
+}
+.gx_back_index {
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+.gx_back_index a {
+    background-color: #03c500;
+    color: white;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 25px;
+    margin: 50px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
