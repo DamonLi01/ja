@@ -278,8 +278,11 @@
     width: 90% !important;
     margin: 0 auto;
 }
+.picScroll-left2 .bd2{
+    height: 478px;
+}
 
-.picScroll-left .bd  ul li ,.picScroll-left2 .bd2  ul li{
+.picScroll-left .bd  ul li ,.picScroll-left2 .bd2  li{
     float: left;
     width: 230px;
     padding: 10px;
@@ -303,9 +306,9 @@
 .picScroll-left2 .gx_cgal .img_box{
     display: flex;
     overflow: hidden;
-    height: 200px;
+    height: 188px;
     text-align: center;
-    line-height: 200px;
+    line-height: 188px;
     vertical-align: middle;
 }
 .picScroll-left2 .gx_cgal .img_box>img{
@@ -314,15 +317,15 @@
     margin: auto;
     vertical-align: middle;
 }
- .picScroll-left2 .bd2 ul li{
+ .picScroll-left2 .bd2  li{
      padding: 0;
-     width: 270px;
+     width: 250px!important;
  }
 
 .picScroll-left2{
     margin-bottom: 150px;
 }
 
-.picScroll-left2 .bd2 ul li .gx_cgal:hover .gx_qy_mask{
+.picScroll-left2 .bd2  li .gx_cgal:hover .gx_qy_mask{
     display: block;
 }
