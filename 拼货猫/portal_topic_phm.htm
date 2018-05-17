@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+    <title>拼货猫</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        html,
+        body,
+        .picScroll-left,
+        .picScroll-left .bd,
+        .picScroll-left ul,
+        .picScroll-left li,
+        .picScroll-left .tempWrap {
+            height: 100%;
+        }
+
+        .picScroll-left ul li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .phm_box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .phm_content {
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            position: relative;
+        }
+
+        .phm_title {
+            color: white;
+            position: absolute;
+            top: 25%;
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+
+        .phm_title h1 {
+            font-size: 32px;
+        }
+
+        .phm_download {
+            position: absolute;
+            top: 50%;
+            color: white;
+        }
+
+        .pull_left {
+            float: left;
+        }
+
+        .phm_ios {
+            background: #e33f40 url(./img/ios.png) no-repeat 10px 10px/33px 33px;
+
+            text-align: right;
+            padding: 10px 10px 10px 50px;
+            margin-top: 7px;
+            margin-right: 10px;
+            font-size: 28px;
+            border-radius: 5px;
+        }
+
+        .phm_android {
+            background: #472cf7 url(./img/android.png) no-repeat 10px 10px/33px 33px;
+
+            text-align: right;
+            padding: 10px 10px 10px 50px;
+            margin-top: 7px;
+            margin-right: 10px;
+            font-size: 28px;
+            border-radius: 5px;
+        }
+        .phm_QRCode{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picScroll-left">
+        <div class="bd">
+            <ul>
+                <li>
+                    <img src="./img/silde1.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./img/slide2.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="phm_box">
+
+        <div class="phm_content">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="phm_title">
+                <h1>
+                    拼货猫
+                </h1>
+                <p>希望拼团购是一种生活方式</p>
+                <p>能够拉进您与您身边的人之间的距离</p>
+            </div>
+            <div class="phm_download">
+                <div class="pull_left">
+                    <div class="phm_ios">iPhone版</div>
+                    <div class="phm_android">Android版</div>
+                </div>
+                <img class="phm_QRCode" src="./img/QRCode.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        jQuery(function () {
+            jQuery(".picScroll-left").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                autoPage: true,
+                effect: "left",
+                autoPlay: true,
+                vis: 1
+            });
+        })
+    </script>
+</body>
+
+</html>
